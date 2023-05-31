@@ -1,3 +1,13 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:vitest/recommended"
+  ],
+  "plugins": ["prettier", "jsx-a11y"],
+  "rules": { "prettier/prettier": "error" },
+  "env": { "jest": true },
+  "ignorePatterns": ["*.js", "node_modules", "/build", "/public/*", "/.next"]
 }
