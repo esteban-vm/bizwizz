@@ -1,0 +1,172 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Header: > should match snapshot 1`] = `
+<DocumentFragment>
+  <header
+    class="
+        relative
+        h-[100vh]
+        w-full
+        bg-black
+        bg-[url('/images/header-img.jpg')]
+        bg-[length:40%]
+        bg-[90%_50%]
+        bg-no-repeat
+      "
+    id="home"
+  >
+    <svg
+      class="text-primary"
+      height="10rem"
+      preserveAspectRatio="none"
+      role="presentation"
+      viewBox="0 0 500 150"
+      width="100%"
+    >
+      <path
+        d="M0.00,49.98 C161.96,151.48 356.65,-54.75 500.00,49.98 L504.51,-36.00 L-13.54,-3.44 Z"
+        fill="currentColor"
+        stroke="none"
+      />
+    </svg>
+    <div
+      class="-mt-20 flex justify-between"
+    >
+      <img
+        alt="Bizwizz logo"
+        class="h-[12rem] w-auto select-none"
+        data-nimg="1"
+        decoding="async"
+        height="500"
+        loading="lazy"
+        src="/_next/image?url=%2Fimages%2Flogo.png&w=1080&q=75"
+        srcset="/_next/image?url=%2Fimages%2Flogo.png&w=640&q=75 1x, /_next/image?url=%2Fimages%2Flogo.png&w=1080&q=75 2x"
+        style="color: transparent;"
+        width="500"
+      />
+      <nav>
+        <ul
+          class="m-[5rem_2rem_0_0] flex list-none"
+        >
+          <li
+            id="c054a01e-9103-4cd7-8a2f-c647d0d3e73b"
+          >
+            <a
+              class="
+          ml-10
+          block
+          select-none
+          pb-[0.8rem]
+          text-[1.4rem]
+          uppercase
+          text-white
+          transition-[border-b]
+          hover:border-b-2
+          hover:border-b-primary
+        "
+              href="#home"
+            >
+              Home
+            </a>
+          </li>
+          <li
+            id="e67da725-6069-4902-838f-2e54b680426e"
+          >
+            <a
+              class="
+          ml-10
+          block
+          select-none
+          pb-[0.8rem]
+          text-[1.4rem]
+          uppercase
+          text-white
+          transition-[border-b]
+          hover:border-b-2
+          hover:border-b-primary
+        "
+              href="#contact"
+            >
+              Contact
+            </a>
+          </li>
+          <li
+            id="fdd9fce5-598c-4029-8682-5296584eec75"
+          >
+            <a
+              class="
+          ml-10
+          block
+          select-none
+          pb-[0.8rem]
+          text-[1.4rem]
+          uppercase
+          text-white
+          transition-[border-b]
+          hover:border-b-2
+          hover:border-b-primary
+        "
+              href="#about"
+            >
+              About Us
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div
+      class="absolute left-20 top-60 text-left"
+    >
+      <div
+        class="font-[500]"
+      >
+        <h1
+          class="text-[6rem] text-primary"
+        >
+          Bizwizz
+        </h1>
+        <h2
+          class="mb-12 w-1/2 text-[5rem] text-white"
+        >
+          Innovate, Transform and Lead
+        </h2>
+      </div>
+      <div>
+        <button
+          class="
+        block
+        min-w-[20rem]
+        cursor-pointer
+        select-none
+
+        bg-white
+        bg-gradient-120
+        from-transparent
+        from-0%
+        via-transparent
+        via-50%
+        to-primary
+        to-50%
+        bg-[length:250%]
+
+        p-[1.6rem]
+        text-2xl
+        font-[500]
+        uppercase
+        text-primary
+        transition-all
+        duration-300
+
+        hover:translate-x-4
+        hover:bg-[100%]
+        hover:text-white
+      "
+          type="button"
+        >
+          Get a quote today
+        </button>
+      </div>
+    </div>
+  </header>
+</DocumentFragment>
+`;

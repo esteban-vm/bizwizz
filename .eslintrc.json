@@ -4,10 +4,11 @@
     "plugin:prettier/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:jsx-a11y/recommended",
-    "plugin:vitest/recommended"
+    "plugin:vitest/recommended",
+    "plugin:tailwindcss/recommended"
   ],
   "plugins": ["prettier", "jsx-a11y"],
-  "rules": { "prettier/prettier": "error" },
+  "rules": { "prettier/prettier": "warn" },
   "env": { "jest": true },
   "ignorePatterns": ["*.js", "node_modules", "/build", "/public/*", "/.next"]
 }

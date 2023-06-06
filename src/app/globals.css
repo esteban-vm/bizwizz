@@ -2,26 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --color-pink: 206 54 124; /* #ce367c */
+    --color-light-pink: 240 194 216; /* #f0c2d8 */
+    --color-black: 0 0 0; /* #000 */
+    --color-white: 255 255 255; /* #fff */
+    --color-light-grey: 220 220 220; /* #dcdcdc */
+    --color-light-grey-2: 242 242 242; /* #f2f2f2 */
+    --color-dark-grey: 128 128 128; /* #808080 */
+    --color-dark-grey-2: 25 25 25; /* #191919 */
+    --color-yellow: 242 207 13; /* #f2cf0d */
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  * {
+    @apply m-0 p-0 scroll-smooth;
+
+    &::before,
+    &::after {
+      @apply box-border;
+    }
+
+    &::selection {
+      @apply bg-primary-light text-primary;
+    }
+
+    &::-webkit-scrollbar {
+      @apply w-4 bg-primary-light rounded-xl;
+    }
+
+    &::-webkit-scrollbar-track {
+      @apply shadow-inner shadow-darkgrey-2;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      @apply bg-primary rounded-xl;
+    }
+  }
+
+  html {
+    @apply text-[62.5%];
+  }
+
+  body {
+    @apply bg-black;
+  }
 }

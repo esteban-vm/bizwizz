@@ -1,0 +1,14 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Icon: > should match snapshot 1`] = `
+<DocumentFragment>
+  <svg
+    class="fill-primary"
+    role="img"
+  >
+    <use
+      xlink:href="#icon-desktop"
+    />
+  </svg>
+</DocumentFragment>
+`;
