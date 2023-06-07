@@ -1,5 +1,5 @@
 import { render, cleanup, within, screen } from '@/tests'
-import Services from './Services'
+import Services, { services } from './Services'
 
 describe('Services:', () => {
   let asFragment: () => DocumentFragment
@@ -10,14 +10,14 @@ describe('Services:', () => {
 
   afterEach(cleanup)
 
-  it('should match snapshot', () => {
+  it('should render correctly', () => {
     expect(asFragment()).toMatchSnapshot()
   })
 
-  it('should render correctly', () => {
-    const services = screen.getByRole('region', { name: /our services/i })
-    expect(services).toBeInTheDocument()
-    expect(within(services).getByRole('heading', { level: 2 })).toBeInTheDocument()
-    expect(within(services).getByRole('heading', { name: /lorem ipsum dolor sit amet/i, level: 3 })).toBeInTheDocument()
+  it('should have correct structure', () => {
+    const servicesElem = screen.getByRole('region')
+    expect(servicesElem).toBeInTheDocument()
+    expect(within(servicesElem).getByRole('heading', { name: /our services/i, level: 2 })).toBeInTheDocument()
+    expect(within(servicesElem).getAllByRole('article')).toHaveLength(services.length)
   })
 })

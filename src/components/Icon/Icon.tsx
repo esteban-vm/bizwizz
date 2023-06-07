@@ -1,32 +1,34 @@
 import type { FC } from 'react'
 
-export type IconProps = {
+export type IconName =
+  | 'facebook'
+  | 'linkedin'
+  | 'twitter'
+  | 'chevron-left'
+  | 'chevron-right'
+  | 'moon'
+  | 'sun'
+  | 'desktop'
+  | 'picture'
+  | 'video'
+  | 'expand'
+  | 'megaphone'
+  | 'trophy'
+  | 'map'
+  | 'pencil'
+  | 'strategy'
+  | 'map-pin'
+  | 'film'
+  | 'address-book'
+  | 'envelop'
+  | 'location'
+  | 'star-empty'
+  | 'star-half'
+  | 'star-full'
+
+type IconProps = {
   className: string
-  name:
-    | 'chevron-left'
-    | 'chevron-right'
-    | 'moon'
-    | 'sun'
-    | 'desktop'
-    | 'picture'
-    | 'video'
-    | 'expand'
-    | 'megaphone'
-    | 'trophy'
-    | 'map'
-    | 'pencil'
-    | 'strategy'
-    | 'map-pin'
-    | 'film'
-    | 'address-book'
-    | 'envelop'
-    | 'location'
-    | 'star-empty'
-    | 'star-half'
-    | 'star-full'
-    | 'facebook'
-    | 'instagram'
-    | 'twitter'
+  name: IconName
 }
 
 const Icon: FC<IconProps> = ({ className, name }) => {

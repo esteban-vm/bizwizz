@@ -1,0 +1,358 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Team: > should render correctly 1`] = `
+<DocumentFragment>
+  <section
+    aria-labelledby="team_title"
+    class="bg-black pb-32 text-center"
+    id="team"
+  >
+    <svg
+      class="text-white h-40 w-full"
+      preserveAspectRatio="none"
+      role="presentation"
+      viewBox="0 0 500 150"
+    >
+      <path
+        d="M0.00,49.98 C161.96,151.48 356.65,-54.75 500.00,49.98 L504.51,-36.00 L-13.54,-3.44 Z"
+        fill="currentColor"
+        stroke="none"
+      />
+    </svg>
+    <header
+      class="font-bold tracking-widest"
+    >
+      <h2
+        class="mb-5 text-[2.4rem] uppercase text-primary"
+        id="team_title"
+      >
+        Meet our team
+      </h2>
+      <h3
+        class="mb-10 text-[4rem] capitalize text-darkgrey"
+      >
+        Lorem ipsum dolor sit amet
+      </h3>
+    </header>
+    <div
+      class="flex flex-wrap justify-evenly"
+    >
+      <article
+        class="
+        relative
+        h-96
+        w-96
+        select-none
+        rounded-full
+        border-[3px]
+        border-solid
+        border-primary
+        bg-cover
+        bg-center
+        first:bg-[url('/images/team-mate-1.jpg')]
+        last:bg-[url('/images/team-mate-3.jpg')]
+        even:bg-[url('/images/team-mate-2.jpg')]
+        [&>div:last-child]:hover:top-1/2
+        [&>div]:hover:opacity-100
+      "
+        id="fec6d982-1994-4d02-9cc7-18a86719fb7c"
+      >
+        <div
+          class="
+          absolute
+          left-0
+          top-0
+          h-full
+          w-full
+          rounded-full
+          bg-primary/70
+          opacity-0
+          transition-opacity
+          duration-200
+        "
+        />
+        <div
+          class="
+          absolute
+          left-1/2
+          top-[30%]
+          -translate-x-1/2
+          -translate-y-1/2
+          text-white
+          opacity-0
+          transition-all
+          duration-500
+        "
+        >
+          <h4
+            class="text-[2.7rem] font-semibold"
+          >
+            Paula Lee
+          </h4>
+          <p
+            class="text-2xl font-medium"
+          >
+            CEO
+          </p>
+          <div
+            class="mt-8 flex justify-between"
+          >
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              title="facebook"
+            >
+              <svg
+                class="m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light"
+                role="img"
+              >
+                <use
+                  xlink:href="#icon-facebook"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              title="twitter"
+            >
+              <svg
+                class="m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light"
+                role="img"
+              >
+                <use
+                  xlink:href="#icon-twitter"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              title="linkedin"
+            >
+              <svg
+                class="m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light"
+                role="img"
+              >
+                <use
+                  xlink:href="#icon-linkedin"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="
+        relative
+        h-96
+        w-96
+        select-none
+        rounded-full
+        border-[3px]
+        border-solid
+        border-primary
+        bg-cover
+        bg-center
+        first:bg-[url('/images/team-mate-1.jpg')]
+        last:bg-[url('/images/team-mate-3.jpg')]
+        even:bg-[url('/images/team-mate-2.jpg')]
+        [&>div:last-child]:hover:top-1/2
+        [&>div]:hover:opacity-100
+      "
+        id="c512f1ff-6fff-4aee-be97-7c0697204186"
+      >
+        <div
+          class="
+          absolute
+          left-0
+          top-0
+          h-full
+          w-full
+          rounded-full
+          bg-primary/70
+          opacity-0
+          transition-opacity
+          duration-200
+        "
+        />
+        <div
+          class="
+          absolute
+          left-1/2
+          top-[30%]
+          -translate-x-1/2
+          -translate-y-1/2
+          text-white
+          opacity-0
+          transition-all
+          duration-500
+        "
+        >
+          <h4
+            class="text-[2.7rem] font-semibold"
+          >
+            Ted Johnson
+          </h4>
+          <p
+            class="text-2xl font-medium"
+          >
+            Co-Founder
+          </p>
+          <div
+            class="mt-8 flex justify-between"
+          >
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              title="facebook"
+            >
+              <svg
+                class="m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light"
+                role="img"
+              >
+                <use
+                  xlink:href="#icon-facebook"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              title="twitter"
+            >
+              <svg
+                class="m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light"
+                role="img"
+              >
+                <use
+                  xlink:href="#icon-twitter"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              title="linkedin"
+            >
+              <svg
+                class="m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light"
+                role="img"
+              >
+                <use
+                  xlink:href="#icon-linkedin"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+      <article
+        class="
+        relative
+        h-96
+        w-96
+        select-none
+        rounded-full
+        border-[3px]
+        border-solid
+        border-primary
+        bg-cover
+        bg-center
+        first:bg-[url('/images/team-mate-1.jpg')]
+        last:bg-[url('/images/team-mate-3.jpg')]
+        even:bg-[url('/images/team-mate-2.jpg')]
+        [&>div:last-child]:hover:top-1/2
+        [&>div]:hover:opacity-100
+      "
+        id="37d5c8a6-3234-42f1-8379-65b50f5f12cb"
+      >
+        <div
+          class="
+          absolute
+          left-0
+          top-0
+          h-full
+          w-full
+          rounded-full
+          bg-primary/70
+          opacity-0
+          transition-opacity
+          duration-200
+        "
+        />
+        <div
+          class="
+          absolute
+          left-1/2
+          top-[30%]
+          -translate-x-1/2
+          -translate-y-1/2
+          text-white
+          opacity-0
+          transition-all
+          duration-500
+        "
+        >
+          <h4
+            class="text-[2.7rem] font-semibold"
+          >
+            Miranda Shaffer
+          </h4>
+          <p
+            class="text-2xl font-medium"
+          >
+            Lead Designer
+          </p>
+          <div
+            class="mt-8 flex justify-between"
+          >
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              title="facebook"
+            >
+              <svg
+                class="m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light"
+                role="img"
+              >
+                <use
+                  xlink:href="#icon-facebook"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              title="twitter"
+            >
+              <svg
+                class="m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light"
+                role="img"
+              >
+                <use
+                  xlink:href="#icon-twitter"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              title="linkedin"
+            >
+              <svg
+                class="m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light"
+                role="img"
+              >
+                <use
+                  xlink:href="#icon-linkedin"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+</DocumentFragment>
+`;

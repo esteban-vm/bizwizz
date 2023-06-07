@@ -1,10 +1,10 @@
 import type { FC } from 'react'
-import { Icon, type IconProps } from '@/components'
+import { Icon, type IconName } from '@/components'
 
 export type ServiceProps = {
   id: `${string}-${string}-${string}-${string}-${string}`
   title: Capitalize<string>
-  icon: IconProps['name']
+  icon: IconName
 }
 
 const Service: FC<ServiceProps> = ({ id, title, icon }) => {

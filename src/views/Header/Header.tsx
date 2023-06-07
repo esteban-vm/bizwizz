@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Button, Wave } from '@/components'
 import NavLink, { type NavLinkProps } from './NavLink'
 
-export const links: NavLinkProps[] = [
+export const navLinks: NavLinkProps[] = [
   { id: 'c054a01e-9103-4cd7-8a2f-c647d0d3e73b', link: '#home', text: 'Home' },
   { id: 'e67da725-6069-4902-838f-2e54b680426e', link: '#contact', text: 'Contact' },
   { id: 'fdd9fce5-598c-4029-8682-5296584eec75', link: '#about', text: 'About Us' },
@@ -12,6 +12,7 @@ export const links: NavLinkProps[] = [
 const Header: FC = () => {
   return (
     <header
+      id='home'
       className={`
         relative
         h-[100vh]
@@ -22,9 +23,8 @@ const Header: FC = () => {
         bg-[90%_50%]
         bg-no-repeat
       `}
-      id='home'
     >
-      <Wave isPrimary />
+      <Wave is='primary' />
       <div className='-mt-20 flex justify-between'>
         <Image
           src='/images/logo.png'
@@ -35,7 +35,7 @@ const Header: FC = () => {
         />
         <nav>
           <ul className='m-[5rem_2rem_0_0] flex list-none'>
-            {links.map((link) => (
+            {navLinks.map((link) => (
               <NavLink key={link.id} {...link} />
             ))}
           </ul>

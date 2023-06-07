@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Service: > should match snapshot 1`] = `
+exports[`Service: > should render correctly 1`] = `
 <DocumentFragment>
   <article
     class="

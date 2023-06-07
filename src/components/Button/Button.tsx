@@ -11,7 +11,6 @@ const Button: FC<ButtonProps> = ({ text }) => {
         min-w-[20rem]
         cursor-pointer
         select-none
-
         bg-white
         bg-gradient-120
         from-transparent
@@ -21,7 +20,6 @@ const Button: FC<ButtonProps> = ({ text }) => {
         to-primary
         to-50%
         bg-[length:250%]
-
         p-[1.6rem]
         text-2xl
         font-[500]
@@ -29,7 +27,6 @@ const Button: FC<ButtonProps> = ({ text }) => {
         text-primary
         transition-all
         duration-300
-
         hover:translate-x-4
         hover:bg-[100%]
         hover:text-white

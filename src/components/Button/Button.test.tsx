@@ -10,13 +10,13 @@ describe('Button:', () => {
 
   afterEach(cleanup)
 
-  it('should match snapshot', () => {
+  it('should render correctly', () => {
     expect(asFragment()).toMatchSnapshot()
   })
 
-  it('should render correctly', () => {
-    const button = screen.getByRole('button')
-    expect(button).toBeInTheDocument()
-    expect(button).toHaveTextContent(/test/i)
+  it('should have correct structure', () => {
+    const buttonElem = screen.getByRole('button')
+    expect(buttonElem).toBeInTheDocument()
+    expect(buttonElem).toHaveTextContent(/test/i)
   })
 })

@@ -1,14 +1,46 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Wave: > should match snapshot 1`] = `
+exports[`Wave: > should render correctly when is black 1`] = `
 <DocumentFragment>
   <svg
-    class="text-primary"
-    height="10rem"
+    class="text-black h-40 w-full"
     preserveAspectRatio="none"
     role="presentation"
     viewBox="0 0 500 150"
-    width="100%"
+  >
+    <path
+      d="M0.00,49.98 C161.96,151.48 356.65,-54.75 500.00,49.98 L504.51,-36.00 L-13.54,-3.44 Z"
+      fill="currentColor"
+      stroke="none"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Wave: > should render correctly when is primary 1`] = `
+<DocumentFragment>
+  <svg
+    class="text-primary h-40 w-full"
+    preserveAspectRatio="none"
+    role="presentation"
+    viewBox="0 0 500 150"
+  >
+    <path
+      d="M0.00,49.98 C161.96,151.48 356.65,-54.75 500.00,49.98 L504.51,-36.00 L-13.54,-3.44 Z"
+      fill="currentColor"
+      stroke="none"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Wave: > should render correctly when is white 1`] = `
+<DocumentFragment>
+  <svg
+    class="text-white h-40 w-full"
+    preserveAspectRatio="none"
+    role="presentation"
+    viewBox="0 0 500 150"
   >
     <path
       d="M0.00,49.98 C161.96,151.48 356.65,-54.75 500.00,49.98 L504.51,-36.00 L-13.54,-3.44 Z"

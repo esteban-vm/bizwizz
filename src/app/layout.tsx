@@ -3,7 +3,7 @@ import type { ReactNode } from 'react'
 import { Work_Sans } from 'next/font/google'
 
 const workSans = Work_Sans({
-  weight: ['100', '300', '400', '500', '800'],
+  weight: 'variable',
   subsets: ['latin'],
   display: 'auto',
   fallback: ['sans-serif'],

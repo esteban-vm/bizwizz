@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Nav Link: > should match snapshot 1`] = `
+exports[`Nav Link: > should render correctly 1`] = `
 <DocumentFragment>
   <li
     id="c054a01e-9103-4cd7-8a2f-c647d0d3e73b"

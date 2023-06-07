@@ -1,5 +1,5 @@
 import { Icons } from '@/components'
-import { Header, Services } from '@/views'
+import { Header, Services, Team } from '@/views'
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
       <Header />
       <main>
         <Services />
+        <Team />
       </main>
     </>
   )

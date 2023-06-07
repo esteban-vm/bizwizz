@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Header: > should match snapshot 1`] = `
+exports[`Header: > should render correctly 1`] = `
 <DocumentFragment>
   <header
     class="
@@ -16,12 +16,10 @@ exports[`Header: > should match snapshot 1`] = `
     id="home"
   >
     <svg
-      class="text-primary"
-      height="10rem"
+      class="text-primary h-40 w-full"
       preserveAspectRatio="none"
       role="presentation"
       viewBox="0 0 500 150"
-      width="100%"
     >
       <path
         d="M0.00,49.98 C161.96,151.48 356.65,-54.75 500.00,49.98 L504.51,-36.00 L-13.54,-3.44 Z"
@@ -138,7 +136,6 @@ exports[`Header: > should match snapshot 1`] = `
         min-w-[20rem]
         cursor-pointer
         select-none
-
         bg-white
         bg-gradient-120
         from-transparent
@@ -148,7 +145,6 @@ exports[`Header: > should match snapshot 1`] = `
         to-primary
         to-50%
         bg-[length:250%]
-
         p-[1.6rem]
         text-2xl
         font-[500]
@@ -156,7 +152,6 @@ exports[`Header: > should match snapshot 1`] = `
         text-primary
         transition-all
         duration-300
-
         hover:translate-x-4
         hover:bg-[100%]
         hover:text-white

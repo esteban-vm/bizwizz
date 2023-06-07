@@ -10,11 +10,13 @@ describe('Icon:', () => {
 
   afterEach(cleanup)
 
-  it('should match snapshot', () => {
+  it('should render correctly', () => {
     expect(asFragment()).toMatchSnapshot()
   })
 
-  it('should render correctly', () => {
-    expect(screen.getByRole('img')).toBeInTheDocument()
+  it('should have correct structure', () => {
+    const iconElem = screen.getByRole('img')
+    expect(iconElem).toBeInTheDocument()
+    expect(iconElem).toHaveAttribute('class', 'fill-primary')
   })
 })

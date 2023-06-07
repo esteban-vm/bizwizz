@@ -12,14 +12,15 @@ describe('Service:', () => {
 
   afterEach(cleanup)
 
-  it('should match snapshot', () => {
+  it('should render correctly', () => {
     expect(asFragment()).toMatchSnapshot()
   })
 
-  it('should render correctly', () => {
-    const service = screen.getByRole('article')
-    expect(service).toBeInTheDocument()
-    expect(within(service).getByRole('img')).toBeInTheDocument()
-    expect(within(service).getByRole('heading', { name: testService.title, level: 4 })).toBeInTheDocument()
+  it('should have correct structure', () => {
+    const serviceElem = screen.getByRole('article')
+    expect(serviceElem).toBeInTheDocument()
+    expect(serviceElem).toHaveAttribute('id', testService.id)
+    expect(within(serviceElem).getByRole('heading', { name: testService.title, level: 4 })).toBeInTheDocument()
+    expect(within(serviceElem).getByRole('img')).toBeInTheDocument()
   })
 })
