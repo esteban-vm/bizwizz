@@ -10,21 +10,7 @@ export type NavLinkProps = {
 const NavLink: FC<NavLinkProps> = ({ id, link, text }) => {
   return (
     <li id={id}>
-      <Link
-        href={link}
-        className={`
-          ml-10
-          block
-          select-none
-          pb-[0.8rem]
-          text-[1.4rem]
-          uppercase
-          text-white
-          transition-[border-b]
-          hover:border-b-2
-          hover:border-b-primary
-        `}
-      >
+      <Link href={link} className='nav_link'>
         {text}
       </Link>
     </li>

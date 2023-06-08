@@ -42,18 +42,7 @@ exports[`Header: > should render correctly 1`] = `
             id="c054a01e-9103-4cd7-8a2f-c647d0d3e73b"
           >
             <a
-              class="
-          ml-10
-          block
-          select-none
-          pb-[0.8rem]
-          text-[1.4rem]
-          uppercase
-          text-white
-          transition-[border-b]
-          hover:border-b-2
-          hover:border-b-primary
-        "
+              class="nav_link"
               href="#home"
             >
               Home
@@ -63,18 +52,7 @@ exports[`Header: > should render correctly 1`] = `
             id="e67da725-6069-4902-838f-2e54b680426e"
           >
             <a
-              class="
-          ml-10
-          block
-          select-none
-          pb-[0.8rem]
-          text-[1.4rem]
-          uppercase
-          text-white
-          transition-[border-b]
-          hover:border-b-2
-          hover:border-b-primary
-        "
+              class="nav_link"
               href="#contact"
             >
               Contact
@@ -84,18 +62,7 @@ exports[`Header: > should render correctly 1`] = `
             id="fdd9fce5-598c-4029-8682-5296584eec75"
           >
             <a
-              class="
-          ml-10
-          block
-          select-none
-          pb-[0.8rem]
-          text-[1.4rem]
-          uppercase
-          text-white
-          transition-[border-b]
-          hover:border-b-2
-          hover:border-b-primary
-        "
+              class="nav_link"
               href="#about"
             >
               About Us
@@ -124,31 +91,7 @@ exports[`Header: > should render correctly 1`] = `
       </div>
       <div>
         <button
-          class="
-        block
-        min-w-[20rem]
-        cursor-pointer
-        select-none
-        bg-white
-        bg-gradient-120
-        from-transparent
-        from-0%
-        via-transparent
-        via-50%
-        to-primary
-        to-50%
-        bg-[length:250%]
-        p-[1.6rem]
-        text-2xl
-        font-[500]
-        uppercase
-        text-primary
-        transition-all
-        duration-300
-        hover:translate-x-4
-        hover:bg-[100%]
-        hover:text-white
-      "
+          class="btn"
           type="button"
         >
           Get a quote today

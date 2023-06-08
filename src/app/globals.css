@@ -51,7 +51,27 @@
 
 @layer components {
   .home {
-    @apply relative h-[100vh] w-full bg-black bg-[url('/images/header-img.jpg')] bg-[length:40%] bg-[90%_50%] bg-no-repeat;
+    @apply relative
+      h-[100vh]
+      w-full
+      bg-black
+      bg-[url('/images/header-img.jpg')]
+      bg-[length:40%]
+      bg-[90%_50%]
+      bg-no-repeat;
+
+    .nav_link {
+      @apply ml-10
+        block
+        select-none
+        pb-[0.8rem]
+        text-[1.4rem]
+        uppercase
+        text-white
+        transition-[border-b]
+        hover:border-b-2
+        hover:border-b-primary;
+    }
   }
 
   .section {
@@ -68,5 +88,114 @@
         @apply mb-10 text-[4rem] capitalize text-darkgrey;
       }
     }
+
+    .service {
+      @apply flex
+        w-80
+        flex-[1_1_30%]
+        items-center
+        justify-center
+        overflow-hidden
+        bg-lightgrey
+        text-black
+        hover:bg-primary
+        hover:text-white
+        [&>h4]:hover:translate-x-20
+        [&>svg]:hover:scale-150
+        [&>svg]:hover:opacity-60;
+
+      .service_icon {
+        @apply mr-7
+          h-44
+          w-[4.8rem]
+          scale-50
+          fill-primary-light
+          opacity-0
+          transition-all
+          duration-500;
+      }
+
+      .service_heading {
+        @apply select-none
+          p-[3rem_6rem_3rem_0]
+          text-[2.3rem]
+          font-[500]
+          transition-all
+          duration-500;
+      }
+    }
+
+    .team_mate {
+      @apply relative
+        h-96
+        w-96
+        select-none
+        rounded-full
+        border-[3px]
+        border-solid
+        border-primary
+        bg-cover
+        bg-center
+        first:bg-[url('/images/team-mate-1.jpg')]
+        last:bg-[url('/images/team-mate-3.jpg')]
+        even:bg-[url('/images/team-mate-2.jpg')]
+        [&>div:last-child]:hover:top-1/2
+        [&>div]:hover:opacity-100;
+
+      .team_mate_overlay {
+        @apply absolute
+          left-0
+          top-0
+          h-full
+          w-full
+          rounded-full
+          bg-primary/70
+          opacity-0
+          transition-opacity
+          duration-200;
+      }
+
+      .team_mate_content {
+        @apply absolute
+          left-1/2
+          top-[30%]
+          -translate-x-1/2
+          -translate-y-1/2
+          text-white
+          opacity-0
+          transition-all
+          duration-500;
+      }
+
+      .team_mate_icon {
+        @apply m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light;
+      }
+    }
+  }
+
+  .btn {
+    @apply block
+      min-w-[20rem]
+      cursor-pointer
+      select-none
+      bg-white
+      bg-gradient-120
+      from-transparent
+      from-0%
+      via-transparent
+      via-50%
+      to-primary
+      to-50%
+      bg-[length:250%]
+      p-[1.6rem]
+      text-2xl
+      font-[500]
+      uppercase
+      text-primary
+      transition-all
+      duration-300
+      hover:translate-x-4
+      hover:bg-[100%]
+      hover:text-white;
   }
 }

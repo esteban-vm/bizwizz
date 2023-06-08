@@ -38,51 +38,14 @@ exports[`Team: > should render correctly 1`] = `
       class="flex flex-wrap justify-evenly"
     >
       <article
-        class="
-        relative
-        h-96
-        w-96
-        select-none
-        rounded-full
-        border-[3px]
-        border-solid
-        border-primary
-        bg-cover
-        bg-center
-        first:bg-[url('/images/team-mate-1.jpg')]
-        last:bg-[url('/images/team-mate-3.jpg')]
-        even:bg-[url('/images/team-mate-2.jpg')]
-        [&>div:last-child]:hover:top-1/2
-        [&>div]:hover:opacity-100
-      "
+        class="team_mate"
         id="fec6d982-1994-4d02-9cc7-18a86719fb7c"
       >
         <div
-          class="
-          absolute
-          left-0
-          top-0
-          h-full
-          w-full
-          rounded-full
-          bg-primary/70
-          opacity-0
-          transition-opacity
-          duration-200
-        "
+          class="team_mate_overlay"
         />
         <div
-          class="
-          absolute
-          left-1/2
-          top-[30%]
-          -translate-x-1/2
-          -translate-y-1/2
-          text-white
-          opacity-0
-          transition-all
-          duration-500
-        "
+          class="team_mate_content"
         >
           <h4
             class="text-[2.7rem] font-semibold"
@@ -103,7 +66,7 @@ exports[`Team: > should render correctly 1`] = `
               title="facebook"
             >
               <svg
-                class="m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light"
+                class="team_mate_icon"
                 role="img"
               >
                 <use
@@ -117,7 +80,7 @@ exports[`Team: > should render correctly 1`] = `
               title="twitter"
             >
               <svg
-                class="m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light"
+                class="team_mate_icon"
                 role="img"
               >
                 <use
@@ -131,7 +94,7 @@ exports[`Team: > should render correctly 1`] = `
               title="linkedin"
             >
               <svg
-                class="m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light"
+                class="team_mate_icon"
                 role="img"
               >
                 <use
@@ -143,51 +106,14 @@ exports[`Team: > should render correctly 1`] = `
         </div>
       </article>
       <article
-        class="
-        relative
-        h-96
-        w-96
-        select-none
-        rounded-full
-        border-[3px]
-        border-solid
-        border-primary
-        bg-cover
-        bg-center
-        first:bg-[url('/images/team-mate-1.jpg')]
-        last:bg-[url('/images/team-mate-3.jpg')]
-        even:bg-[url('/images/team-mate-2.jpg')]
-        [&>div:last-child]:hover:top-1/2
-        [&>div]:hover:opacity-100
-      "
+        class="team_mate"
         id="c512f1ff-6fff-4aee-be97-7c0697204186"
       >
         <div
-          class="
-          absolute
-          left-0
-          top-0
-          h-full
-          w-full
-          rounded-full
-          bg-primary/70
-          opacity-0
-          transition-opacity
-          duration-200
-        "
+          class="team_mate_overlay"
         />
         <div
-          class="
-          absolute
-          left-1/2
-          top-[30%]
-          -translate-x-1/2
-          -translate-y-1/2
-          text-white
-          opacity-0
-          transition-all
-          duration-500
-        "
+          class="team_mate_content"
         >
           <h4
             class="text-[2.7rem] font-semibold"
@@ -208,7 +134,7 @@ exports[`Team: > should render correctly 1`] = `
               title="facebook"
             >
               <svg
-                class="m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light"
+                class="team_mate_icon"
                 role="img"
               >
                 <use
@@ -222,7 +148,7 @@ exports[`Team: > should render correctly 1`] = `
               title="twitter"
             >
               <svg
-                class="m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light"
+                class="team_mate_icon"
                 role="img"
               >
                 <use
@@ -236,7 +162,7 @@ exports[`Team: > should render correctly 1`] = `
               title="linkedin"
             >
               <svg
-                class="m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light"
+                class="team_mate_icon"
                 role="img"
               >
                 <use
@@ -248,51 +174,14 @@ exports[`Team: > should render correctly 1`] = `
         </div>
       </article>
       <article
-        class="
-        relative
-        h-96
-        w-96
-        select-none
-        rounded-full
-        border-[3px]
-        border-solid
-        border-primary
-        bg-cover
-        bg-center
-        first:bg-[url('/images/team-mate-1.jpg')]
-        last:bg-[url('/images/team-mate-3.jpg')]
-        even:bg-[url('/images/team-mate-2.jpg')]
-        [&>div:last-child]:hover:top-1/2
-        [&>div]:hover:opacity-100
-      "
+        class="team_mate"
         id="37d5c8a6-3234-42f1-8379-65b50f5f12cb"
       >
         <div
-          class="
-          absolute
-          left-0
-          top-0
-          h-full
-          w-full
-          rounded-full
-          bg-primary/70
-          opacity-0
-          transition-opacity
-          duration-200
-        "
+          class="team_mate_overlay"
         />
         <div
-          class="
-          absolute
-          left-1/2
-          top-[30%]
-          -translate-x-1/2
-          -translate-y-1/2
-          text-white
-          opacity-0
-          transition-all
-          duration-500
-        "
+          class="team_mate_content"
         >
           <h4
             class="text-[2.7rem] font-semibold"
@@ -313,7 +202,7 @@ exports[`Team: > should render correctly 1`] = `
               title="facebook"
             >
               <svg
-                class="m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light"
+                class="team_mate_icon"
                 role="img"
               >
                 <use
@@ -327,7 +216,7 @@ exports[`Team: > should render correctly 1`] = `
               title="twitter"
             >
               <svg
-                class="m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light"
+                class="team_mate_icon"
                 role="img"
               >
                 <use
@@ -341,7 +230,7 @@ exports[`Team: > should render correctly 1`] = `
               title="linkedin"
             >
               <svg
-                class="m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light"
+                class="team_mate_icon"
                 role="img"
               >
                 <use

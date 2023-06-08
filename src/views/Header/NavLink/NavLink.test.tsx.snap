@@ -6,18 +6,7 @@ exports[`Nav Link: > should render correctly 1`] = `
     id="c054a01e-9103-4cd7-8a2f-c647d0d3e73b"
   >
     <a
-      class="
-          ml-10
-          block
-          select-none
-          pb-[0.8rem]
-          text-[1.4rem]
-          uppercase
-          text-white
-          transition-[border-b]
-          hover:border-b-2
-          hover:border-b-primary
-        "
+      class="nav_link"
       href="#home"
     >
       Home
