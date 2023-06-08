@@ -1,8 +1,8 @@
-import type { FC } from 'react'
+import type { FC, ID } from '@/types'
 import Link from 'next/link'
 
 export type NavLinkProps = {
-  id: `${string}-${string}-${string}-${string}-${string}`
+  id: ID
   link: `#${string}`
   text: Capitalize<string>
 }

@@ -1,8 +1,8 @@
-import type { FC } from 'react'
-import { Icon, type IconName } from '@/components'
+import type { FC, ID, IconName } from '@/types'
+import { Icon } from '@/components'
 
 export type ServiceProps = {
-  id: `${string}-${string}-${string}-${string}-${string}`
+  id: ID
   title: Capitalize<string>
   icon: IconName
 }

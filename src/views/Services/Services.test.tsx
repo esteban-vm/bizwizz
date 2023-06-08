@@ -15,9 +15,14 @@ describe('Services:', () => {
   })
 
   it('should have correct structure', () => {
+    const title = /our services/i
+    const subtitle = /lorem ipsum dolor sit amet/i
     const servicesElem = screen.getByRole('region')
     expect(servicesElem).toBeInTheDocument()
-    expect(within(servicesElem).getByRole('heading', { name: /our services/i, level: 2 })).toBeInTheDocument()
+    expect(servicesElem).toHaveAccessibleName(title)
+    expect(servicesElem).toHaveAttribute('id', 'services')
+    expect(within(servicesElem).getByRole('heading', { name: title, level: 2 })).toBeInTheDocument()
+    expect(within(servicesElem).getByRole('heading', { name: subtitle, level: 3 })).toBeInTheDocument()
     expect(within(servicesElem).getAllByRole('article')).toHaveLength(services.length)
   })
 })

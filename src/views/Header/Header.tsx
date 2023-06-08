@@ -1,4 +1,4 @@
-import type { FC } from 'react'
+import type { FC } from '@/types'
 import Image from 'next/image'
 import { Button, Wave } from '@/components'
 import NavLink, { type NavLinkProps } from './NavLink'
@@ -11,19 +11,7 @@ export const navLinks: NavLinkProps[] = [
 
 const Header: FC = () => {
   return (
-    <header
-      id='home'
-      className={`
-        relative
-        h-[100vh]
-        w-full
-        bg-black
-        bg-[url('/images/header-img.jpg')]
-        bg-[length:40%]
-        bg-[90%_50%]
-        bg-no-repeat
-      `}
-    >
+    <header id='home' aria-labelledby='home_title' className='home'>
       <Wave is='primary' />
       <div className='-mt-20 flex justify-between'>
         <Image
@@ -43,7 +31,9 @@ const Header: FC = () => {
       </div>
       <div className='absolute left-20 top-60 text-left'>
         <div className='font-[500]'>
-          <h1 className='text-[6rem] text-primary'>Bizwizz</h1>
+          <h1 id='home_title' className='text-[6rem] text-primary'>
+            Bizwizz
+          </h1>
           <h2 className='mb-12 w-1/2 text-[5rem] text-white'>Innovate, Transform and Lead</h2>
         </div>
         <div>

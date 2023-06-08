@@ -1,6 +1,8 @@
-import type { FC } from 'react'
+import type { FC } from '@/types'
 
-export type WaveProps = { is: 'primary' | 'white' | 'black' }
+type WaveProps = {
+  is: 'primary' | 'white' | 'black'
+}
 
 const Wave: FC<WaveProps> = ({ is }) => {
   const isBlack = is === 'black'

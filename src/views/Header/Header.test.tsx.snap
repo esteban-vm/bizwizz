@@ -3,16 +3,8 @@
 exports[`Header: > should render correctly 1`] = `
 <DocumentFragment>
   <header
-    class="
-        relative
-        h-[100vh]
-        w-full
-        bg-black
-        bg-[url('/images/header-img.jpg')]
-        bg-[length:40%]
-        bg-[90%_50%]
-        bg-no-repeat
-      "
+    aria-labelledby="home_title"
+    class="home"
     id="home"
   >
     <svg
@@ -120,6 +112,7 @@ exports[`Header: > should render correctly 1`] = `
       >
         <h1
           class="text-[6rem] text-primary"
+          id="home_title"
         >
           Bizwizz
         </h1>

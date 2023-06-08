@@ -15,9 +15,14 @@ describe('Team:', () => {
   })
 
   it('should have correct structure', () => {
+    const title = /meet our team/i
+    const subtitle = /lorem ipsum dolor sit amet/i
     const teamElem = screen.getByRole('region')
     expect(teamElem).toBeInTheDocument()
-    expect(within(teamElem).getByRole('heading', { name: /meet our team/i, level: 2 })).toBeInTheDocument()
+    expect(teamElem).toHaveAccessibleName(title)
+    expect(teamElem).toHaveAttribute('id', 'team')
+    expect(within(teamElem).getByRole('heading', { name: title, level: 2 })).toBeInTheDocument()
+    expect(within(teamElem).getByRole('heading', { name: subtitle, level: 3 })).toBeInTheDocument()
     expect(within(teamElem).getAllByRole('article')).toHaveLength(teamMates.length)
   })
 })

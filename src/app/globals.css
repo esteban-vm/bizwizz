@@ -16,7 +16,7 @@
   }
 
   * {
-    @apply m-0 p-0 scroll-smooth;
+    @apply m-0 scroll-smooth p-0;
 
     &::before,
     &::after {
@@ -28,7 +28,7 @@
     }
 
     &::-webkit-scrollbar {
-      @apply w-4 bg-primary-light rounded-xl;
+      @apply w-4 rounded-xl bg-primary-light;
     }
 
     &::-webkit-scrollbar-track {
@@ -36,7 +36,7 @@
     }
 
     &::-webkit-scrollbar-thumb {
-      @apply bg-primary rounded-xl;
+      @apply rounded-xl bg-primary;
     }
   }
 
@@ -46,5 +46,27 @@
 
   body {
     @apply bg-black;
+  }
+}
+
+@layer components {
+  .home {
+    @apply relative h-[100vh] w-full bg-black bg-[url('/images/header-img.jpg')] bg-[length:40%] bg-[90%_50%] bg-no-repeat;
+  }
+
+  .section {
+    @apply pb-32 text-center;
+
+    .section_header {
+      @apply font-bold tracking-widest;
+
+      .section_heading {
+        @apply mb-5 text-[2.4rem] uppercase text-primary;
+      }
+
+      .section_subheading {
+        @apply mb-10 text-[4rem] capitalize text-darkgrey;
+      }
+    }
   }
 }

@@ -1,5 +1,5 @@
-import type { FC } from 'react'
-import { Wrapper } from '@/layouts'
+import type { FC } from '@/types'
+import { Wave } from '@/components'
 import TeamMate, { type TeamMateProps } from './TeamMate'
 
 export const teamMates: TeamMateProps[] = [
@@ -10,13 +10,20 @@ export const teamMates: TeamMateProps[] = [
 
 const Team: FC = () => {
   return (
-    <Wrapper title='Meet our team' label='team'>
+    <section id='team' aria-labelledby='team_title' className='section bg-black'>
+      <Wave is='white' />
+      <div className='section_header'>
+        <h2 id='team_title' className='section_heading'>
+          Meet our team
+        </h2>
+        <h3 className='section_subheading'>Lorem ipsum dolor sit amet</h3>
+      </div>
       <div className='flex flex-wrap justify-evenly'>
         {teamMates.map((teamMate) => (
           <TeamMate key={teamMate.id} {...teamMate} />
         ))}
       </div>
-    </Wrapper>
+    </section>
   )
 }
 

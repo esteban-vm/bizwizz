@@ -1,8 +1,8 @@
-import type { FC } from 'react'
-import { Icon, type IconName } from '@/components'
+import type { FC, ID, IconName } from '@/types'
+import { Icon } from '@/components'
 
 export type TeamMateProps = {
-  id: `${string}-${string}-${string}-${string}-${string}`
+  id: ID
   name: Capitalize<string>
   designation: string
 }

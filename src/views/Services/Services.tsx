@@ -1,6 +1,5 @@
-import type { FC } from 'react'
-// import { Title, Wave } from '@/components'
-import { Wrapper } from '@/layouts'
+import type { FC } from '@/types'
+import { Wave } from '@/components'
 import Service, { type ServiceProps } from './Service'
 
 export const services: ServiceProps[] = [
@@ -17,13 +16,20 @@ export const services: ServiceProps[] = [
 
 const Services: FC = () => {
   return (
-    <Wrapper title='Our services' label='services' light>
+    <section id='services' aria-labelledby='services_title' className='section bg-white'>
+      <Wave is='black' />
+      <div className='section_header'>
+        <h2 id='services_title' className='section_heading'>
+          Our services
+        </h2>
+        <h3 className='section_subheading'>Lorem ipsum dolor sit amet</h3>
+      </div>
       <div className='m-[0_6rem] flex flex-wrap gap-6'>
         {services.map((service) => (
           <Service key={service.id} {...service} />
         ))}
       </div>
-    </Wrapper>
+    </section>
   )
 }
 
