@@ -13,6 +13,9 @@ module.exports = {
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'gradient-120': 'linear-gradient(120deg, var(--tw-gradient-stops))',
       },
+      fontFamily: {
+        'work-sans': ['Work Sans', 'sans-serif'],
+      },
     },
     colors: {
       transparent: 'transparent',

@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Work Sans';
+  font-display: swap;
+  src: local('Work Sans') url('/fonts/work-sans-variable-font-wght.ttf') format('truetype-variations');
+}
+
 @layer base {
   :root {
     --color-pink: 206 54 124; /* #ce367c */
@@ -45,7 +51,7 @@
   }
 
   body {
-    @apply bg-black;
+    @apply bg-black font-work-sans;
   }
 }
 
