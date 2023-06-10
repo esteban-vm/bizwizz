@@ -17,9 +17,9 @@ describe('Work:', () => {
   })
 
   it('should have correct structure', () => {
-    const teamMateElem = screen.getByRole('article')
-    expect(teamMateElem).toBeInTheDocument()
-    expect(teamMateElem).toHaveAttribute('id', testWork.id)
-    expect(within(teamMateElem).getByRole('img')).toBeInTheDocument()
+    const workElem = screen.getByRole('article')
+    expect(workElem).toBeInTheDocument()
+    expect(workElem).toHaveAttribute('id', testWork.id)
+    expect(within(workElem).getByRole('img')).toBeInTheDocument()
   })
 })
