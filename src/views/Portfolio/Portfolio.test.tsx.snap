@@ -1,0 +1,195 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Portfolio: > should render correctly 1`] = `
+<DocumentFragment>
+  <section
+    aria-labelledby="portfolio_title"
+    class="section bg-white"
+    id="portfolio"
+  >
+    <svg
+      class="text-black h-40 w-full"
+      preserveAspectRatio="none"
+      role="presentation"
+      viewBox="0 0 500 150"
+    >
+      <path
+        d="M0.00,49.98 C161.96,151.48 356.65,-54.75 500.00,49.98 L504.51,-36.00 L-13.54,-3.44 Z"
+        fill="currentColor"
+        stroke="none"
+      />
+    </svg>
+    <div
+      class="section_header"
+    >
+      <h2
+        class="section_heading"
+        id="portfolio_title"
+      >
+        Our popular projects
+      </h2>
+      <h3
+        class="section_subheading"
+      >
+        Lorem ipsum dolor sit amet
+      </h3>
+    </div>
+    <div
+      class="flex items-center justify-center gap-3"
+    >
+      <div
+        class="basis-1/5"
+      >
+        <article
+          class="work"
+          id="56d05460-059d-4ea1-b980-8c9035d05aa2"
+        >
+          <img
+            alt=""
+            class="work_image"
+            data-nimg="1"
+            decoding="async"
+            height="3078"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Fportfolio-image-1.jpg&w=3840&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fportfolio-image-1.jpg&w=3840&q=75 1x"
+            style="color: transparent;"
+            width="4309"
+          />
+        </article>
+        <article
+          class="work"
+          id="d2066021-f1f0-4963-8832-177977a0e99c"
+        >
+          <img
+            alt=""
+            class="work_image"
+            data-nimg="1"
+            decoding="async"
+            height="4000"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Fportfolio-image-2.jpg&w=3840&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fportfolio-image-2.jpg&w=3840&q=75 1x"
+            style="color: transparent;"
+            width="6000"
+          />
+        </article>
+      </div>
+      <div
+        class="basis-1/5"
+      >
+        <article
+          class="work"
+          id="cfe97174-6585-45e4-8161-c19161428611"
+        >
+          <img
+            alt=""
+            class="work_image"
+            data-nimg="1"
+            decoding="async"
+            height="6720"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Fportfolio-image-3.jpg&w=3840&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fportfolio-image-3.jpg&w=3840&q=75 1x"
+            style="color: transparent;"
+            width="4480"
+          />
+        </article>
+        <article
+          class="work"
+          id="7fd58301-7a11-481b-8b3b-46e61fbc25e2"
+        >
+          <img
+            alt=""
+            class="work_image"
+            data-nimg="1"
+            decoding="async"
+            height="3072"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Fportfolio-image-4.jpg&w=3840&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fportfolio-image-4.jpg&w=3840&q=75 1x"
+            style="color: transparent;"
+            width="4608"
+          />
+        </article>
+      </div>
+      <div
+        class="basis-1/5"
+      >
+        <article
+          class="work"
+          id="b86757c5-14ab-4479-96f8-063cbfd6d16b"
+        >
+          <img
+            alt=""
+            class="work_image"
+            data-nimg="1"
+            decoding="async"
+            height="5255"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Fportfolio-image-5.jpg&w=3840&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fportfolio-image-5.jpg&w=3840&q=75 1x"
+            style="color: transparent;"
+            width="3792"
+          />
+        </article>
+        <article
+          class="work"
+          id="81bafebd-69da-47af-88c5-26d4bd400dbf"
+        >
+          <img
+            alt=""
+            class="work_image"
+            data-nimg="1"
+            decoding="async"
+            height="3000"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Fportfolio-image-6.jpg&w=3840&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fportfolio-image-6.jpg&w=2048&q=75 1x, /_next/image?url=%2Fimages%2Fportfolio-image-6.jpg&w=3840&q=75 2x"
+            style="color: transparent;"
+            width="2000"
+          />
+        </article>
+      </div>
+      <div
+        class="basis-1/5"
+      >
+        <article
+          class="work"
+          id="fc1e2205-854c-4a5e-b100-eadfb262ea83"
+        >
+          <img
+            alt=""
+            class="work_image"
+            data-nimg="1"
+            decoding="async"
+            height="8320"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Fportfolio-image-7.jpg&w=3840&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fportfolio-image-7.jpg&w=3840&q=75 1x"
+            style="color: transparent;"
+            width="6240"
+          />
+        </article>
+        <article
+          class="work"
+          id="dc7a5fc1-e1ce-4ddc-a862-512b20846d2b"
+        >
+          <img
+            alt=""
+            class="work_image"
+            data-nimg="1"
+            decoding="async"
+            height="6000"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Fportfolio-image-8.jpg&w=3840&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fportfolio-image-8.jpg&w=3840&q=75 1x"
+            style="color: transparent;"
+            width="4000"
+          />
+        </article>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;

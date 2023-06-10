@@ -173,8 +173,36 @@
           duration-500;
       }
 
+      .team_mate_name {
+        @apply text-[2.7rem] font-semibold;
+      }
+
+      .team_mate_designation {
+        @apply text-2xl font-medium;
+      }
+
+      .team_mate_links {
+        @apply mt-8 flex justify-between;
+      }
+
       .team_mate_icon {
         @apply m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light;
+      }
+    }
+
+    .work {
+      @apply m-3 w-full overflow-hidden;
+
+      .work_image {
+        @apply h-auto
+          w-full
+          brightness-100
+          contrast-100
+          saturate-0
+          transition-all
+          duration-500
+          hover:scale-125
+          hover:filter-none;
       }
     }
   }

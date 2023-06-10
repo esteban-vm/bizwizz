@@ -1,0 +1,23 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Work: > should render correctly 1`] = `
+<DocumentFragment>
+  <article
+    class="work"
+    id="56d05460-059d-4ea1-b980-8c9035d05aa2"
+  >
+    <img
+      alt=""
+      class="work_image"
+      data-nimg="1"
+      decoding="async"
+      height="3078"
+      loading="lazy"
+      src="/_next/image?url=%2Fimages%2Fportfolio-image-1.jpg&w=3840&q=75"
+      srcset="/_next/image?url=%2Fimages%2Fportfolio-image-1.jpg&w=3840&q=75 1x"
+      style="color: transparent;"
+      width="4309"
+    />
+  </article>
+</DocumentFragment>
+`;

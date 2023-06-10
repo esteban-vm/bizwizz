@@ -14,9 +14,9 @@ const TeamMate: FC<TeamMateProps> = ({ id, name, designation }) => {
     <article id={id} className='team_mate'>
       <div className='team_mate_overlay' />
       <div className='team_mate_content'>
-        <h4 className='text-[2.7rem] font-semibold'>{name}</h4>
-        <p className='text-2xl font-medium'>{designation}</p>
-        <div className='mt-8 flex justify-between'>
+        <h4 className='team_mate_name'>{name}</h4>
+        <p className='team_mate_designation'>{designation}</p>
+        <div className='team_mate_links'>
           {socialMediaLinks.map((link, index) => (
             <a key={index} href={`https://www.${link}.com`} target='_blank' title={link}>
               <Icon name={link} className='team_mate_icon' />
