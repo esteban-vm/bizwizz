@@ -1,6 +1,6 @@
 import { render, cleanup, within, screen } from '@/tests'
-import { navLinks } from '../Header'
 import NavLink from './NavLink'
+import navLinks from '../Header.data'
 
 describe('Nav Link:', () => {
   let asFragment: () => DocumentFragment

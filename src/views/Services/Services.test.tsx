@@ -1,5 +1,6 @@
 import { render, cleanup, within, screen } from '@/tests'
-import Services, { services } from './Services'
+import Services from './Services'
+import services from './Services.data'
 
 describe('Services:', () => {
   let asFragment: () => DocumentFragment

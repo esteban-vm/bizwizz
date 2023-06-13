@@ -1,6 +1,6 @@
 import { render, cleanup, within, screen } from '@/tests'
-import { teamMates } from '../Team'
 import TeamMate from './TeamMate'
+import teamMates from '../Team.data'
 
 describe('Team Mate:', () => {
   let asFragment: () => DocumentFragment

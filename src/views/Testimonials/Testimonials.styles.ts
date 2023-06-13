@@ -3,7 +3,7 @@ import { commonStyles } from '@/styles'
 
 const styles = {
   ...commonStyles,
-  team_mates: clsx('flex flex-wrap justify-evenly'),
+  testimonials: clsx('m-[0_auto] w-[25%]'),
 }
 
 export default styles

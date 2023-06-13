@@ -1,6 +1,6 @@
 import { render, cleanup, within, screen } from '@/tests'
-import { works } from '../Portfolio'
 import Work from './Work'
+import works from '../Portfolio.data'
 
 describe('Work:', () => {
   let asFragment: () => DocumentFragment
