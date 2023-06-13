@@ -1,6 +1,7 @@
 import type { FC } from '@/types'
 import { Wave } from '@/components'
 import TeamMate, { type TeamMateProps } from './TeamMate'
+import styles from './Team.styles'
 
 export const teamMates: TeamMateProps[] = [
   { id: 'fec6d982-1994-4d02-9cc7-18a86719fb7c', name: 'Paula Lee', designation: 'CEO' },
@@ -10,15 +11,15 @@ export const teamMates: TeamMateProps[] = [
 
 const Team: FC = () => {
   return (
-    <section id='team' aria-labelledby='team_title' className='section bg-black'>
+    <section aria-labelledby='team_title' className='section bg-black' id='team'>
       <Wave is='white' />
       <div className='section_header'>
-        <h2 id='team_title' className='section_heading'>
+        <h2 className='section_heading' id='team_title'>
           Meet our team
         </h2>
         <h3 className='section_subheading'>Lorem ipsum dolor sit amet</h3>
       </div>
-      <div className='flex flex-wrap justify-evenly'>
+      <div className={styles.team_mates}>
         {teamMates.map((teamMate) => (
           <TeamMate key={teamMate.id} {...teamMate} />
         ))}

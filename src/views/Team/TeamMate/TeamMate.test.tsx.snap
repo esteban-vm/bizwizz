@@ -3,27 +3,27 @@
 exports[`Team Mate: > should render correctly 1`] = `
 <DocumentFragment>
   <article
-    class="team_mate"
+    class="relative h-96 w-96 select-none rounded-full border-[3px] border-solid border-primary bg-cover bg-center first:bg-[url('/images/team-mate-1.jpg')] last:bg-[url('/images/team-mate-3.jpg')] even:bg-[url('/images/team-mate-2.jpg')] [&>div:last-child]:hover:top-1/2 [&>div]:hover:opacity-100"
     id="fec6d982-1994-4d02-9cc7-18a86719fb7c"
   >
     <div
-      class="team_mate_overlay"
+      class="absolute left-0 top-0 h-full w-full rounded-full bg-primary/70 opacity-0 transition-opacity duration-200"
     />
     <div
-      class="team_mate_content"
+      class="absolute left-1/2 top-[30%] -translate-x-1/2 -translate-y-1/2 text-white opacity-0 transition-all duration-500"
     >
       <h4
-        class="team_mate_name"
+        class="text-[2.7rem] font-semibold"
       >
         Paula Lee
       </h4>
       <p
-        class="team_mate_designation"
+        class="text-2xl font-medium"
       >
         CEO
       </p>
       <div
-        class="team_mate_links"
+        class="mt-8 flex justify-between"
       >
         <a
           href="https://www.facebook.com"
@@ -31,7 +31,8 @@ exports[`Team Mate: > should render correctly 1`] = `
           title="facebook"
         >
           <svg
-            class="team_mate_icon"
+            aria-hidden="true"
+            class="m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light"
             role="img"
           >
             <use
@@ -45,7 +46,8 @@ exports[`Team Mate: > should render correctly 1`] = `
           title="twitter"
         >
           <svg
-            class="team_mate_icon"
+            aria-hidden="true"
+            class="m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light"
             role="img"
           >
             <use
@@ -59,7 +61,8 @@ exports[`Team Mate: > should render correctly 1`] = `
           title="linkedin"
         >
           <svg
-            class="team_mate_icon"
+            aria-hidden="true"
+            class="m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light"
             role="img"
           >
             <use

@@ -8,7 +8,8 @@ exports[`Portfolio: > should render correctly 1`] = `
     id="portfolio"
   >
     <svg
-      class="text-black h-40 w-full"
+      aria-hidden="true"
+      class="h-40 w-full text-black"
       preserveAspectRatio="none"
       role="presentation"
       viewBox="0 0 500 150"
@@ -41,12 +42,12 @@ exports[`Portfolio: > should render correctly 1`] = `
         class="basis-1/5"
       >
         <article
-          class="work"
+          class="m-3 w-full overflow-hidden"
           id="56d05460-059d-4ea1-b980-8c9035d05aa2"
         >
           <img
             alt=""
-            class="work_image"
+            class="h-auto w-full brightness-100 contrast-100 saturate-0 transition-all duration-500 hover:scale-125 hover:filter-none"
             data-nimg="1"
             decoding="async"
             height="3078"
@@ -58,12 +59,12 @@ exports[`Portfolio: > should render correctly 1`] = `
           />
         </article>
         <article
-          class="work"
+          class="m-3 w-full overflow-hidden"
           id="d2066021-f1f0-4963-8832-177977a0e99c"
         >
           <img
             alt=""
-            class="work_image"
+            class="h-auto w-full brightness-100 contrast-100 saturate-0 transition-all duration-500 hover:scale-125 hover:filter-none"
             data-nimg="1"
             decoding="async"
             height="4000"
@@ -79,12 +80,12 @@ exports[`Portfolio: > should render correctly 1`] = `
         class="basis-1/5"
       >
         <article
-          class="work"
+          class="m-3 w-full overflow-hidden"
           id="cfe97174-6585-45e4-8161-c19161428611"
         >
           <img
             alt=""
-            class="work_image"
+            class="h-auto w-full brightness-100 contrast-100 saturate-0 transition-all duration-500 hover:scale-125 hover:filter-none"
             data-nimg="1"
             decoding="async"
             height="6720"
@@ -96,12 +97,12 @@ exports[`Portfolio: > should render correctly 1`] = `
           />
         </article>
         <article
-          class="work"
+          class="m-3 w-full overflow-hidden"
           id="7fd58301-7a11-481b-8b3b-46e61fbc25e2"
         >
           <img
             alt=""
-            class="work_image"
+            class="h-auto w-full brightness-100 contrast-100 saturate-0 transition-all duration-500 hover:scale-125 hover:filter-none"
             data-nimg="1"
             decoding="async"
             height="3072"
@@ -117,12 +118,12 @@ exports[`Portfolio: > should render correctly 1`] = `
         class="basis-1/5"
       >
         <article
-          class="work"
+          class="m-3 w-full overflow-hidden"
           id="b86757c5-14ab-4479-96f8-063cbfd6d16b"
         >
           <img
             alt=""
-            class="work_image"
+            class="h-auto w-full brightness-100 contrast-100 saturate-0 transition-all duration-500 hover:scale-125 hover:filter-none"
             data-nimg="1"
             decoding="async"
             height="5255"
@@ -134,12 +135,12 @@ exports[`Portfolio: > should render correctly 1`] = `
           />
         </article>
         <article
-          class="work"
+          class="m-3 w-full overflow-hidden"
           id="81bafebd-69da-47af-88c5-26d4bd400dbf"
         >
           <img
             alt=""
-            class="work_image"
+            class="h-auto w-full brightness-100 contrast-100 saturate-0 transition-all duration-500 hover:scale-125 hover:filter-none"
             data-nimg="1"
             decoding="async"
             height="3000"
@@ -155,12 +156,12 @@ exports[`Portfolio: > should render correctly 1`] = `
         class="basis-1/5"
       >
         <article
-          class="work"
+          class="m-3 w-full overflow-hidden"
           id="fc1e2205-854c-4a5e-b100-eadfb262ea83"
         >
           <img
             alt=""
-            class="work_image"
+            class="h-auto w-full brightness-100 contrast-100 saturate-0 transition-all duration-500 hover:scale-125 hover:filter-none"
             data-nimg="1"
             decoding="async"
             height="8320"
@@ -172,12 +173,12 @@ exports[`Portfolio: > should render correctly 1`] = `
           />
         </article>
         <article
-          class="work"
+          class="m-3 w-full overflow-hidden"
           id="dc7a5fc1-e1ce-4ddc-a862-512b20846d2b"
         >
           <img
             alt=""
-            class="work_image"
+            class="h-auto w-full brightness-100 contrast-100 saturate-0 transition-all duration-500 hover:scale-125 hover:filter-none"
             data-nimg="1"
             decoding="async"
             height="6000"

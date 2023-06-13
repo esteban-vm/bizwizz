@@ -5,10 +5,21 @@
     "plugin:vitest/recommended",
     "plugin:prettier/recommended",
     "plugin:tailwindcss/recommended",
-    "plugin:jsx-a11y/recommended"
+    "plugin:jsx-a11y/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript"
   ],
   "plugins": ["prettier", "tailwindcss", "jsx-a11y"],
-  "rules": { "prettier/prettier": "warn" },
+  "rules": {
+    "prettier/prettier": "warn",
+    "react/jsx-sort-props": ["warn", { "shorthandLast": true, "reservedFirst": true }],
+    "import/order": [
+      "warn",
+      { "groups": ["type", "builtin", "external", "internal", ["sibling", "parent"], "index", "unknown"] }
+    ],
+    "import/no-named-as-default": "off"
+  },
   "env": { "jest": true },
-  "ignorePatterns": ["*.js", "node_modules", "/build", "/public/*", "/.next"]
+  "ignorePatterns": ["*.js", "node_modules", "/build", "/public/*", "/.next"],
+  "settings": { "import/resolver": { "typescript": true } }
 }

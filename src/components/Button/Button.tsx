@@ -1,4 +1,5 @@
 import type { FC } from '@/types'
+import styles from './Button.styles'
 
 type ButtonProps = {
   text: string
@@ -6,7 +7,7 @@ type ButtonProps = {
 
 const Button: FC<ButtonProps> = ({ text }) => {
   return (
-    <button type='button' className='btn'>
+    <button className={styles} type='button'>
       {text}
     </button>
   )

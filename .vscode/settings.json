@@ -6,6 +6,7 @@
     "source.fixAll.eslint": true,
     "source.fixAll.format": true
   },
+  "eslint.validate": ["typescript"],
   "prettier.configPath": ".prettierrc",
-  "files.eol": "\n"
+  "tailwindCSS.experimental.classRegex": [["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]]
 }

@@ -1,6 +1,7 @@
 import type { FC } from '@/types'
 import { Wave } from '@/components'
 import Work, { type WorkProps } from './Work'
+import styles from './Portfolio.styles'
 
 export const works: WorkProps[] = [
   {
@@ -39,31 +40,31 @@ export const works: WorkProps[] = [
 
 const Portfolio: FC = () => {
   return (
-    <section id='portfolio' aria-labelledby='portfolio_title' className='section bg-white'>
+    <section aria-labelledby='portfolio_title' className='section bg-white' id='portfolio'>
       <Wave is='black' />
       <div className='section_header'>
-        <h2 id='portfolio_title' className='section_heading'>
+        <h2 className='section_heading' id='portfolio_title'>
           Our popular projects
         </h2>
         <h3 className='section_subheading'>Lorem ipsum dolor sit amet</h3>
       </div>
-      <div className='flex items-center justify-center gap-3'>
-        <div className='basis-1/5'>
+      <div className={styles.works}>
+        <div className={styles.work_column}>
           {works.slice(undefined, 2).map((work) => (
             <Work key={work.id} {...work} />
           ))}
         </div>
-        <div className='basis-1/5'>
+        <div className={styles.work_column}>
           {works.slice(2, 4).map((work) => (
             <Work key={work.id} {...work} />
           ))}
         </div>
-        <div className='basis-1/5'>
+        <div className={styles.work_column}>
           {works.slice(4, 6).map((work) => (
             <Work key={work.id} {...work} />
           ))}
         </div>
-        <div className='basis-1/5'>
+        <div className={styles.work_column}>
           {works.slice(6).map((work) => (
             <Work key={work.id} {...work} />
           ))}

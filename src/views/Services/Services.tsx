@@ -1,6 +1,7 @@
 import type { FC } from '@/types'
 import { Wave } from '@/components'
 import Service, { type ServiceProps } from './Service'
+import styles from './Services.styles'
 
 export const services: ServiceProps[] = [
   { id: '92cf33d6-5464-4bb5-8768-d62f81ab5036', title: 'Digital Marketing', icon: 'strategy' },
@@ -16,15 +17,15 @@ export const services: ServiceProps[] = [
 
 const Services: FC = () => {
   return (
-    <section id='services' aria-labelledby='services_title' className='section bg-white'>
+    <section aria-labelledby='services_title' className='section bg-white' id='services'>
       <Wave is='black' />
       <div className='section_header'>
-        <h2 id='services_title' className='section_heading'>
+        <h2 className='section_heading' id='services_title'>
           Our services
         </h2>
         <h3 className='section_subheading'>Lorem ipsum dolor sit amet</h3>
       </div>
-      <div className='m-[0_6rem] flex flex-wrap gap-6'>
+      <div className={styles.services}>
         {services.map((service) => (
           <Service key={service.id} {...service} />
         ))}

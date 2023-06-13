@@ -3,11 +3,11 @@ import type { FC } from 'react'
 const Icons: FC = () => {
   return (
     <svg
-      aria-hidden
       className='absolute h-0 w-0 overflow-hidden'
       version='1.1'
       xmlns='http://www.w3.org/2000/svg'
       xmlnsXlink='http://www.w3.org/1999/xlink'
+      aria-hidden
     >
       <defs>
         <symbol id='icon-facebook' viewBox='0 0 20 20'>

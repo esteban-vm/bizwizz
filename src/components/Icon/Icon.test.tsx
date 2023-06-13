@@ -15,7 +15,7 @@ describe('Icon:', () => {
   })
 
   it('should have correct structure', () => {
-    const iconElem = screen.getByRole('img')
+    const iconElem = screen.getByRole('img', { hidden: true })
     expect(iconElem).toBeInTheDocument()
     expect(iconElem).toHaveAttribute('class', 'fill-primary')
   })

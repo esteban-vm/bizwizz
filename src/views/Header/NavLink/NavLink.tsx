@@ -1,5 +1,6 @@
 import type { FC, ID } from '@/types'
 import Link from 'next/link'
+import styles from './NavLink.styles'
 
 export type NavLinkProps = {
   id: ID
@@ -10,7 +11,7 @@ export type NavLinkProps = {
 const NavLink: FC<NavLinkProps> = ({ id, link, text }) => {
   return (
     <li id={id}>
-      <Link href={link} className='nav_link'>
+      <Link className={styles} href={link}>
         {text}
       </Link>
     </li>

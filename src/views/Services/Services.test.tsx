@@ -21,6 +21,7 @@ describe('Services:', () => {
     expect(servicesElem).toBeInTheDocument()
     expect(servicesElem).toHaveAccessibleName(title)
     expect(servicesElem).toHaveAttribute('id', 'services')
+    expect(within(servicesElem).getByRole('presentation', { hidden: true })).toBeInTheDocument()
     expect(within(servicesElem).getByRole('heading', { name: title, level: 2 })).toBeInTheDocument()
     expect(within(servicesElem).getByRole('heading', { name: subtitle, level: 3 })).toBeInTheDocument()
     expect(within(servicesElem).getAllByRole('article')).toHaveLength(services.length)

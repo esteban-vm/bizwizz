@@ -4,11 +4,12 @@ exports[`Header: > should render correctly 1`] = `
 <DocumentFragment>
   <header
     aria-labelledby="home_title"
-    class="home"
+    class="relative h-[100vh] w-full bg-black bg-[url(/images/header-img.jpg)] bg-[length:40%] bg-[90%_50%] bg-no-repeat"
     id="home"
   >
     <svg
-      class="text-primary h-40 w-full"
+      aria-hidden="true"
+      class="h-40 w-full text-primary"
       preserveAspectRatio="none"
       role="presentation"
       viewBox="0 0 500 150"
@@ -42,7 +43,7 @@ exports[`Header: > should render correctly 1`] = `
             id="c054a01e-9103-4cd7-8a2f-c647d0d3e73b"
           >
             <a
-              class="nav_link"
+              class="ml-10 block select-none pb-[0.8rem]  text-[1.4rem] uppercase text-white transition-[border-b] hover:border-b-2 hover:border-b-primary"
               href="#home"
             >
               Home
@@ -52,7 +53,7 @@ exports[`Header: > should render correctly 1`] = `
             id="e67da725-6069-4902-838f-2e54b680426e"
           >
             <a
-              class="nav_link"
+              class="ml-10 block select-none pb-[0.8rem]  text-[1.4rem] uppercase text-white transition-[border-b] hover:border-b-2 hover:border-b-primary"
               href="#contact"
             >
               Contact
@@ -62,7 +63,7 @@ exports[`Header: > should render correctly 1`] = `
             id="fdd9fce5-598c-4029-8682-5296584eec75"
           >
             <a
-              class="nav_link"
+              class="ml-10 block select-none pb-[0.8rem]  text-[1.4rem] uppercase text-white transition-[border-b] hover:border-b-2 hover:border-b-primary"
               href="#about"
             >
               About Us
@@ -72,11 +73,9 @@ exports[`Header: > should render correctly 1`] = `
       </nav>
     </div>
     <div
-      class="absolute left-20 top-60 text-left"
+      class="absolute left-20 top-60 text-left font-[500]"
     >
-      <div
-        class="font-[500]"
-      >
+      <div>
         <h1
           class="text-[6rem] text-primary"
           id="home_title"
@@ -91,7 +90,7 @@ exports[`Header: > should render correctly 1`] = `
       </div>
       <div>
         <button
-          class="btn"
+          class="block min-w-[20rem] cursor-pointer select-none bg-white bg-gradient-120 from-transparent from-0% via-transparent via-50% to-primary to-50% bg-[length:250%] p-[1.6rem] text-2xl font-[500] uppercase text-primary transition-all duration-300 hover:translate-x-4 hover:bg-[100%] hover:text-white"
           type="button"
         >
           Get a quote today

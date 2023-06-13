@@ -21,6 +21,6 @@ describe('Service:', () => {
     expect(serviceElem).toBeInTheDocument()
     expect(serviceElem).toHaveAttribute('id', testService.id)
     expect(within(serviceElem).getByRole('heading', { name: testService.title, level: 4 })).toBeInTheDocument()
-    expect(within(serviceElem).getByRole('img')).toBeInTheDocument()
+    expect(within(serviceElem).getByRole('img', { hidden: true })).toBeInTheDocument()
   })
 })

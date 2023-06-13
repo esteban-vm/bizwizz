@@ -21,6 +21,7 @@ describe('Portfolio:', () => {
     expect(portfolioElem).toBeInTheDocument()
     expect(portfolioElem).toHaveAccessibleName(title)
     expect(portfolioElem).toHaveAttribute('id', 'portfolio')
+    expect(within(portfolioElem).getByRole('presentation', { hidden: true })).toBeInTheDocument()
     expect(within(portfolioElem).getByRole('heading', { name: title, level: 2 })).toBeInTheDocument()
     expect(within(portfolioElem).getByRole('heading', { name: subtitle, level: 3 })).toBeInTheDocument()
     expect(within(portfolioElem).getAllByRole('article')).toHaveLength(works.length)

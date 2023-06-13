@@ -3,6 +3,7 @@
 exports[`Icon: > should render correctly 1`] = `
 <DocumentFragment>
   <svg
+    aria-hidden="true"
     class="fill-primary"
     role="img"
   >

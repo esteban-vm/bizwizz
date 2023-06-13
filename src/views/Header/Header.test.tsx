@@ -21,7 +21,7 @@ describe('Header:', () => {
     expect(headerElem).toBeInTheDocument()
     expect(headerElem).toHaveAccessibleName(title)
     expect(headerElem).toHaveAttribute('id', 'home')
-    expect(within(headerElem).getByRole('presentation')).toBeInTheDocument()
+    expect(within(headerElem).getByRole('presentation', { hidden: true })).toBeInTheDocument()
     expect(within(headerElem).getByRole('img', { name: /bizwizz logo/i })).toBeInTheDocument()
     expect(within(headerElem).getByRole('navigation')).toBeInTheDocument()
     expect(within(headerElem).getByRole('list')).toBeInTheDocument()

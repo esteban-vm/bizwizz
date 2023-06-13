@@ -21,6 +21,7 @@ describe('Team:', () => {
     expect(teamElem).toBeInTheDocument()
     expect(teamElem).toHaveAccessibleName(title)
     expect(teamElem).toHaveAttribute('id', 'team')
+    expect(within(teamElem).getByRole('presentation', { hidden: true })).toBeInTheDocument()
     expect(within(teamElem).getByRole('heading', { name: title, level: 2 })).toBeInTheDocument()
     expect(within(teamElem).getByRole('heading', { name: subtitle, level: 3 })).toBeInTheDocument()
     expect(within(teamElem).getAllByRole('article')).toHaveLength(teamMates.length)
