@@ -1,11 +1,17 @@
 import { render, cleanup, screen } from '@/tests'
 import Icon from './Icon'
+import Icons from './Icons'
 
 describe('Icon:', () => {
   let asFragment: () => DocumentFragment
 
   beforeEach(() => {
-    void ({ asFragment } = render(<Icon className='fill-primary' name='desktop' />))
+    void ({ asFragment } = render(
+      <>
+        <Icons />
+        <Icon className='fill-primary' name='desktop' />
+      </>
+    ))
   })
 
   afterEach(cleanup)
