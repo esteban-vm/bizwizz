@@ -1,4 +1,4 @@
-const plugin = require('tailwindcss/plugin')
+const { carouselCheck, carouselSlide } = require('./tailwind.plugins')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -32,17 +32,6 @@ module.exports = {
       yellow: 'rgb(var(--color-yellow))',
     },
   },
-  plugins: [
-    require('tailwindcss-touch')(),
-    plugin(({ addVariant }) => {
-      addVariant(
-        'checked-labels',
-        [...Array(3)].map((_, _index) => {
-          const index = _index + 1
-          return `&:checked:nth-of-type(${index}) ~ div label:nth-of-type(${index})`
-        })
-      )
-    }),
-  ],
+  plugins: [require('tailwindcss-touch')(), carouselCheck, carouselSlide],
   future: { hoverOnlyWhenSupported: true },
 }

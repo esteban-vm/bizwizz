@@ -6,21 +6,22 @@ exports[`Carousel: > should render correctly 1`] = `
     class="flex flex-col overflow-hidden"
   >
     <input
-      class="checked-labels:bg-primary"
+      checked=""
+      class="hidden carousel-check:bg-primary carousel-slide-2:translate-x-[calc(-100%/3)] carousel-slide-3:translate-x-[calc(-100%*2/3)]"
       id="slide_1"
       name="slide"
       type="radio"
       value="1"
     />
     <input
-      class="checked-labels:bg-primary"
+      class="hidden carousel-check:bg-primary carousel-slide-2:translate-x-[calc(-100%/3)] carousel-slide-3:translate-x-[calc(-100%*2/3)]"
       id="slide_2"
       name="slide"
       type="radio"
       value="2"
     />
     <input
-      class="checked-labels:bg-primary"
+      class="hidden carousel-check:bg-primary carousel-slide-2:translate-x-[calc(-100%/3)] carousel-slide-3:translate-x-[calc(-100%*2/3)]"
       id="slide_3"
       name="slide"
       type="radio"
@@ -43,7 +44,7 @@ exports[`Carousel: > should render correctly 1`] = `
       />
     </div>
     <div
-      class="flex w-[300%]"
+      class="flex w-[300%] transition-all duration-500"
     />
   </div>
 </DocumentFragment>
