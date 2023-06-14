@@ -10,7 +10,6 @@ exports[`Testimonial: > should render correctly 1`] = `
       class="flex flex-row"
     >
       <svg
-        aria-hidden="true"
         class="h-6 w-6 fill-yellow"
         role="img"
       >
@@ -19,7 +18,6 @@ exports[`Testimonial: > should render correctly 1`] = `
         />
       </svg>
       <svg
-        aria-hidden="true"
         class="h-6 w-6 fill-yellow"
         role="img"
       >
@@ -28,7 +26,6 @@ exports[`Testimonial: > should render correctly 1`] = `
         />
       </svg>
       <svg
-        aria-hidden="true"
         class="h-6 w-6 fill-yellow"
         role="img"
       >
@@ -37,7 +34,6 @@ exports[`Testimonial: > should render correctly 1`] = `
         />
       </svg>
       <svg
-        aria-hidden="true"
         class="h-6 w-6 fill-yellow"
         role="img"
       >
@@ -46,7 +42,6 @@ exports[`Testimonial: > should render correctly 1`] = `
         />
       </svg>
       <svg
-        aria-hidden="true"
         class="h-6 w-6 fill-yellow"
         role="img"
       >

@@ -33,7 +33,7 @@ type IconProps = {
 
 const Icon: FC<IconProps> = ({ className, name }) => {
   return (
-    <svg className={className} role='img' aria-hidden>
+    <svg className={className} role='img'>
       <use xlinkHref={`#icon-${name}`} />
     </svg>
   )

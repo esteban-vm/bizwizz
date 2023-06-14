@@ -31,7 +31,6 @@ exports[`Team Mate: > should render correctly 1`] = `
           title="facebook"
         >
           <svg
-            aria-hidden="true"
             class="m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light"
             role="img"
           >
@@ -46,7 +45,6 @@ exports[`Team Mate: > should render correctly 1`] = `
           title="twitter"
         >
           <svg
-            aria-hidden="true"
             class="m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light"
             role="img"
           >
@@ -61,7 +59,6 @@ exports[`Team Mate: > should render correctly 1`] = `
           title="linkedin"
         >
           <svg
-            aria-hidden="true"
             class="m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light"
             role="img"
           >

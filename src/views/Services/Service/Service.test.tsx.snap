@@ -7,7 +7,6 @@ exports[`Service: > should render correctly 1`] = `
     id="92cf33d6-5464-4bb5-8768-d62f81ab5036"
   >
     <svg
-      aria-hidden="true"
       class="mr-7 h-44 w-[4.8rem] scale-50 fill-primary-light opacity-0 transition-all duration-500"
       role="img"
     >
