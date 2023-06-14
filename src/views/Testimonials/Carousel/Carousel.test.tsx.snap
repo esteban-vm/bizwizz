@@ -6,21 +6,21 @@ exports[`Carousel: > should render correctly 1`] = `
     class="flex flex-col overflow-hidden"
   >
     <input
-      class="hidden"
+      class="checked-labels:bg-primary"
       id="slide_1"
       name="slide"
       type="radio"
       value="1"
     />
     <input
-      class="hidden"
+      class="checked-labels:bg-primary"
       id="slide_2"
       name="slide"
       type="radio"
       value="2"
     />
     <input
-      class="hidden"
+      class="checked-labels:bg-primary"
       id="slide_3"
       name="slide"
       type="radio"
