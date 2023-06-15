@@ -36,317 +36,337 @@ exports[`Testimonials > should render correctly 1`] = `
       </h3>
     </div>
     <div
-      class="m-[0_auto] w-[25%]"
+      class="m-[0_auto] w-[30%]"
     >
       <div
-        class="flex flex-col overflow-hidden"
+        class="flex flex-row items-center justify-between gap-6"
       >
-        <input
-          checked=""
-          class="hidden carousel-check:bg-primary carousel-slide-2:translate-x-[calc(-100%/3)] carousel-slide-3:translate-x-[calc(-100%*2/3)]"
-          id="slide_1"
-          name="slide"
-          type="radio"
-          value="1"
-        />
-        <input
-          class="hidden carousel-check:bg-primary carousel-slide-2:translate-x-[calc(-100%/3)] carousel-slide-3:translate-x-[calc(-100%*2/3)]"
-          id="slide_2"
-          name="slide"
-          type="radio"
-          value="2"
-        />
-        <input
-          class="hidden carousel-check:bg-primary carousel-slide-2:translate-x-[calc(-100%/3)] carousel-slide-3:translate-x-[calc(-100%*2/3)]"
-          id="slide_3"
-          name="slide"
-          type="radio"
-          value="3"
-        />
-        <div
-          class="order-1 flex justify-center"
+        <svg
+          class="cursor-pointer select-none fill-primary hover:opacity-80 active:scale-90"
+          role="img"
         >
-          <label
-            class="m-[1.6rem] block h-5 w-5 cursor-pointer rounded-full border-2 border-solid border-primary bg-white"
-            for="slide_1"
+          <use
+            xlink:href="#icon-chevron-left"
           />
-          <label
-            class="m-[1.6rem] block h-5 w-5 cursor-pointer rounded-full border-2 border-solid border-primary bg-white"
-            for="slide_2"
-          />
-          <label
-            class="m-[1.6rem] block h-5 w-5 cursor-pointer rounded-full border-2 border-solid border-primary bg-white"
-            for="slide_3"
-          />
-        </div>
+        </svg>
         <div
-          class="flex w-[300%] transition-all duration-500"
+          class="flex flex-col overflow-hidden"
         >
-          <article
-            class="m-[3rem_0] flex h-[40rem] w-full flex-col items-start justify-evenly border-[3px] border-solid border-darkgrey-2 bg-darkgrey-2 p-16 text-left hover:border-primary"
-            id="cdbc1f6c-4153-40f2-a00c-e0957fa2812b"
+          <input
+            checked=""
+            class="hidden carousel-check:bg-primary carousel-slide-2:translate-x-[calc(-100%/3)] carousel-slide-3:translate-x-[calc(-100%*2/3)]"
+            id="slide_1"
+            name="slide"
+            type="radio"
+            value="1"
+          />
+          <input
+            class="hidden carousel-check:bg-primary carousel-slide-2:translate-x-[calc(-100%/3)] carousel-slide-3:translate-x-[calc(-100%*2/3)]"
+            id="slide_2"
+            name="slide"
+            type="radio"
+            value="2"
+          />
+          <input
+            class="hidden carousel-check:bg-primary carousel-slide-2:translate-x-[calc(-100%/3)] carousel-slide-3:translate-x-[calc(-100%*2/3)]"
+            id="slide_3"
+            name="slide"
+            type="radio"
+            value="3"
+          />
+          <div
+            class="order-1 flex justify-center"
           >
-            <div
-              class="flex flex-row"
-            >
-              <svg
-                class="h-6 w-6 fill-yellow"
-                role="img"
-              >
-                <use
-                  xlink:href="#icon-star-full"
-                />
-              </svg>
-              <svg
-                class="h-6 w-6 fill-yellow"
-                role="img"
-              >
-                <use
-                  xlink:href="#icon-star-full"
-                />
-              </svg>
-              <svg
-                class="h-6 w-6 fill-yellow"
-                role="img"
-              >
-                <use
-                  xlink:href="#icon-star-full"
-                />
-              </svg>
-              <svg
-                class="h-6 w-6 fill-yellow"
-                role="img"
-              >
-                <use
-                  xlink:href="#icon-star-full"
-                />
-              </svg>
-              <svg
-                class="h-6 w-6 fill-yellow"
-                role="img"
-              >
-                <use
-                  xlink:href="#icon-star-empty"
-                />
-              </svg>
-            </div>
-            <p
-              class="text-3xl text-lightgrey"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et porro dignissimos quisquam distinctio totam obcaecati laudantium accusamus id ut architecto!
-            </p>
-            <div
-              class="flex items-center gap-10"
-            >
-              <div
-                class="h-32 w-32 overflow-hidden rounded-full"
-              >
-                <img
-                  alt="Paul Rodriguez's photo"
-                  class="h-full select-none"
-                  data-nimg="1"
-                  decoding="async"
-                  height="536"
-                  loading="lazy"
-                  src="/_next/image?url=%2Fimages%2Fclient-1.jpg&w=1080&q=75"
-                  srcset="/_next/image?url=%2Fimages%2Fclient-1.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fclient-1.jpg&w=1080&q=75 2x"
-                  style="color: transparent;"
-                  width="536"
-                />
-              </div>
-              <div
-                class="text-2xl"
-              >
-                <p
-                  class="font-extrabold text-white"
-                >
-                  Paul Rodriguez
-                </p>
-                <p
-                  class="font-medium text-primary"
-                >
-                  Marketer
-                </p>
-              </div>
-            </div>
-          </article>
-          <article
-            class="m-[3rem_0] flex h-[40rem] w-full flex-col items-start justify-evenly border-[3px] border-solid border-darkgrey-2 bg-darkgrey-2 p-16 text-left hover:border-primary"
-            id="74294d20-8111-461a-aa03-afb975deecb8"
+            <label
+              class="m-[1.6rem] block h-5 w-5 cursor-pointer rounded-full border-2 border-solid border-primary bg-white"
+              for="slide_1"
+            />
+            <label
+              class="m-[1.6rem] block h-5 w-5 cursor-pointer rounded-full border-2 border-solid border-primary bg-white"
+              for="slide_2"
+            />
+            <label
+              class="m-[1.6rem] block h-5 w-5 cursor-pointer rounded-full border-2 border-solid border-primary bg-white"
+              for="slide_3"
+            />
+          </div>
+          <div
+            class="flex w-[300%] transition-all duration-500"
           >
-            <div
-              class="flex flex-row"
-            >
-              <svg
-                class="h-6 w-6 fill-yellow"
-                role="img"
-              >
-                <use
-                  xlink:href="#icon-star-full"
-                />
-              </svg>
-              <svg
-                class="h-6 w-6 fill-yellow"
-                role="img"
-              >
-                <use
-                  xlink:href="#icon-star-full"
-                />
-              </svg>
-              <svg
-                class="h-6 w-6 fill-yellow"
-                role="img"
-              >
-                <use
-                  xlink:href="#icon-star-full"
-                />
-              </svg>
-              <svg
-                class="h-6 w-6 fill-yellow"
-                role="img"
-              >
-                <use
-                  xlink:href="#icon-star-full"
-                />
-              </svg>
-              <svg
-                class="h-6 w-6 fill-yellow"
-                role="img"
-              >
-                <use
-                  xlink:href="#icon-star-full"
-                />
-              </svg>
-            </div>
-            <p
-              class="text-3xl text-lightgrey"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et porro dignissimos quisquam distinctio totam obcaecati laudantium accusamus id ut architecto!
-            </p>
-            <div
-              class="flex items-center gap-10"
+            <article
+              class="m-[3rem_0] flex h-[40rem] w-full flex-col items-start justify-evenly border-[3px] border-solid border-darkgrey-2 bg-darkgrey-2 p-16 text-left hover:border-primary"
+              id="cdbc1f6c-4153-40f2-a00c-e0957fa2812b"
             >
               <div
-                class="h-32 w-32 overflow-hidden rounded-full"
+                class="flex flex-row"
               >
-                <img
-                  alt="Ted Johnson's photo"
-                  class="h-full select-none"
-                  data-nimg="1"
-                  decoding="async"
-                  height="523"
-                  loading="lazy"
-                  src="/_next/image?url=%2Fimages%2Fclient-2.jpg&w=1920&q=75"
-                  srcset="/_next/image?url=%2Fimages%2Fclient-2.jpg&w=1080&q=75 1x, /_next/image?url=%2Fimages%2Fclient-2.jpg&w=1920&q=75 2x"
-                  style="color: transparent;"
-                  width="900"
-                />
+                <svg
+                  class="h-6 w-6 fill-yellow"
+                  role="img"
+                >
+                  <use
+                    xlink:href="#icon-star-full"
+                  />
+                </svg>
+                <svg
+                  class="h-6 w-6 fill-yellow"
+                  role="img"
+                >
+                  <use
+                    xlink:href="#icon-star-full"
+                  />
+                </svg>
+                <svg
+                  class="h-6 w-6 fill-yellow"
+                  role="img"
+                >
+                  <use
+                    xlink:href="#icon-star-full"
+                  />
+                </svg>
+                <svg
+                  class="h-6 w-6 fill-yellow"
+                  role="img"
+                >
+                  <use
+                    xlink:href="#icon-star-full"
+                  />
+                </svg>
+                <svg
+                  class="h-6 w-6 fill-yellow"
+                  role="img"
+                >
+                  <use
+                    xlink:href="#icon-star-empty"
+                  />
+                </svg>
               </div>
+              <p
+                class="text-3xl text-lightgrey"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et porro dignissimos quisquam distinctio totam obcaecati laudantium accusamus id ut architecto!
+              </p>
               <div
-                class="text-2xl"
+                class="flex items-center gap-10"
               >
-                <p
-                  class="font-extrabold text-white"
+                <div
+                  class="h-32 w-32 overflow-hidden rounded-full"
                 >
-                  Ted Johnson
-                </p>
-                <p
-                  class="font-medium text-primary"
+                  <img
+                    alt="Paul Rodriguez's photo"
+                    class="h-full select-none"
+                    data-nimg="1"
+                    decoding="async"
+                    height="536"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Fclient-1.jpg&w=1080&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fclient-1.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fclient-1.jpg&w=1080&q=75 2x"
+                    style="color: transparent;"
+                    width="536"
+                  />
+                </div>
+                <div
+                  class="text-2xl"
                 >
-                  Life Coach
-                </p>
+                  <p
+                    class="font-extrabold text-white"
+                  >
+                    Paul Rodriguez
+                  </p>
+                  <p
+                    class="font-medium text-primary"
+                  >
+                    Marketer
+                  </p>
+                </div>
               </div>
-            </div>
-          </article>
-          <article
-            class="m-[3rem_0] flex h-[40rem] w-full flex-col items-start justify-evenly border-[3px] border-solid border-darkgrey-2 bg-darkgrey-2 p-16 text-left hover:border-primary"
-            id="827a14ec-c61a-4e3d-b8fc-b1de05c4077b"
-          >
-            <div
-              class="flex flex-row"
-            >
-              <svg
-                class="h-6 w-6 fill-yellow"
-                role="img"
-              >
-                <use
-                  xlink:href="#icon-star-full"
-                />
-              </svg>
-              <svg
-                class="h-6 w-6 fill-yellow"
-                role="img"
-              >
-                <use
-                  xlink:href="#icon-star-full"
-                />
-              </svg>
-              <svg
-                class="h-6 w-6 fill-yellow"
-                role="img"
-              >
-                <use
-                  xlink:href="#icon-star-full"
-                />
-              </svg>
-              <svg
-                class="h-6 w-6 fill-yellow"
-                role="img"
-              >
-                <use
-                  xlink:href="#icon-star-empty"
-                />
-              </svg>
-              <svg
-                class="h-6 w-6 fill-yellow"
-                role="img"
-              >
-                <use
-                  xlink:href="#icon-star-empty"
-                />
-              </svg>
-            </div>
-            <p
-              class="text-3xl text-lightgrey"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et porro dignissimos quisquam distinctio totam obcaecati laudantium accusamus id ut architecto!
-            </p>
-            <div
-              class="flex items-center gap-10"
+            </article>
+            <article
+              class="m-[3rem_0] flex h-[40rem] w-full flex-col items-start justify-evenly border-[3px] border-solid border-darkgrey-2 bg-darkgrey-2 p-16 text-left hover:border-primary"
+              id="74294d20-8111-461a-aa03-afb975deecb8"
             >
               <div
-                class="h-32 w-32 overflow-hidden rounded-full"
+                class="flex flex-row"
               >
-                <img
-                  alt="Paula Lee's photo"
-                  class="h-full select-none"
-                  data-nimg="1"
-                  decoding="async"
-                  height="458"
-                  loading="lazy"
-                  src="/_next/image?url=%2Fimages%2Fclient-3.jpg&w=1200&q=75"
-                  srcset="/_next/image?url=%2Fimages%2Fclient-3.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fclient-3.jpg&w=1200&q=75 2x"
-                  style="color: transparent;"
-                  width="592"
-                />
+                <svg
+                  class="h-6 w-6 fill-yellow"
+                  role="img"
+                >
+                  <use
+                    xlink:href="#icon-star-full"
+                  />
+                </svg>
+                <svg
+                  class="h-6 w-6 fill-yellow"
+                  role="img"
+                >
+                  <use
+                    xlink:href="#icon-star-full"
+                  />
+                </svg>
+                <svg
+                  class="h-6 w-6 fill-yellow"
+                  role="img"
+                >
+                  <use
+                    xlink:href="#icon-star-full"
+                  />
+                </svg>
+                <svg
+                  class="h-6 w-6 fill-yellow"
+                  role="img"
+                >
+                  <use
+                    xlink:href="#icon-star-full"
+                  />
+                </svg>
+                <svg
+                  class="h-6 w-6 fill-yellow"
+                  role="img"
+                >
+                  <use
+                    xlink:href="#icon-star-full"
+                  />
+                </svg>
               </div>
+              <p
+                class="text-3xl text-lightgrey"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et porro dignissimos quisquam distinctio totam obcaecati laudantium accusamus id ut architecto!
+              </p>
               <div
-                class="text-2xl"
+                class="flex items-center gap-10"
               >
-                <p
-                  class="font-extrabold text-white"
+                <div
+                  class="h-32 w-32 overflow-hidden rounded-full"
                 >
-                  Paula Lee
-                </p>
-                <p
-                  class="font-medium text-primary"
+                  <img
+                    alt="Ted Johnson's photo"
+                    class="h-full select-none"
+                    data-nimg="1"
+                    decoding="async"
+                    height="523"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Fclient-2.jpg&w=1920&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fclient-2.jpg&w=1080&q=75 1x, /_next/image?url=%2Fimages%2Fclient-2.jpg&w=1920&q=75 2x"
+                    style="color: transparent;"
+                    width="900"
+                  />
+                </div>
+                <div
+                  class="text-2xl"
                 >
-                  Analyst
-                </p>
+                  <p
+                    class="font-extrabold text-white"
+                  >
+                    Ted Johnson
+                  </p>
+                  <p
+                    class="font-medium text-primary"
+                  >
+                    Life Coach
+                  </p>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
+            <article
+              class="m-[3rem_0] flex h-[40rem] w-full flex-col items-start justify-evenly border-[3px] border-solid border-darkgrey-2 bg-darkgrey-2 p-16 text-left hover:border-primary"
+              id="827a14ec-c61a-4e3d-b8fc-b1de05c4077b"
+            >
+              <div
+                class="flex flex-row"
+              >
+                <svg
+                  class="h-6 w-6 fill-yellow"
+                  role="img"
+                >
+                  <use
+                    xlink:href="#icon-star-full"
+                  />
+                </svg>
+                <svg
+                  class="h-6 w-6 fill-yellow"
+                  role="img"
+                >
+                  <use
+                    xlink:href="#icon-star-full"
+                  />
+                </svg>
+                <svg
+                  class="h-6 w-6 fill-yellow"
+                  role="img"
+                >
+                  <use
+                    xlink:href="#icon-star-full"
+                  />
+                </svg>
+                <svg
+                  class="h-6 w-6 fill-yellow"
+                  role="img"
+                >
+                  <use
+                    xlink:href="#icon-star-empty"
+                  />
+                </svg>
+                <svg
+                  class="h-6 w-6 fill-yellow"
+                  role="img"
+                >
+                  <use
+                    xlink:href="#icon-star-empty"
+                  />
+                </svg>
+              </div>
+              <p
+                class="text-3xl text-lightgrey"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et porro dignissimos quisquam distinctio totam obcaecati laudantium accusamus id ut architecto!
+              </p>
+              <div
+                class="flex items-center gap-10"
+              >
+                <div
+                  class="h-32 w-32 overflow-hidden rounded-full"
+                >
+                  <img
+                    alt="Paula Lee's photo"
+                    class="h-full select-none"
+                    data-nimg="1"
+                    decoding="async"
+                    height="458"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Fclient-3.jpg&w=1200&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fclient-3.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fclient-3.jpg&w=1200&q=75 2x"
+                    style="color: transparent;"
+                    width="592"
+                  />
+                </div>
+                <div
+                  class="text-2xl"
+                >
+                  <p
+                    class="font-extrabold text-white"
+                  >
+                    Paula Lee
+                  </p>
+                  <p
+                    class="font-medium text-primary"
+                  >
+                    Analyst
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
+        <svg
+          class="cursor-pointer select-none fill-primary hover:opacity-80 active:scale-90"
+          role="img"
+        >
+          <use
+            xlink:href="#icon-chevron-right"
+          />
+        </svg>
       </div>
     </div>
   </section>
