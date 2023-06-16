@@ -19,7 +19,7 @@
     ],
     "import/no-named-as-default": "off"
   },
-  "env": { "jest": true },
   "ignorePatterns": ["*.js", "node_modules", "/build", "/public/*", "/.next"],
-  "settings": { "import/resolver": { "typescript": true } }
+  "settings": { "import/resolver": { "typescript": true } },
+  "globals": { "vi": true }
 }

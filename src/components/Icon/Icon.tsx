@@ -29,11 +29,12 @@ export type IconName =
 type IconProps = {
   className: string
   name: IconName
+  onClick?: () => void
 }
 
-const Icon: FC<IconProps> = ({ className, name }) => {
+const Icon: FC<IconProps> = ({ className, name, onClick }) => {
   return (
-    <svg className={className} role='img'>
+    <svg className={className} onClick={onClick} role='img'>
       <use xlinkHref={`#icon-${name}`} />
     </svg>
   )

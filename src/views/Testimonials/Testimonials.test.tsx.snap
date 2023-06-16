@@ -53,26 +53,22 @@ exports[`Testimonials > should render correctly 1`] = `
           class="flex flex-col overflow-hidden"
         >
           <input
-            checked=""
             class="hidden carousel-check:bg-primary carousel-slide-2:translate-x-[calc(-100%/3)] carousel-slide-3:translate-x-[calc(-100%*2/3)]"
             id="slide_1"
             name="slide"
             type="radio"
-            value="1"
           />
           <input
             class="hidden carousel-check:bg-primary carousel-slide-2:translate-x-[calc(-100%/3)] carousel-slide-3:translate-x-[calc(-100%*2/3)]"
             id="slide_2"
             name="slide"
             type="radio"
-            value="2"
           />
           <input
             class="hidden carousel-check:bg-primary carousel-slide-2:translate-x-[calc(-100%/3)] carousel-slide-3:translate-x-[calc(-100%*2/3)]"
             id="slide_3"
             name="slide"
             type="radio"
-            value="3"
           />
           <div
             class="order-1 flex justify-center"
