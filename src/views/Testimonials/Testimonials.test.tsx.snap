@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Testimonials > should render correctly 1`] = `
+exports[`Testimonials: > should render correctly 1`] = `
 <DocumentFragment>
   <section
     aria-labelledby="testimonials_title"

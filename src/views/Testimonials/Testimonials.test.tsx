@@ -2,7 +2,7 @@ import { render, cleanup, within, screen } from '@/tests'
 import Testimonials from './Testimonials'
 import testimonials from './Testimonials.data'
 
-describe('Testimonials', () => {
+describe('Testimonials:', () => {
   let asFragment: () => DocumentFragment
 
   beforeEach(() => {

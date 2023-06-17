@@ -1,0 +1,13 @@
+import clsx from 'clsx'
+import { commonStyles } from '@/styles'
+
+const styles = {
+  ...commonStyles,
+  contact: clsx('flex'),
+  column: clsx(
+    'm-[0.8rem_1.2rem] rounded-md bg-lightgrey-2 p-[1.6rem_3rem] text-left text-[1.6rem] text-black',
+    'first:basis-[45%] last:basis-[65%] [&>h3]:text-4xl [&>h3]:font-semibold [&>p]:first:mt-8'
+  ),
+}
+
+export default styles

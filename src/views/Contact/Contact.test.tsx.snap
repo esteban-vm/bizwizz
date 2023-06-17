@@ -1,0 +1,147 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Contact: > should render correctly 1`] = `
+<DocumentFragment>
+  <section
+    aria-labelledby="contact_title"
+    class="section bg-white"
+    id="contact"
+  >
+    <svg
+      aria-hidden="true"
+      class="h-40 w-full text-black"
+      preserveAspectRatio="none"
+      role="presentation"
+      viewBox="0 0 500 150"
+    >
+      <path
+        d="M0.00,49.98 C161.96,151.48 356.65,-54.75 500.00,49.98 L504.51,-36.00 L-13.54,-3.44 Z"
+        fill="currentColor"
+        stroke="none"
+      />
+    </svg>
+    <div
+      class="section_header"
+    >
+      <h2
+        class="section_heading"
+        id="contact_title"
+      >
+        Contact Us
+      </h2>
+    </div>
+    <div
+      class="flex"
+    >
+      <div
+        class="m-[0.8rem_1.2rem] rounded-md bg-lightgrey-2 p-[1.6rem_3rem] text-left text-[1.6rem] text-black first:basis-[45%] last:basis-[65%] [&>h3]:text-4xl [&>h3]:font-semibold [&>p]:first:mt-8"
+      >
+        <h3>
+          Get in Touch
+        </h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam debitis eos unde officiis tempore assumenda ab repellat facere dolore dignissimos a repudiandae iste fugiat, rerum ad voluptates veritatis tenetur laboriosam?
+        </p>
+        <article
+          class="mt-8 flex items-center"
+          id="1bcfb7c3-6138-445e-81ab-4109756943d0"
+        >
+          <div
+            class="mr-[1.6rem]"
+          >
+            <svg
+              class="h-[2.4rem] w-[2.4rem] fill-primary"
+              role="img"
+            >
+              <use
+                xlink:href="#icon-location"
+              />
+            </svg>
+          </div>
+          <div
+            class="text-left"
+          >
+            <p
+              class="text-[1.6rem] first:text-3xl first:font-semibold"
+            >
+              Address
+            </p>
+            <p
+              class="text-[1.6rem] first:text-3xl first:font-semibold"
+            >
+              Mountain View, California
+            </p>
+          </div>
+        </article>
+        <article
+          class="mt-8 flex items-center"
+          id="2ec98648-6ce9-4df3-9f36-178aa5a41814"
+        >
+          <div
+            class="mr-[1.6rem]"
+          >
+            <svg
+              class="h-[2.4rem] w-[2.4rem] fill-primary"
+              role="img"
+            >
+              <use
+                xlink:href="#icon-envelop"
+              />
+            </svg>
+          </div>
+          <div
+            class="text-left"
+          >
+            <p
+              class="text-[1.6rem] first:text-3xl first:font-semibold"
+            >
+              Email
+            </p>
+            <p
+              class="text-[1.6rem] first:text-3xl first:font-semibold"
+            >
+              email_us@bizwizz.com
+            </p>
+          </div>
+        </article>
+        <article
+          class="mt-8 flex items-center"
+          id="3e3c9837-aeb9-4ee9-92fe-eb524ba93f07"
+        >
+          <div
+            class="mr-[1.6rem]"
+          >
+            <svg
+              class="h-[2.4rem] w-[2.4rem] fill-primary"
+              role="img"
+            >
+              <use
+                xlink:href="#icon-address-book"
+              />
+            </svg>
+          </div>
+          <div
+            class="text-left"
+          >
+            <p
+              class="text-[1.6rem] first:text-3xl first:font-semibold"
+            >
+              Telephone
+            </p>
+            <p
+              class="text-[1.6rem] first:text-3xl first:font-semibold"
+            >
+              650-210-8852
+            </p>
+          </div>
+        </article>
+      </div>
+      <div
+        class="m-[0.8rem_1.2rem] rounded-md bg-lightgrey-2 p-[1.6rem_3rem] text-left text-[1.6rem] text-black first:basis-[45%] last:basis-[65%] [&>h3]:text-4xl [&>h3]:font-semibold [&>p]:first:mt-8"
+      >
+         
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;

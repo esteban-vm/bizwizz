@@ -1,0 +1,37 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Info: > should render correctly 1`] = `
+<DocumentFragment>
+  <article
+    class="mt-8 flex items-center"
+    id="1bcfb7c3-6138-445e-81ab-4109756943d0"
+  >
+    <div
+      class="mr-[1.6rem]"
+    >
+      <svg
+        class="h-[2.4rem] w-[2.4rem] fill-primary"
+        role="img"
+      >
+        <use
+          xlink:href="#icon-location"
+        />
+      </svg>
+    </div>
+    <div
+      class="text-left"
+    >
+      <p
+        class="text-[1.6rem] first:text-3xl first:font-semibold"
+      >
+        Address
+      </p>
+      <p
+        class="text-[1.6rem] first:text-3xl first:font-semibold"
+      >
+        Mountain View, California
+      </p>
+    </div>
+  </article>
+</DocumentFragment>
+`;
