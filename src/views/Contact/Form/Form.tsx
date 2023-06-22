@@ -1,6 +1,7 @@
 'use client'
 import type { FC } from '@/types'
 import { useForm, type SubmitHandler } from 'react-hook-form'
+import cogoToast from 'cogo-toast'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { Button } from '@/components'
@@ -24,11 +25,22 @@ const Form: FC = () => {
   } = useForm<FormValues>({
     resolver: zodResolver(validationSchema),
     defaultValues: { name: '', email: '', subject: '', message: '' },
+    resetOptions: { keepTouched: false, keepDirty: false, keepErrors: false },
   })
 
-  const onSubmit: SubmitHandler<FormValues> = (data) => {
+  const onSubmit: SubmitHandler<FormValues> = async (data) => {
     reset()
-    console.log(data)
+
+    await cogoToast.success(
+      <div className={styles.toast}>
+        {Object.entries(data).map(([key, value], index) => (
+          <p key={index}>
+            <strong>{key}:</strong> {value}
+          </p>
+        ))}
+      </div>,
+      { heading: 'Thank you for contacting us!', hideAfter: 5, role: 'alert' }
+    )
   }
 
   return (

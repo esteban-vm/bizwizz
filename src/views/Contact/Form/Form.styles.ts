@@ -7,6 +7,7 @@ const styles = {
   feedback: clsx('mt-0 text-darkgrey-2'),
   input: clsx('form-field'),
   textarea: clsx('form-field h-80 resize-none'),
+  toast: clsx('text-primary [&_strong]:capitalize'),
 }
 
 export default styles

@@ -24,15 +24,38 @@ describe('Form:', () => {
   })
 
   it('should validate input fields', async () => {
-    const [nameField, emailField, subjectField, messageField] = screen.getAllByRole('textbox')
-    await userEvent.type(nameField, 'test')
-    await userEvent.type(emailField, 'test')
-    await userEvent.type(subjectField, 'test')
-    await userEvent.type(messageField, 'test')
-    await userEvent.click(screen.getByRole('button', { name: /send message/i }))
-    expect(await screen.findByText(/name must be at least 5 characters long/i)).toBeInTheDocument()
-    expect(await screen.findByText(/email must be valid/i)).toBeInTheDocument()
-    expect(await screen.findByText(/subject must be at least 5 characters long/i)).toBeInTheDocument()
-    expect(await screen.findByText(/message must be at least 10 characters long/i)).toBeInTheDocument()
+    const formElem = screen.getByRole('form')
+    const [nameField, emailField, subjectField, messageField] = within(formElem).getAllByRole('textbox')
+    const mockValue = 'test'
+    await userEvent.type(nameField, mockValue)
+    await userEvent.type(emailField, mockValue)
+    await userEvent.type(subjectField, mockValue)
+    await userEvent.type(messageField, mockValue)
+    await userEvent.click(within(formElem).getByRole('button', { name: /send message/i }))
+    expect(await within(formElem).findByText(/name must be at least 5 characters long/i)).toBeInTheDocument()
+    expect(await within(formElem).findByText(/email must be valid/i)).toBeInTheDocument()
+    expect(await within(formElem).findByText(/subject must be at least 5 characters long/i)).toBeInTheDocument()
+    expect(await within(formElem).findByText(/message must be at least 10 characters long/i)).toBeInTheDocument()
+  })
+
+  it('should be submitted successfully', async () => {
+    const formElem = screen.getByRole('form')
+    const [nameField, emailField, subjectField, messageField] = within(formElem).getAllByRole('textbox')
+    const mockName = 'John Doe'
+    const mockEmail = 'test@example.com'
+    const mockSubject = 'testing'
+    const mockMessage = 'hello world'
+    await userEvent.type(nameField, mockName)
+    await userEvent.type(emailField, mockEmail)
+    await userEvent.type(subjectField, mockSubject)
+    await userEvent.type(messageField, mockMessage)
+    await userEvent.click(within(formElem).getByRole('button', { name: /send message/i }))
+    const alert = await screen.findByRole('alert')
+    expect(alert).toBeInTheDocument()
+    expect(within(alert).getByRole('heading', { name: /thank you for contacting us!/i, level: 4 })).toBeInTheDocument()
+    expect(within(alert).getByText((_, elem) => elem?.textContent === `name: ${mockName}`)).toBeInTheDocument()
+    expect(within(alert).getByText((_, elem) => elem?.textContent === `email: ${mockEmail}`)).toBeInTheDocument()
+    expect(within(alert).getByText((_, elem) => elem?.textContent === `subject: ${mockSubject}`)).toBeInTheDocument()
+    expect(within(alert).getByText((_, elem) => elem?.textContent === `message: ${mockMessage}`)).toBeInTheDocument()
   })
 })

@@ -11,6 +11,7 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: './src/tests/setup',
     reporters: 'verbose',
+    silent: true,
     resolveSnapshotPath(path, extension) {
       return path.replace(/\.test\.([tj]sx?)/, `.test.$1${extension}`)
     },
