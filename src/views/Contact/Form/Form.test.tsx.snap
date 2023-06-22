@@ -1,0 +1,79 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Form: > should render correctly 1`] = `
+<DocumentFragment>
+  <h3
+    id="contact_form_heading"
+  >
+    Shoot Us a Message
+  </h3>
+  <div>
+    <form
+      aria-labelledby="contact_form_heading"
+      novalidate=""
+    >
+      <div
+        class="my-6 flex justify-between"
+      >
+        <div
+          class="basis-[48%]"
+        >
+          <input
+            autocorrect="off"
+            class="form-field"
+            id="name"
+            maxlength="30"
+            minlength="5"
+            name="name"
+            placeholder="Your name"
+            spellcheck="false"
+            type="text"
+          />
+        </div>
+        <div
+          class="basis-[48%]"
+        >
+          <input
+            class="form-field"
+            id="email"
+            name="email"
+            placeholder="Your email address"
+            type="email"
+          />
+        </div>
+      </div>
+      <div
+        class="my-6 w-full"
+      >
+        <input
+          class="form-field"
+          id="subject"
+          maxlength="100"
+          minlength="5"
+          name="subject"
+          placeholder="Subject"
+          type="text"
+        />
+      </div>
+      <div
+        class="my-6 w-full"
+      >
+        <textarea
+          class="form-field h-80 resize-none"
+          id="message"
+          maxlength="500"
+          minlength="10"
+          name="message"
+          placeholder="Your message"
+        />
+      </div>
+      <button
+        class="block min-w-[20rem] cursor-pointer select-none bg-gradient-120 from-transparent from-0% via-transparent via-50% to-50% bg-[length:250%] p-[1.6rem] text-2xl font-[500] uppercase transition-all duration-300 hover:translate-x-4 hover:bg-[100%] bg-primary to-white text-white hover:text-primary rounded-xl border border-solid border-primary text-center"
+        type="submit"
+      >
+        Send message
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;

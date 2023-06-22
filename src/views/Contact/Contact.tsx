@@ -1,5 +1,6 @@
 import type { FC } from '@/types'
 import { Wave } from '@/components'
+import Form from './Form'
 import Info from './Info'
 import info from './Contact.data'
 import styles from './Contact.styles'
@@ -25,7 +26,9 @@ const Contact: FC = () => {
             <Info key={item.id} {...item} />
           ))}
         </div>
-        <div className={styles.column}>&nbsp;</div>
+        <div className={styles.column}>
+          <Form />
+        </div>
       </div>
     </section>
   )

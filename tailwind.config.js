@@ -25,6 +25,7 @@ module.exports = {
       'primary-light': 'rgb(var(--color-light-pink))',
       black: 'rgb(var(--color-black))',
       white: 'rgb(var(--color-white))',
+      red: 'rgb(var(--color-red))',
       lightgrey: 'rgb(var(--color-light-grey))',
       'lightgrey-2': 'rgb(var(--color-light-grey-2))',
       darkgrey: 'rgb(var(--color-dark-grey))',

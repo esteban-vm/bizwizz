@@ -27,6 +27,6 @@ describe('Contact:', () => {
     expect(within(contactElem).getByRole('heading', { name: subtitle, level: 3 })).toBeInTheDocument()
     expect(within(contactElem).getByText(/lorem, ipsum/i)).toBeInTheDocument()
     expect(within(contactElem).getAllByRole('article')).toHaveLength(info.length)
-    // expect(within(contactElem).getByRole('form')).toBeInTheDocument()
+    expect(within(contactElem).getByRole('form')).toBeInTheDocument()
   })
 })
