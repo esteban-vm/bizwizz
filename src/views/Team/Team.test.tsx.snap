@@ -4,7 +4,7 @@ exports[`Team: > should render correctly 1`] = `
 <DocumentFragment>
   <section
     aria-labelledby="team_title"
-    class="section bg-black"
+    class="pb-32 text-center bg-black"
     id="team"
   >
     <svg
@@ -20,21 +20,21 @@ exports[`Team: > should render correctly 1`] = `
         stroke="none"
       />
     </svg>
-    <div
-      class="section_header"
+    <header
+      class="font-bold tracking-widest"
     >
       <h2
-        class="section_heading"
+        class="mb-5 text-[2.4rem] uppercase text-primary"
         id="team_title"
       >
         Meet our team
       </h2>
       <h3
-        class="section_subheading"
+        class="mb-10 text-[4rem] capitalize text-darkgrey"
       >
         Lorem ipsum dolor sit amet
       </h3>
-    </div>
+    </header>
     <div
       class="flex flex-wrap justify-evenly"
     >

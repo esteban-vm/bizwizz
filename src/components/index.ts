@@ -1,4 +1,5 @@
 export * from './Button'
 export * from './Icon'
+export * from './Section'
 export * from './SocialLink'
 export * from './Wave'

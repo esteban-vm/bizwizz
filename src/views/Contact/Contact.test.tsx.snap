@@ -4,7 +4,7 @@ exports[`Contact: > should render correctly 1`] = `
 <DocumentFragment>
   <section
     aria-labelledby="contact_title"
-    class="section bg-white"
+    class="pb-32 text-center bg-white"
     id="contact"
   >
     <svg
@@ -20,16 +20,16 @@ exports[`Contact: > should render correctly 1`] = `
         stroke="none"
       />
     </svg>
-    <div
-      class="section_header"
+    <header
+      class="font-bold tracking-widest"
     >
       <h2
-        class="section_heading"
+        class="mb-5 text-[2.4rem] uppercase text-primary"
         id="contact_title"
       >
         Contact Us
       </h2>
-    </div>
+    </header>
     <div
       class="flex"
     >

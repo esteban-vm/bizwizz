@@ -19,6 +19,7 @@ describe('Form:', () => {
     const formElem = screen.getByRole('form')
     expect(formElem).toBeInTheDocument()
     expect(formElem).toHaveAccessibleName(title)
+    expect(screen.getByRole('heading', { name: title, level: 3 })).toBeInTheDocument()
     expect(within(formElem).getAllByRole('textbox')).toHaveLength(4)
     expect(within(formElem).getByRole('button', { name: /send message/i })).toBeInTheDocument()
   })

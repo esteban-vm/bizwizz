@@ -57,22 +57,6 @@
 }
 
 @layer components {
-  .section {
-    @apply pb-32 text-center;
-
-    .section_header {
-      @apply font-bold tracking-widest;
-
-      .section_heading {
-        @apply mb-5 text-[2.4rem] uppercase text-primary;
-      }
-
-      .section_subheading {
-        @apply mb-10 text-[4rem] capitalize text-darkgrey;
-      }
-    }
-  }
-
   .form-field {
     @apply w-full rounded-xl border-2 border-solid border-primary-light p-2 text-2xl placeholder:select-none placeholder:text-darkgrey invalid:border-red focus:border-primary focus:outline-none;
   }

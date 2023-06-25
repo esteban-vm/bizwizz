@@ -4,7 +4,7 @@ exports[`Services: > should render correctly 1`] = `
 <DocumentFragment>
   <section
     aria-labelledby="services_title"
-    class="section bg-white"
+    class="pb-32 text-center bg-white"
     id="services"
   >
     <svg
@@ -20,21 +20,21 @@ exports[`Services: > should render correctly 1`] = `
         stroke="none"
       />
     </svg>
-    <div
-      class="section_header"
+    <header
+      class="font-bold tracking-widest"
     >
       <h2
-        class="section_heading"
+        class="mb-5 text-[2.4rem] uppercase text-primary"
         id="services_title"
       >
         Our services
       </h2>
       <h3
-        class="section_subheading"
+        class="mb-10 text-[4rem] capitalize text-darkgrey"
       >
         Lorem ipsum dolor sit amet
       </h3>
-    </div>
+    </header>
     <div
       class="m-[0_6rem] flex flex-wrap gap-6"
     >
