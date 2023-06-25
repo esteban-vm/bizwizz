@@ -5,7 +5,7 @@ import styles from './CTA.styles'
 const CTA: FC = () => {
   return (
     <>
-      <Wave is='white' />
+      <Wave color='white' />
       <section aria-labelledby='cta_title' className={styles.wrapper} id='call-to-action'>
         <div className={styles.links}>
           <SocialLink link='facebook' />

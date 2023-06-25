@@ -2,12 +2,12 @@ import type { FC } from '@/types'
 import styles from './Wave.styles'
 
 type WaveProps = {
-  is: 'primary' | 'white' | 'black'
+  color: 'primary' | 'white' | 'black'
 }
 
-const Wave: FC<WaveProps> = ({ is }) => {
-  const isBlack = is === 'black'
-  const isWhite = is === 'white'
+const Wave: FC<WaveProps> = ({ color }) => {
+  const isBlack = color === 'black'
+  const isWhite = color === 'white'
 
   return (
     <svg

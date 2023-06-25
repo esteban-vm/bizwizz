@@ -14,7 +14,7 @@ const Section: FC<SectionProps> = ({ id, title, subtitle, bg, children }) => {
 
   return (
     <section aria-labelledby={titleID} className={styles.wrapper(bg)} id={id}>
-      <Wave is={bg === 'black' ? 'white' : 'black'} />
+      <Wave color={bg === 'black' ? 'white' : 'black'} />
       <header className={styles.header}>
         <h2 className={styles.heading} id={titleID}>
           {title}

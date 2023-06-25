@@ -8,7 +8,7 @@ import styles from './Header.styles'
 const Header: FC = () => {
   return (
     <header aria-labelledby='home_title' className={styles.wrapper} id='home'>
-      <Wave is='primary' />
+      <Wave color='primary' />
       <div className={styles.navigation}>
         <Image alt='Bizwizz logo' className={styles.image} height={500} src='/images/logo.png' width={500} />
         <nav>
