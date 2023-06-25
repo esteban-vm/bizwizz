@@ -1,5 +1,5 @@
-import type { FC, ID, IconName } from '@/types'
-import { Icon } from '@/components'
+import type { FC, ID } from '@/types'
+import { SocialLink } from '@/components'
 import styles from './TeamMate.styles'
 
 export type TeamMateProps = {
@@ -7,8 +7,6 @@ export type TeamMateProps = {
   name: Capitalize<string>
   designation: string
 }
-
-const socialMediaLinks: IconName[] = ['facebook', 'twitter', 'linkedin']
 
 const TeamMate: FC<TeamMateProps> = ({ id, name, designation }) => {
   return (
@@ -18,11 +16,9 @@ const TeamMate: FC<TeamMateProps> = ({ id, name, designation }) => {
         <h4 className={styles.name}>{name}</h4>
         <p className={styles.designation}>{designation}</p>
         <div className={styles.links}>
-          {socialMediaLinks.map((link, index) => (
-            <a key={index} href={`https://www.${link}.com`} target='_blank' title={link}>
-              <Icon className={styles.icon} name={link} />
-            </a>
-          ))}
+          <SocialLink link='facebook' style={styles.icon} />
+          <SocialLink link='twitter' style={styles.icon} />
+          <SocialLink link='linkedin' style={styles.icon} />
         </div>
       </div>
     </article>

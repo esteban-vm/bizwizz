@@ -1,0 +1,20 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Social Link: > should render correctly 1`] = `
+<DocumentFragment>
+  <a
+    href="https://www.facebook.com"
+    rel="noreferrer"
+    target="_blank"
+    title="facebook"
+  >
+    <svg
+      role="img"
+    >
+      <use
+        xlink:href="#icon-facebook"
+      />
+    </svg>
+  </a>
+</DocumentFragment>
+`;

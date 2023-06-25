@@ -27,6 +27,7 @@ exports[`Team Mate: > should render correctly 1`] = `
       >
         <a
           href="https://www.facebook.com"
+          rel="noreferrer"
           target="_blank"
           title="facebook"
         >
@@ -41,6 +42,7 @@ exports[`Team Mate: > should render correctly 1`] = `
         </a>
         <a
           href="https://www.twitter.com"
+          rel="noreferrer"
           target="_blank"
           title="twitter"
         >
@@ -55,6 +57,7 @@ exports[`Team Mate: > should render correctly 1`] = `
         </a>
         <a
           href="https://www.linkedin.com"
+          rel="noreferrer"
           target="_blank"
           title="linkedin"
         >

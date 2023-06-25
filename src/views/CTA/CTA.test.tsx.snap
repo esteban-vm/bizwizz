@@ -1,0 +1,90 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CTA: > should render correctly 1`] = `
+<DocumentFragment>
+  <svg
+    aria-hidden="true"
+    class="h-40 w-full text-white"
+    preserveAspectRatio="none"
+    role="presentation"
+    viewBox="0 0 500 150"
+  >
+    <path
+      d="M0.00,49.98 C161.96,151.48 356.65,-54.75 500.00,49.98 L504.51,-36.00 L-13.54,-3.44 Z"
+      fill="currentColor"
+      stroke="none"
+    />
+  </svg>
+  <section
+    aria-labelledby="cta_title"
+    class="bg-black p-12"
+    id="call-to-action"
+  >
+    <div
+      class=""
+    >
+      <a
+        href="https://www.facebook.com"
+        rel="noreferrer"
+        target="_blank"
+        title="facebook"
+      >
+        <svg
+          role="img"
+        >
+          <use
+            xlink:href="#icon-facebook"
+          />
+        </svg>
+      </a>
+      <a
+        href="https://www.twitter.com"
+        rel="noreferrer"
+        target="_blank"
+        title="twitter"
+      >
+        <svg
+          role="img"
+        >
+          <use
+            xlink:href="#icon-twitter"
+          />
+        </svg>
+      </a>
+      <a
+        href="https://www.linkedin.com"
+        rel="noreferrer"
+        target="_blank"
+        title="linkedin"
+      >
+        <svg
+          role="img"
+        >
+          <use
+            xlink:href="#icon-linkedin"
+          />
+        </svg>
+      </a>
+    </div>
+    <div
+      class=""
+    >
+      <h2
+        id="cta_title"
+      >
+        Let's Talk
+      </h2>
+    </div>
+    <div
+      class=""
+    >
+      <button
+        class="block min-w-[20rem] cursor-pointer select-none bg-gradient-120 from-transparent from-0% via-transparent via-50% to-50% bg-[length:250%] p-[1.6rem] text-2xl font-[500] uppercase transition-all duration-300 hover:translate-x-4 hover:bg-[100%] bg-white to-primary text-primary hover:text-white"
+        type="button"
+      >
+        Get a quote today
+      </button>
+    </div>
+  </section>
+</DocumentFragment>
+`;

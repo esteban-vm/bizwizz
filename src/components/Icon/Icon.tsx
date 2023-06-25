@@ -27,8 +27,8 @@ export type IconName =
   | 'star-full'
 
 type IconProps = {
-  className: string
   name: IconName
+  className?: string
   onClick?: () => void
 }
 
