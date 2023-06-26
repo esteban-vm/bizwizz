@@ -6,47 +6,51 @@ import { Icon } from '@/components'
 import styles from './Carousel.styles'
 
 const Carousel: FC<PropsWithChildren> = ({ children }) => {
-  const slide1Ref = useRef<HTMLInputElement>(null)
-  const slide2Ref = useRef<HTMLInputElement>(null)
-  const slide3Ref = useRef<HTMLInputElement>(null)
+  const slider = useRef<HTMLDivElement>(null)
+  const slides = [...Array(3)].map((_, index) => `slide_${index + 1}`)
 
   useEffect(() => {
-    if (slide1Ref.current) {
-      slide1Ref.current.checked = true
+    if (slider.current) {
+      const slide1 = slider.current.querySelector('input') as HTMLInputElement
+      slide1.checked = true
     }
   }, [])
 
-  const leftClick = () => {
-    if (slide1Ref.current && slide2Ref.current && slide3Ref.current) {
-      if (slide1Ref.current.checked) slide3Ref.current.checked = true
-      else if (slide2Ref.current.checked) slide1Ref.current.checked = true
-      else if (slide3Ref.current.checked) slide2Ref.current.checked = true
-    }
-  }
+  const handleClick = (side: 'left' | 'right') => {
+    return () => {
+      if (slider.current) {
+        const [slide1, slide2, slide3] = Array.from(slider.current.querySelectorAll('input')) as HTMLInputElement[]
 
-  const rightClick = () => {
-    if (slide1Ref.current && slide2Ref.current && slide3Ref.current) {
-      if (slide1Ref.current.checked) slide2Ref.current.checked = true
-      else if (slide2Ref.current.checked) slide3Ref.current.checked = true
-      else if (slide3Ref.current.checked) slide1Ref.current.checked = true
+        if (side === 'left') {
+          if (slide1.checked) slide3.checked = true
+          else if (slide2.checked) slide1.checked = true
+          else if (slide3.checked) slide2.checked = true
+        }
+
+        if (side === 'right') {
+          if (slide1.checked) slide2.checked = true
+          else if (slide2.checked) slide3.checked = true
+          else if (slide3.checked) slide1.checked = true
+        }
+      }
     }
   }
 
   return (
     <div className={styles.outer_wrapper}>
-      <Icon className={styles.icon} name='chevron-left' onClick={leftClick} />
-      <div className={styles.inner_wrapper}>
-        <input ref={slide1Ref} className={styles.radio} id='slide_1' name='slide' type='radio' />
-        <input ref={slide2Ref} className={styles.radio} id='slide_2' name='slide' type='radio' />
-        <input ref={slide3Ref} className={styles.radio} id='slide_3' name='slide' type='radio' />
+      <Icon className={styles.icon} name='chevron-left' onClick={handleClick('left')} />
+      <div ref={slider} className={styles.inner_wrapper}>
+        {slides.map((slide) => (
+          <input key={slide} className={styles.radio} id={slide} name='slide' type='radio' />
+        ))}
         <div className={styles.label_container}>
-          <label className={styles.label} htmlFor='slide_1' />
-          <label className={styles.label} htmlFor='slide_2' />
-          <label className={styles.label} htmlFor='slide_3' />
+          {slides.map((slide) => (
+            <label key={slide} className={styles.label} htmlFor={slide} />
+          ))}
         </div>
         <div className={styles.slider}>{children}</div>
       </div>
-      <Icon className={styles.icon} name='chevron-right' onClick={rightClick} />
+      <Icon className={styles.icon} name='chevron-right' onClick={handleClick('right')} />
     </div>
   )
 }
