@@ -20,16 +20,20 @@ const Carousel: FC<PropsWithChildren> = ({ children }) => {
       if (slider.current) {
         const [slide1, slide2, slide3] = slider.current.querySelectorAll('input')
 
+        const checked1 = slide1.checked
+        const checked2 = slide2.checked
+        const checked3 = slide3.checked
+
         if (side === 'left') {
-          if (slide1.checked) slide3.checked = true
-          else if (slide2.checked) slide1.checked = true
-          else if (slide3.checked) slide2.checked = true
+          if (checked1) slide3.checked = true
+          else if (checked2) slide1.checked = true
+          else if (checked3) slide2.checked = true
         }
 
         if (side === 'right') {
-          if (slide1.checked) slide2.checked = true
-          else if (slide2.checked) slide3.checked = true
-          else if (slide3.checked) slide1.checked = true
+          if (checked1) slide2.checked = true
+          else if (checked2) slide3.checked = true
+          else if (checked3) slide1.checked = true
         }
       }
     }
