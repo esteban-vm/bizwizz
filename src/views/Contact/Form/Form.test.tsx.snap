@@ -19,14 +19,11 @@ exports[`Form: > should render correctly 1`] = `
           class="basis-[48%]"
         >
           <input
-            autocorrect="off"
             class="form-field"
-            id="name"
             maxlength="30"
             minlength="5"
             name="name"
             placeholder="Your name"
-            spellcheck="false"
             type="text"
           />
         </div>
@@ -35,7 +32,6 @@ exports[`Form: > should render correctly 1`] = `
         >
           <input
             class="form-field"
-            id="email"
             name="email"
             placeholder="Your email address"
             type="email"
@@ -47,7 +43,6 @@ exports[`Form: > should render correctly 1`] = `
       >
         <input
           class="form-field"
-          id="subject"
           maxlength="100"
           minlength="5"
           name="subject"
@@ -60,7 +55,6 @@ exports[`Form: > should render correctly 1`] = `
       >
         <textarea
           class="form-field h-80 resize-none"
-          id="message"
           maxlength="500"
           minlength="10"
           name="message"

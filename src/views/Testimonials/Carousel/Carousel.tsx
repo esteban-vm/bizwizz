@@ -1,5 +1,4 @@
 'use client'
-/* eslint-disable jsx-a11y/label-has-associated-control */
 import type { FC, PropsWithChildren } from '@/types'
 import { useRef, useEffect } from 'react'
 import { Icon } from '@/components'
@@ -19,7 +18,7 @@ const Carousel: FC<PropsWithChildren> = ({ children }) => {
   const handleClick = (side: 'left' | 'right') => {
     return () => {
       if (slider.current) {
-        const [slide1, slide2, slide3] = Array.from(slider.current.querySelectorAll('input')) as HTMLInputElement[]
+        const [slide1, slide2, slide3] = slider.current.querySelectorAll('input')
 
         if (side === 'left') {
           if (slide1.checked) slide3.checked = true
@@ -45,6 +44,7 @@ const Carousel: FC<PropsWithChildren> = ({ children }) => {
         ))}
         <div className={styles.label_container}>
           {slides.map((slide) => (
+            // eslint-disable-next-line jsx-a11y/label-has-associated-control
             <label key={slide} className={styles.label} htmlFor={slide} />
           ))}
         </div>
