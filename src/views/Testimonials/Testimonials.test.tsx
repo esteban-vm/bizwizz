@@ -25,6 +25,7 @@ describe('Testimonials:', () => {
     expect(within(testimonialsElem).getByRole('presentation', { hidden: true })).toBeInTheDocument()
     expect(within(testimonialsElem).getByRole('heading', { name: title, level: 2 })).toBeInTheDocument()
     expect(within(testimonialsElem).getByRole('heading', { name: subtitle, level: 3 })).toBeInTheDocument()
+    expect(within(testimonialsElem).getByRole('group')).toBeInTheDocument()
     expect(within(testimonialsElem).getAllByRole('article')).toHaveLength(testimonials.length)
   })
 })
