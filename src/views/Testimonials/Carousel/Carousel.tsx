@@ -36,16 +36,16 @@ const Carousel: FC<PropsWithChildren> = ({ children }) => {
   }
 
   return (
-    <div className={styles.outer_wrapper}>
+    <div aria-roledescription='carousel' className={styles.outer_wrapper} role='group'>
       <Icon className={styles.icon} name='chevron-left' onClick={handleClick('left')} />
       <div ref={slider} className={styles.inner_wrapper}>
-        {slides.map((slide) => (
-          <input key={slide} className={styles.radio} id={slide} name='slide' type='radio' />
+        {slides.map((slide, index) => (
+          <input key={index} className={styles.radio} id={slide} name='slide' type='radio' />
         ))}
         <div className={styles.label_container}>
-          {slides.map((slide) => (
+          {slides.map((slide, index) => (
             // eslint-disable-next-line jsx-a11y/label-has-associated-control
-            <label key={slide} className={styles.label} htmlFor={slide} />
+            <label key={index} className={styles.label} htmlFor={slide} />
           ))}
         </div>
         <div className={styles.slider}>{children}</div>

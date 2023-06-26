@@ -3,7 +3,9 @@
 exports[`Carousel: > should render correctly 1`] = `
 <DocumentFragment>
   <div
+    aria-roledescription="carousel"
     class="flex flex-row items-center justify-between gap-6"
+    role="group"
   >
     <svg
       class="cursor-pointer select-none fill-primary hover:opacity-80 active:scale-90"
