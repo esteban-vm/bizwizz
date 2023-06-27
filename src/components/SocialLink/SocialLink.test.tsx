@@ -5,7 +5,7 @@ describe('Social Link:', () => {
   let asFragment: () => DocumentFragment
 
   beforeEach(() => {
-    void ({ asFragment } = render(<SocialLink link='facebook' />))
+    void ({ asFragment } = render(<SocialLink to='facebook' />))
   })
 
   afterEach(cleanup)

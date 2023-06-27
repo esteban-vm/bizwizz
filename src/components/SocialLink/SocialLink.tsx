@@ -2,14 +2,14 @@ import type { FC } from '@/types'
 import { Icon, type IconName } from '../Icon'
 
 type SocialLinkProps = {
-  link: IconName
-  style?: string
+  to: Extract<IconName, 'facebook' | 'twitter' | 'linkedin'>
+  className?: string
 }
 
-const SocialLink: FC<SocialLinkProps> = ({ link, style }) => {
+const SocialLink: FC<SocialLinkProps> = ({ to: socialMedia, className }) => {
   return (
-    <a href={`https://www.${link}.com`} rel='noreferrer' target='_blank' title={link}>
-      <Icon className={style} name={link} />
+    <a href={`https://www.${socialMedia}.com`} rel='noreferrer' target='_blank' title={socialMedia}>
+      <Icon className={className} name={socialMedia} />
     </a>
   )
 }

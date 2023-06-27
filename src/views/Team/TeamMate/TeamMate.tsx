@@ -16,9 +16,9 @@ const TeamMate: FC<TeamMateProps> = ({ id, name, designation }) => {
         <h4 className={styles.name}>{name}</h4>
         <p className={styles.designation}>{designation}</p>
         <div className={styles.links}>
-          <SocialLink link='facebook' style={styles.icon} />
-          <SocialLink link='twitter' style={styles.icon} />
-          <SocialLink link='linkedin' style={styles.icon} />
+          <SocialLink className={styles.icon} to='facebook' />
+          <SocialLink className={styles.icon} to='twitter' />
+          <SocialLink className={styles.icon} to='linkedin' />
         </div>
       </div>
     </article>

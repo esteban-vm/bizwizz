@@ -8,9 +8,9 @@ const CTA: FC = () => {
       <Wave color='white' />
       <section aria-labelledby='cta_title' className={styles.wrapper} id='call-to-action'>
         <div className={styles.links}>
-          <SocialLink link='facebook' />
-          <SocialLink link='twitter' />
-          <SocialLink link='linkedin' />
+          <SocialLink to='facebook' />
+          <SocialLink to='twitter' />
+          <SocialLink to='linkedin' />
         </div>
         <div className={styles.cta}>
           <h2 id='cta_title'>Let&apos;s Talk</h2>
