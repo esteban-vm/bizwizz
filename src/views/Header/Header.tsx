@@ -27,7 +27,7 @@ const Header: FC = () => {
           <h2 className={styles.heading_2}>Innovate, Transform and Lead</h2>
         </div>
         <div>
-          <Button text='Get a quote today' />
+          <Button />
         </div>
       </div>
     </header>

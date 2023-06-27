@@ -16,7 +16,7 @@ const CTA: FC = () => {
           <h2 id='cta_title'>Let&apos;s Talk</h2>
         </div>
         <div className={styles.btn}>
-          <Button text='Get a quote today' />
+          <Button />
         </div>
       </section>
     </>
