@@ -4,11 +4,12 @@ import styles from './Button.styles'
 type ButtonProps = {
   text?: string
   isSubmit?: boolean
+  onClick?: () => void
 }
 
-const Button: FC<ButtonProps> = ({ text = 'Get a quote today', isSubmit }) => {
+const Button: FC<ButtonProps> = ({ text = 'Get a quote today', isSubmit, onClick }) => {
   return (
-    <button className={styles(isSubmit)} type={isSubmit ? 'submit' : 'button'}>
+    <button className={styles(isSubmit)} onClick={isSubmit ? undefined : onClick} type={isSubmit ? 'submit' : 'button'}>
       {text}
     </button>
   )
