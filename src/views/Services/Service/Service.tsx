@@ -1,9 +1,9 @@
-import type { FC, ID, IconName } from '@/types'
+import type { FC, UUID, IconName } from '@/types'
 import { Icon } from '@/components'
 import styles from './Service.styles'
 
 export type ServiceProps = {
-  id: ID
+  id: UUID
   title: Capitalize<string>
   icon: IconName
 }

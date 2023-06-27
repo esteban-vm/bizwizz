@@ -1,10 +1,10 @@
-import type { FC, ID, IconName } from '@/types'
+import type { FC, UUID, IconName } from '@/types'
 import { Icon } from '@/components'
 import styles from './Info.styles'
 
 export type InfoProps = {
-  id: ID
-  detail: { subject: string; content: string }
+  id: UUID
+  detail: { subject: Capitalize<string>; content: string }
   icon: IconName
 }
 

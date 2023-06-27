@@ -1,4 +1,4 @@
-import type { FC, ID, ImageData } from '@/types'
+import type { FC, UUID, ImageData } from '@/types'
 import Image from 'next/image'
 import { Icon } from '@/components'
 import styles from './Testimonial.styles'
@@ -6,10 +6,10 @@ import styles from './Testimonial.styles'
 type TestimonialImage = `client-${1 | 2 | 3}`
 
 export type TestimonialProps = {
-  id: ID
-  name: Capitalize<string>
-  designation: string
-  stars: number
+  id: UUID
+  name: `${Capitalize<string>} ${Capitalize<string>}`
+  designation: Capitalize<string>
+  stars: 1 | 2 | 3 | 4 | 5
   image: ImageData<TestimonialImage>
 }
 

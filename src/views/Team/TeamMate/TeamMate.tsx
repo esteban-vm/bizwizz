@@ -1,11 +1,11 @@
-import type { FC, ID } from '@/types'
+import type { FC, UUID } from '@/types'
 import { SocialLink } from '@/components'
 import styles from './TeamMate.styles'
 
 export type TeamMateProps = {
-  id: ID
-  name: Capitalize<string>
-  designation: string
+  id: UUID
+  name: `${Capitalize<string>} ${Capitalize<string>}`
+  designation: Capitalize<string>
 }
 
 const TeamMate: FC<TeamMateProps> = ({ id, name, designation }) => {
