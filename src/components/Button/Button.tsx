@@ -6,16 +6,12 @@ type ButtonProps = {
   isSubmit?: boolean
 }
 
-const Button: FC<ButtonProps> = ({ text, isSubmit }) => {
+const Button: FC<ButtonProps> = ({ text = 'Get a quote today', isSubmit }) => {
   return (
     <button className={styles(isSubmit)} type={isSubmit ? 'submit' : 'button'}>
       {text}
     </button>
   )
-}
-
-Button.defaultProps = {
-  text: 'Get a quote today',
 }
 
 export default Button
