@@ -8,9 +8,9 @@ export interface TeamMateProps {
   designation: Capitalize<string>
 }
 
-const TeamMate: FC<TeamMateProps> = ({ id, name, designation }) => {
+const TeamMate: FC<TeamMateProps> = ({ name, designation, ...props }) => {
   return (
-    <article className={styles.wrapper} id={id}>
+    <article className={styles.wrapper} {...props}>
       <div className={styles.overlay} />
       <div className={styles.content}>
         <h4 className={styles.name}>{name}</h4>

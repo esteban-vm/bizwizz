@@ -11,9 +11,9 @@ export interface TestimonialProps {
   photo: ImageProps<`client-${1 | 2 | 3}`>
 }
 
-const Testimonial: FC<TestimonialProps> = ({ id, name, designation, stars, photo }) => {
+const Testimonial: FC<TestimonialProps> = ({ name, designation, stars, photo, ...props }) => {
   return (
-    <article className={styles.wrapper} id={id}>
+    <article className={styles.wrapper} {...props}>
       <div className={styles.icon_container}>
         {[...Array(5)].map((_, index) => (
           <Icon key={index} className={styles.icon} name={index + 1 <= stars ? 'star-full' : 'star-empty'} />

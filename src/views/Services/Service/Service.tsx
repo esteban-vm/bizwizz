@@ -8,9 +8,9 @@ export interface ServiceProps {
   icon: IconName
 }
 
-const Service: FC<ServiceProps> = ({ id, title, icon }) => {
+const Service: FC<ServiceProps> = ({ title, icon, ...props }) => {
   return (
-    <article className={styles.wrapper} id={id}>
+    <article className={styles.wrapper} {...props}>
       <Icon className={styles.icon} name={icon} />
       <h4 className={styles.heading}>{title}</h4>
     </article>

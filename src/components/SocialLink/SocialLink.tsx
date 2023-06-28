@@ -6,10 +6,10 @@ interface SocialLinkProps {
   className?: string
 }
 
-const SocialLink: FC<SocialLinkProps> = ({ to: socialMedia, className }) => {
+const SocialLink: FC<SocialLinkProps> = ({ to: socialMedia, ...props }) => {
   return (
     <a href={`https://www.${socialMedia}.com`} rel='noreferrer' target='_blank' title={socialMedia}>
-      <Icon className={className} name={socialMedia} />
+      <Icon name={socialMedia} {...props} />
     </a>
   )
 }

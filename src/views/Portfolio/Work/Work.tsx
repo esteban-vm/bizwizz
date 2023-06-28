@@ -7,9 +7,9 @@ export interface WorkProps {
   image: ImageProps<`portfolio-image-${1 | 2 | 3 | 4 | 5 | 6 | 7 | 8}`>
 }
 
-const Work: FC<WorkProps> = ({ id, image }) => {
+const Work: FC<WorkProps> = ({ image, ...props }) => {
   return (
-    <article className={styles.wrapper} id={id}>
+    <article className={styles.wrapper} {...props}>
       <Image alt='' className={styles.image} {...image} />
     </article>
   )

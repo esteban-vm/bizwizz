@@ -8,9 +8,9 @@ export interface InfoProps {
   icon: IconName
 }
 
-const Info: FC<InfoProps> = ({ id, detail, icon }) => {
+const Info: FC<InfoProps> = ({ detail, icon, ...props }) => {
   return (
-    <article className={styles.wrapper} id={id}>
+    <article className={styles.wrapper} {...props}>
       <div className={styles.icon_container}>
         <Icon className={styles.icon} name={icon} />
       </div>

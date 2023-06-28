@@ -9,9 +9,9 @@ interface IconProps {
   onClick?: () => void
 }
 
-const Icon: FC<IconProps> = ({ className, name, onClick }) => {
+const Icon: FC<IconProps> = ({ name, ...props }) => {
   return (
-    <svg className={className} onClick={onClick} role='img'>
+    <svg role='img' {...props}>
       <use xlinkHref={`#icon-${name}`} />
     </svg>
   )

@@ -8,9 +8,9 @@ export interface NavLinkProps {
   text: Capitalize<string>
 }
 
-const NavLink: FC<NavLinkProps> = ({ id, link, text }) => {
+const NavLink: FC<NavLinkProps> = ({ link, text, ...props }) => {
   return (
-    <li id={id}>
+    <li {...props}>
       <Link className={styles} href={link}>
         {text}
       </Link>
