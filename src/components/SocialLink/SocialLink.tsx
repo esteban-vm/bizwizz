@@ -1,7 +1,7 @@
 import type { FC } from '@/types'
 import { Icon, type IconName } from '../Icon'
 
-type SocialLinkProps = {
+interface SocialLinkProps {
   to: Extract<IconName, 'facebook' | 'twitter' | 'linkedin'>
   className?: string
 }

@@ -1,7 +1,7 @@
 import type { FC } from '@/types'
 import styles from './Wave.styles'
 
-type WaveProps = {
+interface WaveProps {
   color: 'primary' | 'white' | 'black'
 }
 

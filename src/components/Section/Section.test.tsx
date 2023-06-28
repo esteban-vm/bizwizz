@@ -6,7 +6,7 @@ describe('Section:', () => {
 
   beforeEach(() => {
     void ({ asFragment } = render(
-      <Section bg='black' id='test' subtitle='Lorem ipsum' title='Test'>
+      <Section bg='black' id='contact' subtitle='Lorem ipsum' title='Test'>
         <article>Child element</article>
       </Section>
     ))
@@ -24,7 +24,7 @@ describe('Section:', () => {
     const sectionElem = screen.getByRole('region')
     expect(sectionElem).toBeInTheDocument()
     expect(sectionElem).toHaveAccessibleName(title)
-    expect(sectionElem).toHaveAttribute('id', 'test')
+    expect(sectionElem).toHaveAttribute('id', 'contact')
     expect(within(sectionElem).getByRole('presentation', { hidden: true })).toBeInTheDocument()
     expect(within(sectionElem).getByRole('heading', { name: title, level: 2 })).toBeInTheDocument()
     expect(within(sectionElem).getByRole('heading', { name: subtitle, level: 3 })).toBeInTheDocument()

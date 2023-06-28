@@ -5,7 +5,11 @@ describe('Carousel:', () => {
   let asFragment: () => DocumentFragment
 
   beforeEach(() => {
-    void ({ asFragment } = render(<Carousel />))
+    void ({ asFragment } = render(
+      <Carousel>
+        <article>Child element</article>
+      </Carousel>
+    ))
   })
 
   afterEach(cleanup)

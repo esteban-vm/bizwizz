@@ -2,7 +2,7 @@ import type { FC, UUID, IconName } from '@/types'
 import { Icon } from '@/components'
 import styles from './Info.styles'
 
-export type InfoProps = {
+export interface InfoProps {
   id: UUID
   detail: { subject: Capitalize<string>; content: string }
   icon: IconName

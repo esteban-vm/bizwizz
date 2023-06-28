@@ -2,7 +2,7 @@ import type { FC, UUID } from '@/types'
 import { SocialLink } from '@/components'
 import styles from './TeamMate.styles'
 
-export type TeamMateProps = {
+export interface TeamMateProps {
   id: UUID
   name: `${Capitalize<string>} ${Capitalize<string>}`
   designation: Capitalize<string>

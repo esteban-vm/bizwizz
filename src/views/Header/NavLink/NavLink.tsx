@@ -1,10 +1,10 @@
-import type { FC, UUID } from '@/types'
+import type { FC, UUID, SectionID } from '@/types'
 import Link from 'next/link'
 import styles from './NavLink.styles'
 
-export type NavLinkProps = {
+export interface NavLinkProps {
   id: UUID
-  link: `#${Lowercase<string>}`
+  link: `#${Extract<SectionID, 'contact' | 'portfolio' | 'services'>}`
   text: Capitalize<string>
 }
 

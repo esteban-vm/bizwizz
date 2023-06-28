@@ -1,12 +1,10 @@
-import type { FC, UUID, ImageData } from '@/types'
+import type { FC, UUID, ImageProps } from '@/types'
 import Image from 'next/image'
 import styles from './Work.styles'
 
-type WorkImage = `portfolio-image-${1 | 2 | 3 | 4 | 5 | 6 | 7 | 8}`
-
-export type WorkProps = {
+export interface WorkProps {
   id: UUID
-  image: ImageData<WorkImage>
+  image: ImageProps<`portfolio-image-${1 | 2 | 3 | 4 | 5 | 6 | 7 | 8}`>
 }
 
 const Work: FC<WorkProps> = ({ id, image }) => {

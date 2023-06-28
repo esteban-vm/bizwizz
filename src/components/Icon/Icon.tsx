@@ -1,32 +1,9 @@
 import type { FC } from '@/types'
+import type { icons } from './Icons'
 
-export type IconName =
-  | 'facebook'
-  | 'linkedin'
-  | 'twitter'
-  | 'chevron-left'
-  | 'chevron-right'
-  | 'moon'
-  | 'sun'
-  | 'desktop'
-  | 'picture'
-  | 'video'
-  | 'expand'
-  | 'megaphone'
-  | 'trophy'
-  | 'map'
-  | 'pencil'
-  | 'strategy'
-  | 'map-pin'
-  | 'film'
-  | 'address-book'
-  | 'envelop'
-  | 'location'
-  | 'star-empty'
-  | 'star-half'
-  | 'star-full'
+export type IconName = (typeof icons)[number]
 
-type IconProps = {
+interface IconProps {
   name: IconName
   className?: string
   onClick?: () => void

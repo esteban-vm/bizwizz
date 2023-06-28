@@ -1,13 +1,16 @@
-import type { FC, PropsWithChildren } from '@/types'
+import type { FC, ReactNode } from '@/types'
 import { Wave } from '../Wave'
 import styles from './Section.styles'
 
-type SectionProps = PropsWithChildren<{
-  id: Lowercase<string>
+export type SectionID = 'contact' | 'portfolio' | 'services' | 'team' | 'testimonials'
+
+interface SectionProps {
+  id: SectionID
   title: Capitalize<string>
   subtitle?: Capitalize<string>
   bg: 'white' | 'black'
-}>
+  children: ReactNode
+}
 
 const Section: FC<SectionProps> = ({ id, title, subtitle, bg, children }) => {
   const titleID = `${id}_title`

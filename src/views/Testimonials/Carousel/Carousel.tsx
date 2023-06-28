@@ -1,10 +1,14 @@
 'use client'
-import type { FC, PropsWithChildren } from '@/types'
+import type { FC, ReactNode } from '@/types'
 import { useRef, useEffect } from 'react'
 import { Icon } from '@/components'
 import styles from './Carousel.styles'
 
-const Carousel: FC<PropsWithChildren> = ({ children }) => {
+interface CarouselProps {
+  children: ReactNode
+}
+
+const Carousel: FC<CarouselProps> = ({ children }) => {
   const slider = useRef<HTMLDivElement>(null)
   const slides = [...Array(3)].map((_, index) => `slide_${index + 1}`)
 

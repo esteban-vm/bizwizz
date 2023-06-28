@@ -1,19 +1,17 @@
-import type { FC, UUID, ImageData } from '@/types'
+import type { FC, UUID, ImageProps } from '@/types'
 import Image from 'next/image'
 import { Icon } from '@/components'
 import styles from './Testimonial.styles'
 
-type TestimonialImage = `client-${1 | 2 | 3}`
-
-export type TestimonialProps = {
+export interface TestimonialProps {
   id: UUID
   name: `${Capitalize<string>} ${Capitalize<string>}`
   designation: Capitalize<string>
   stars: 1 | 2 | 3 | 4 | 5
-  image: ImageData<TestimonialImage>
+  photo: ImageProps<`client-${1 | 2 | 3}`>
 }
 
-const Testimonial: FC<TestimonialProps> = ({ id, name, designation, stars, image }) => {
+const Testimonial: FC<TestimonialProps> = ({ id, name, designation, stars, photo }) => {
   return (
     <article className={styles.wrapper} id={id}>
       <div className={styles.icon_container}>
@@ -27,7 +25,7 @@ const Testimonial: FC<TestimonialProps> = ({ id, name, designation, stars, image
       </p>
       <div className={styles.client}>
         <div className={styles.photo_container}>
-          <Image {...image} alt={`${name}'s photo`} className={styles.photo} />
+          <Image {...photo} alt={`${name}'s photo`} className={styles.photo} />
         </div>
         <div className={styles.client_data}>
           <p className={styles.name}>{name}</p>
