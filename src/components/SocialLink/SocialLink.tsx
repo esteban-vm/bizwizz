@@ -1,5 +1,5 @@
-import type { FC } from '@/types'
-import { Icon, type IconName } from '../Icon'
+import type { FC, IconName } from '@/types'
+import { Icon } from '../Icon'
 
 interface SocialLinkProps {
   to: Extract<IconName, 'facebook' | 'twitter' | 'linkedin'>

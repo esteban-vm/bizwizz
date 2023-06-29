@@ -16,7 +16,7 @@ const Testimonial: FC<TestimonialProps> = ({ name, designation, stars, photo, ..
     <article className={styles.wrapper} {...props}>
       <div className={styles.icon_container}>
         {[...Array(5)].map((_, index) => (
-          <Icon key={index} className={styles.icon} name={index + 1 <= stars ? 'star-full' : 'star-empty'} />
+          <Icon key={index} className={styles.icon} name={`star-${index + 1 <= stars ? 'full' : 'empty'}`} />
         ))}
       </div>
       <p className={styles.content}>
@@ -25,7 +25,7 @@ const Testimonial: FC<TestimonialProps> = ({ name, designation, stars, photo, ..
       </p>
       <div className={styles.client}>
         <div className={styles.photo_container}>
-          <Image {...photo} alt={`${name}'s photo`} className={styles.photo} />
+          <Image alt={`${name}'s photo`} className={styles.photo} {...photo} />
         </div>
         <div className={styles.client_data}>
           <p className={styles.name}>{name}</p>

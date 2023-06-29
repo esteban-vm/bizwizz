@@ -1,7 +1,4 @@
-import type { FC } from '@/types'
-import type { icons } from './Icons'
-
-export type IconName = (typeof icons)[number]
+import type { FC, IconName } from '@/types'
 
 interface IconProps {
   name: IconName
