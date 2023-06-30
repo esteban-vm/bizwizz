@@ -19,12 +19,12 @@ const Header: FC = () => {
           </ul>
         </nav>
       </div>
-      <div className={styles.headings}>
+      <div className={styles.titles}>
         <div>
-          <h1 className={styles.heading_1} id='home_title'>
+          <h1 className={styles.title} id='home_title'>
             Bizwizz
           </h1>
-          <h2 className={styles.heading_2}>Innovate, Transform and Lead</h2>
+          <h2 className={styles.subtitle}>Innovate, Transform and Lead</h2>
         </div>
         <div>
           <Button />
