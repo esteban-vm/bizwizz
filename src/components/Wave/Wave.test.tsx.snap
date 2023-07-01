@@ -4,7 +4,7 @@ exports[`Wave: > should render correctly when is black 1`] = `
 <DocumentFragment>
   <svg
     aria-hidden="true"
-    class="h-40 w-full text-black"
+    class="wave text-black"
     preserveAspectRatio="none"
     role="presentation"
     viewBox="0 0 500 150"
@@ -22,7 +22,7 @@ exports[`Wave: > should render correctly when is primary 1`] = `
 <DocumentFragment>
   <svg
     aria-hidden="true"
-    class="h-40 w-full text-primary"
+    class="wave text-primary"
     preserveAspectRatio="none"
     role="presentation"
     viewBox="0 0 500 150"
@@ -40,7 +40,7 @@ exports[`Wave: > should render correctly when is white 1`] = `
 <DocumentFragment>
   <svg
     aria-hidden="true"
-    class="h-40 w-full text-white"
+    class="wave text-white"
     preserveAspectRatio="none"
     role="presentation"
     viewBox="0 0 500 150"

@@ -4,7 +4,7 @@ exports[`CTA: > should render correctly 1`] = `
 <DocumentFragment>
   <svg
     aria-hidden="true"
-    class="h-40 w-full text-white"
+    class="wave text-white"
     preserveAspectRatio="none"
     role="presentation"
     viewBox="0 0 500 150"
@@ -17,11 +17,11 @@ exports[`CTA: > should render correctly 1`] = `
   </svg>
   <section
     aria-labelledby="cta_title"
-    class="bg-black p-12"
+    class="flex w-full flex-row items-center justify-around bg-black p-12"
     id="call-to-action"
   >
     <div
-      class=""
+      class="mr-3 flex"
     >
       <a
         href="https://www.facebook.com"
@@ -30,6 +30,7 @@ exports[`CTA: > should render correctly 1`] = `
         title="facebook"
       >
         <svg
+          class="m-3 block h-[4.5rem] w-[4.5rem] translate-y-0 rounded-full border-2 border-solid border-primary fill-white p-5 transition-all duration-500 hover:-translate-y-3 hover:fill-primary"
           role="img"
         >
           <use
@@ -44,6 +45,7 @@ exports[`CTA: > should render correctly 1`] = `
         title="twitter"
       >
         <svg
+          class="m-3 block h-[4.5rem] w-[4.5rem] translate-y-0 rounded-full border-2 border-solid border-primary fill-white p-5 transition-all duration-500 hover:-translate-y-3 hover:fill-primary"
           role="img"
         >
           <use
@@ -58,6 +60,7 @@ exports[`CTA: > should render correctly 1`] = `
         title="linkedin"
       >
         <svg
+          class="m-3 block h-[4.5rem] w-[4.5rem] translate-y-0 rounded-full border-2 border-solid border-primary fill-white p-5 transition-all duration-500 hover:-translate-y-3 hover:fill-primary"
           role="img"
         >
           <use
@@ -66,10 +69,9 @@ exports[`CTA: > should render correctly 1`] = `
         </svg>
       </a>
     </div>
-    <div
-      class=""
-    >
+    <div>
       <h2
+        class="text-[4rem] font-semibold text-white"
         id="cta_title"
       >
         Let's Talk
@@ -79,7 +81,7 @@ exports[`CTA: > should render correctly 1`] = `
       class=""
     >
       <button
-        class="block min-w-[20rem] cursor-pointer select-none bg-gradient-120 from-transparent from-0% via-transparent via-50% to-50% bg-[length:250%] p-[1.6rem] text-2xl font-[500] uppercase transition-all duration-300 hover:translate-x-4 hover:bg-[100%] bg-white to-primary text-primary hover:text-white"
+        class="button"
         type="button"
       >
         Get a quote today

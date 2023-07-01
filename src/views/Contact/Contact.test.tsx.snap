@@ -4,12 +4,12 @@ exports[`Contact: > should render correctly 1`] = `
 <DocumentFragment>
   <section
     aria-labelledby="contact_title"
-    class="pb-32 text-center bg-white"
+    class="section bg-white"
     id="contact"
   >
     <svg
       aria-hidden="true"
-      class="h-40 w-full text-black"
+      class="wave text-black"
       preserveAspectRatio="none"
       role="presentation"
       viewBox="0 0 500 150"
@@ -20,11 +20,8 @@ exports[`Contact: > should render correctly 1`] = `
         stroke="none"
       />
     </svg>
-    <header
-      class="font-bold tracking-widest"
-    >
+    <header>
       <h2
-        class="mb-5 text-[2.4rem] uppercase text-primary"
         id="contact_title"
       >
         Contact Us
@@ -199,7 +196,7 @@ exports[`Contact: > should render correctly 1`] = `
               />
             </div>
             <button
-              class="block min-w-[20rem] cursor-pointer select-none bg-gradient-120 from-transparent from-0% via-transparent via-50% to-50% bg-[length:250%] p-[1.6rem] text-2xl font-[500] uppercase transition-all duration-300 hover:translate-x-4 hover:bg-[100%] rounded-xl border border-solid border-primary bg-primary to-white text-white hover:text-primary"
+              class="button submit"
               type="submit"
             >
               Send message

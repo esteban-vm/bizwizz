@@ -4,12 +4,12 @@ exports[`Testimonials: > should render correctly 1`] = `
 <DocumentFragment>
   <section
     aria-labelledby="testimonials_title"
-    class="pb-32 text-center bg-black"
+    class="section bg-black"
     id="testimonials"
   >
     <svg
       aria-hidden="true"
-      class="h-40 w-full text-white"
+      class="wave text-white"
       preserveAspectRatio="none"
       role="presentation"
       viewBox="0 0 500 150"
@@ -20,18 +20,13 @@ exports[`Testimonials: > should render correctly 1`] = `
         stroke="none"
       />
     </svg>
-    <header
-      class="font-bold tracking-widest"
-    >
+    <header>
       <h2
-        class="mb-5 text-[2.4rem] uppercase text-primary"
         id="testimonials_title"
       >
         Testimonials
       </h2>
-      <h3
-        class="mb-10 text-[4rem] capitalize text-darkgrey"
-      >
+      <h3>
         People seem to like us!
       </h3>
     </header>

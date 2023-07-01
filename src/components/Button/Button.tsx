@@ -1,5 +1,5 @@
 import type { FC } from '@/types'
-import styles from './Button.styles'
+import clsx from 'clsx'
 
 interface ButtonProps {
   text: string
@@ -9,7 +9,11 @@ interface ButtonProps {
 
 const Button: FC<Partial<ButtonProps>> = ({ text = 'Get a quote today', isSubmit, onClick }) => {
   return (
-    <button className={styles(isSubmit)} onClick={isSubmit ? undefined : onClick} type={isSubmit ? 'submit' : 'button'}>
+    <button
+      className={clsx('button', isSubmit && 'submit')}
+      onClick={isSubmit ? undefined : onClick}
+      type={isSubmit ? 'submit' : 'button'}
+    >
       {text}
     </button>
   )

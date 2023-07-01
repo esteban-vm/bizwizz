@@ -4,12 +4,12 @@ exports[`Team: > should render correctly 1`] = `
 <DocumentFragment>
   <section
     aria-labelledby="team_title"
-    class="pb-32 text-center bg-black"
+    class="section bg-black"
     id="team"
   >
     <svg
       aria-hidden="true"
-      class="h-40 w-full text-white"
+      class="wave text-white"
       preserveAspectRatio="none"
       role="presentation"
       viewBox="0 0 500 150"
@@ -20,18 +20,13 @@ exports[`Team: > should render correctly 1`] = `
         stroke="none"
       />
     </svg>
-    <header
-      class="font-bold tracking-widest"
-    >
+    <header>
       <h2
-        class="mb-5 text-[2.4rem] uppercase text-primary"
         id="team_title"
       >
         Meet our team
       </h2>
-      <h3
-        class="mb-10 text-[4rem] capitalize text-darkgrey"
-      >
+      <h3>
         Lorem ipsum dolor sit amet
       </h3>
     </header>

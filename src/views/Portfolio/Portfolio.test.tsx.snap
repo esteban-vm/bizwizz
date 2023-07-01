@@ -4,12 +4,12 @@ exports[`Portfolio: > should render correctly 1`] = `
 <DocumentFragment>
   <section
     aria-labelledby="portfolio_title"
-    class="pb-32 text-center bg-white"
+    class="section bg-white"
     id="portfolio"
   >
     <svg
       aria-hidden="true"
-      class="h-40 w-full text-black"
+      class="wave text-black"
       preserveAspectRatio="none"
       role="presentation"
       viewBox="0 0 500 150"
@@ -20,18 +20,13 @@ exports[`Portfolio: > should render correctly 1`] = `
         stroke="none"
       />
     </svg>
-    <header
-      class="font-bold tracking-widest"
-    >
+    <header>
       <h2
-        class="mb-5 text-[2.4rem] uppercase text-primary"
         id="portfolio_title"
       >
         Our popular projects
       </h2>
-      <h3
-        class="mb-10 text-[4rem] capitalize text-darkgrey"
-      >
+      <h3>
         Lorem ipsum dolor sit amet
       </h3>
     </header>

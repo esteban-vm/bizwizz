@@ -9,7 +9,7 @@ exports[`Header: > should render correctly 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="h-40 w-full text-primary"
+      class="wave text-primary"
       preserveAspectRatio="none"
       role="presentation"
       viewBox="0 0 500 150"
@@ -90,7 +90,7 @@ exports[`Header: > should render correctly 1`] = `
       </div>
       <div>
         <button
-          class="block min-w-[20rem] cursor-pointer select-none bg-gradient-120 from-transparent from-0% via-transparent via-50% to-50% bg-[length:250%] p-[1.6rem] text-2xl font-[500] uppercase transition-all duration-300 hover:translate-x-4 hover:bg-[100%] bg-white to-primary text-primary hover:text-white"
+          class="button"
           type="button"
         >
           Get a quote today

@@ -57,6 +57,26 @@
 }
 
 @layer components {
+  .icons {
+    @apply absolute h-0 w-0 overflow-hidden;
+  }
+
+  .button {
+    @apply block min-w-[20rem] cursor-pointer select-none bg-white bg-gradient-120 from-transparent from-0% via-transparent via-50% to-primary to-50% bg-[length:250%] p-[1.6rem] text-2xl font-[500] uppercase text-primary transition-all duration-300;
+
+    &:hover {
+      @apply translate-x-4 bg-[100%] text-white;
+    }
+
+    &.submit {
+      @apply rounded-xl border border-solid border-primary bg-primary to-white text-white;
+
+      &:hover {
+        @apply text-primary;
+      }
+    }
+  }
+
   .form-field {
     @apply w-full rounded-xl border-2 border-solid border-primary-light p-2 text-2xl;
 
@@ -71,5 +91,25 @@
     &:focus {
       @apply border-primary outline-none;
     }
+  }
+
+  .section {
+    @apply pb-32 text-center;
+
+    header {
+      @apply font-bold tracking-widest;
+
+      h2 {
+        @apply mb-5 text-[2.4rem] uppercase text-primary;
+      }
+
+      h3 {
+        @apply mb-10 text-[4rem] capitalize text-darkgrey;
+      }
+    }
+  }
+
+  .wave {
+    @apply h-40 w-full;
   }
 }
