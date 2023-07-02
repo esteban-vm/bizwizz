@@ -25,6 +25,7 @@ exports[`CTA: > should render correctly 1`] = `
     >
       <a
         href="https://www.facebook.com"
+        id="c10f7e60-6e36-498f-9a72-7b481133a14f"
         rel="noreferrer"
         target="_blank"
         title="facebook"
@@ -40,6 +41,7 @@ exports[`CTA: > should render correctly 1`] = `
       </a>
       <a
         href="https://www.twitter.com"
+        id="dc35c092-25ed-4754-8743-f4d9cd982004"
         rel="noreferrer"
         target="_blank"
         title="twitter"
@@ -55,6 +57,7 @@ exports[`CTA: > should render correctly 1`] = `
       </a>
       <a
         href="https://www.linkedin.com"
+        id="5780b1a7-ea08-4bf7-9076-685e21e4483a"
         rel="noreferrer"
         target="_blank"
         title="linkedin"

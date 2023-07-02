@@ -3,7 +3,7 @@
 exports[`Nav Link: > should render correctly 1`] = `
 <DocumentFragment>
   <li
-    class="header_nav_link"
+    class="nav_link header"
     id="31c97b93-9ad9-4064-9a41-d8034c2faccf"
   >
     <a

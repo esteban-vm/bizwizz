@@ -58,6 +58,7 @@ exports[`Team: > should render correctly 1`] = `
           >
             <a
               href="https://www.facebook.com"
+              id="bb186afa-ef11-40ff-88ad-48256a6d6f6c"
               rel="noreferrer"
               target="_blank"
               title="facebook"
@@ -73,6 +74,7 @@ exports[`Team: > should render correctly 1`] = `
             </a>
             <a
               href="https://www.twitter.com"
+              id="83f3fe76-d766-4c2b-9de3-59ce8218d7ef"
               rel="noreferrer"
               target="_blank"
               title="twitter"
@@ -88,6 +90,7 @@ exports[`Team: > should render correctly 1`] = `
             </a>
             <a
               href="https://www.linkedin.com"
+              id="2f6d3dce-7da0-4433-9a31-b597b51b40f0"
               rel="noreferrer"
               target="_blank"
               title="linkedin"
@@ -129,6 +132,7 @@ exports[`Team: > should render correctly 1`] = `
           >
             <a
               href="https://www.facebook.com"
+              id="bb186afa-ef11-40ff-88ad-48256a6d6f6c"
               rel="noreferrer"
               target="_blank"
               title="facebook"
@@ -144,6 +148,7 @@ exports[`Team: > should render correctly 1`] = `
             </a>
             <a
               href="https://www.twitter.com"
+              id="83f3fe76-d766-4c2b-9de3-59ce8218d7ef"
               rel="noreferrer"
               target="_blank"
               title="twitter"
@@ -159,6 +164,7 @@ exports[`Team: > should render correctly 1`] = `
             </a>
             <a
               href="https://www.linkedin.com"
+              id="2f6d3dce-7da0-4433-9a31-b597b51b40f0"
               rel="noreferrer"
               target="_blank"
               title="linkedin"
@@ -200,6 +206,7 @@ exports[`Team: > should render correctly 1`] = `
           >
             <a
               href="https://www.facebook.com"
+              id="bb186afa-ef11-40ff-88ad-48256a6d6f6c"
               rel="noreferrer"
               target="_blank"
               title="facebook"
@@ -215,6 +222,7 @@ exports[`Team: > should render correctly 1`] = `
             </a>
             <a
               href="https://www.twitter.com"
+              id="83f3fe76-d766-4c2b-9de3-59ce8218d7ef"
               rel="noreferrer"
               target="_blank"
               title="twitter"
@@ -230,6 +238,7 @@ exports[`Team: > should render correctly 1`] = `
             </a>
             <a
               href="https://www.linkedin.com"
+              id="2f6d3dce-7da0-4433-9a31-b597b51b40f0"
               rel="noreferrer"
               target="_blank"
               title="linkedin"

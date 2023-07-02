@@ -1,14 +1,15 @@
-import type { FC, IconName } from '@/types'
+import type { FC, UUID, IconName } from '@/types'
 import { Icon } from '../Icon'
 
 export interface SocialLinkProps {
+  id: UUID
   to: Extract<IconName, 'facebook' | 'twitter' | 'linkedin'>
-  className?: string
+  className: string
 }
 
-const SocialLink: FC<SocialLinkProps> = ({ to: socialMedia, ...props }) => {
+const SocialLink: FC<SocialLinkProps> = ({ id, to: socialMedia, ...props }) => {
   return (
-    <a href={`https://www.${socialMedia}.com`} rel='noreferrer' target='_blank' title={socialMedia}>
+    <a href={`https://www.${socialMedia}.com`} id={id} rel='noreferrer' target='_blank' title={socialMedia}>
       <Icon name={socialMedia} {...props} />
     </a>
   )

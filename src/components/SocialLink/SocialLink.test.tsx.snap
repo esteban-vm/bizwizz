@@ -4,11 +4,13 @@ exports[`Social Link: > should render correctly 1`] = `
 <DocumentFragment>
   <a
     href="https://www.facebook.com"
+    id="929262c9-7c62-4107-b17c-d1db9dbe3575"
     rel="noreferrer"
     target="_blank"
     title="facebook"
   >
     <svg
+      class="class"
       role="img"
     >
       <use

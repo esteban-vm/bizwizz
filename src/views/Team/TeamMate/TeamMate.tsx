@@ -1,6 +1,12 @@
-import type { FC, UUID } from '@/types'
+import type { FC, UUID, SocialLinkProps } from '@/types'
 import { SocialLink } from '@/components'
 import styles from './TeamMate.styles'
+
+const socialLinks: SocialLinkProps[] = [
+  { id: 'bb186afa-ef11-40ff-88ad-48256a6d6f6c', to: 'facebook', className: styles.link },
+  { id: '83f3fe76-d766-4c2b-9de3-59ce8218d7ef', to: 'twitter', className: styles.link },
+  { id: '2f6d3dce-7da0-4433-9a31-b597b51b40f0', to: 'linkedin', className: styles.link },
+]
 
 export interface TeamMateProps {
   id: UUID
@@ -16,9 +22,9 @@ const TeamMate: FC<TeamMateProps> = ({ name, designation, ...props }) => {
         <h4 className={styles.name}>{name}</h4>
         <p className={styles.designation}>{designation}</p>
         <div className={styles.links}>
-          <SocialLink className={styles.icon} to='facebook' />
-          <SocialLink className={styles.icon} to='twitter' />
-          <SocialLink className={styles.icon} to='linkedin' />
+          {socialLinks.map((link) => (
+            <SocialLink key={link.id} {...link} />
+          ))}
         </div>
       </div>
     </article>

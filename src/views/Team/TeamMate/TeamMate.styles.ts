@@ -11,12 +11,13 @@ const styles = {
     'opacity-0 transition-opacity duration-200'
   ),
   content: clsx(
-    'absolute left-1/2 top-[30%] -translate-x-1/2 -translate-y-1/2 text-white opacity-0 transition-all duration-500'
+    'absolute left-1/2 top-[30%] -translate-x-1/2 -translate-y-1/2',
+    'text-white opacity-0 transition-all duration-500'
   ),
   name: clsx('text-[2.7rem] font-semibold'),
   designation: clsx('text-2xl font-medium'),
   links: clsx('mt-8 flex justify-between'),
-  icon: clsx('m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light'),
+  link: clsx('m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light'),
 }
 
 export default styles

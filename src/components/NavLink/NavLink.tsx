@@ -4,14 +4,14 @@ import Link from 'next/link'
 export interface NavLinkProps {
   id: UUID
   text: Capitalize<string>
+  to: `#${Extract<SectionID, 'contact' | 'portfolio' | 'services'>}`
   className: `nav_link ${'header' | 'footer'}`
-  link: `#${Extract<SectionID, 'contact' | 'portfolio' | 'services'>}`
 }
 
-const NavLink: FC<NavLinkProps> = ({ link, text, ...props }) => {
+const NavLink: FC<NavLinkProps> = ({ to, text, ...props }) => {
   return (
     <li {...props}>
-      <Link href={link}>{text}</Link>
+      <Link href={to}>{text}</Link>
     </li>
   )
 }

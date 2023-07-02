@@ -5,10 +5,10 @@ describe('Nav Link:', () => {
   let asFragment: () => DocumentFragment
 
   const props: NavLinkProps = {
-    className: 'header_nav_link',
     id: '31c97b93-9ad9-4064-9a41-d8034c2faccf',
-    link: '#contact',
     text: 'Contact',
+    to: '#contact',
+    className: 'nav_link header',
   }
 
   beforeEach(() => {
@@ -28,6 +28,6 @@ describe('Nav Link:', () => {
     expect(navLinkElem).toHaveAttribute('class', props.className)
     const linkElem = within(navLinkElem).getByRole('link', { name: props.text })
     expect(linkElem).toBeInTheDocument()
-    expect(linkElem).toHaveAttribute('href', props.link)
+    expect(linkElem).toHaveAttribute('href', props.to)
   })
 })
