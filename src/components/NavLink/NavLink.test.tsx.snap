@@ -3,10 +3,10 @@
 exports[`Nav Link: > should render correctly 1`] = `
 <DocumentFragment>
   <li
-    id="e67da725-6069-4902-838f-2e54b680426e"
+    class="header_nav_link"
+    id="31c97b93-9ad9-4064-9a41-d8034c2faccf"
   >
     <a
-      class="ml-10 block select-none pb-[0.8rem]  text-[1.4rem] uppercase text-white transition-[border-b] hover:border-b-2 hover:border-b-primary"
       href="#contact"
     >
       Contact

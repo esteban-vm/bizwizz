@@ -1,7 +1,6 @@
 import type { FC } from '@/types'
 import Image from 'next/image'
-import { Button, Wave } from '@/components'
-import NavLink from './NavLink'
+import { Button, NavLink, Wave } from '@/components'
 import navLinks from './Header.data'
 import styles from './Header.styles'
 

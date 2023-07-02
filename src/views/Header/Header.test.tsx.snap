@@ -40,30 +40,30 @@ exports[`Header: > should render correctly 1`] = `
           class="m-[5rem_2rem_0_0] flex list-none"
         >
           <li
+            class="nav_link header"
             id="e67da725-6069-4902-838f-2e54b680426e"
           >
             <a
-              class="ml-10 block select-none pb-[0.8rem]  text-[1.4rem] uppercase text-white transition-[border-b] hover:border-b-2 hover:border-b-primary"
               href="#contact"
             >
               Contact
             </a>
           </li>
           <li
+            class="nav_link header"
             id="c054a01e-9103-4cd7-8a2f-c647d0d3e73b"
           >
             <a
-              class="ml-10 block select-none pb-[0.8rem]  text-[1.4rem] uppercase text-white transition-[border-b] hover:border-b-2 hover:border-b-primary"
               href="#services"
             >
               Our services
             </a>
           </li>
           <li
+            class="nav_link header"
             id="fdd9fce5-598c-4029-8682-5296584eec75"
           >
             <a
-              class="ml-10 block select-none pb-[0.8rem]  text-[1.4rem] uppercase text-white transition-[border-b] hover:border-b-2 hover:border-b-primary"
               href="#portfolio"
             >
               Our Work

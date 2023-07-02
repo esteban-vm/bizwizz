@@ -93,6 +93,20 @@
     }
   }
 
+  .nav_link {
+    &.footer {
+      @apply ml-4 text-yellow;
+    }
+
+    &.header {
+      @apply ml-10 block select-none pb-[0.8rem] text-[1.4rem] uppercase text-white transition-[border-b];
+
+      &:hover {
+        @apply border-b-2 border-b-primary;
+      }
+    }
+  }
+
   .section {
     @apply pb-32 text-center;
 

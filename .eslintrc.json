@@ -13,6 +13,7 @@
   "rules": {
     "prettier/prettier": "warn",
     "react/jsx-sort-props": ["warn", { "shorthandLast": true, "reservedFirst": true }],
+    "@typescript-eslint/consistent-type-imports": ["error", { "disallowTypeAnnotations": false }],
     "import/order": [
       "warn",
       { "groups": ["type", "builtin", "external", "internal", ["sibling", "parent"], "index", "unknown"] }

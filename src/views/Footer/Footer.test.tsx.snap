@@ -1,0 +1,59 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Footer: > should render correctly 1`] = `
+<DocumentFragment>
+  <footer
+    class="flex justify-between p-[3rem_0]"
+  >
+    <div
+      class="text-darkgrey"
+    >
+      <p>
+        This website has been created by
+        <a
+          class="text-white"
+          href="#foo"
+        >
+          Esteban V.M.
+        </a>
+      </p>
+    </div>
+    <nav>
+      <ul
+        class="flex"
+      >
+        <li
+          class="nav_link footer"
+          id="476b85cb-1e4d-4e03-9b66-d6ba167e09b2"
+        >
+          <a
+            href="#contact"
+          >
+            Terms of use
+          </a>
+        </li>
+        <li
+          class="nav_link footer"
+          id="72012561-b194-4711-b2a3-f4591312ef94"
+        >
+          <a
+            href="#services"
+          >
+            Privacy Policy
+          </a>
+        </li>
+        <li
+          class="nav_link footer"
+          id="8efd4a0e-7c40-476f-8c8a-c654e06a86e9"
+        >
+          <a
+            href="#portfolio"
+          >
+            Cookie Policy
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+</DocumentFragment>
+`;

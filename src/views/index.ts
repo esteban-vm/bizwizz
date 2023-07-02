@@ -1,5 +1,6 @@
 export * from './Contact'
 export * from './CTA'
+export * from './Footer'
 export * from './Header'
 export * from './Portfolio'
 export * from './Services'
