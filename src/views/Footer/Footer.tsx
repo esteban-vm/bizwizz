@@ -8,8 +8,8 @@ const Footer: FC = () => {
     <footer className={styles.wrapper}>
       <div className={styles.copyright}>
         <p>
-          This website has been created by
-          <a className={styles.author} href='#foo'>
+          This website has been created by&nbsp;
+          <a className={styles.author} href='https://github.com/esteban-vm' rel='noreferrer' target='_blank'>
             Esteban V.M.
           </a>
         </p>

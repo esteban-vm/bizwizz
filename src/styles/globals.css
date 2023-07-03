@@ -96,6 +96,10 @@
   .nav_link {
     &.footer {
       @apply ml-4 text-yellow;
+
+      &:hover {
+        @apply scale-110 opacity-80;
+      }
     }
 
     &.header {

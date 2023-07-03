@@ -3,16 +3,18 @@
 exports[`Footer: > should render correctly 1`] = `
 <DocumentFragment>
   <footer
-    class="flex justify-between p-[3rem_0]"
+    class="flex justify-evenly p-[3rem_0] text-xl"
   >
     <div
       class="text-darkgrey"
     >
       <p>
-        This website has been created by
+        This website has been created by 
         <a
-          class="text-white"
-          href="#foo"
+          class="text-white hover:opacity-80"
+          href="https://github.com/esteban-vm"
+          rel="noreferrer"
+          target="_blank"
         >
           Esteban V.M.
         </a>
@@ -20,7 +22,7 @@ exports[`Footer: > should render correctly 1`] = `
     </div>
     <nav>
       <ul
-        class="flex"
+        class="flex flex-row"
       >
         <li
           class="nav_link footer"
