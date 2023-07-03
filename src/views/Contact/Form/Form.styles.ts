@@ -5,8 +5,8 @@ const styles = {
   half_group: clsx('basis-[48%]'),
   group: clsx('my-6 w-full'),
   feedback: clsx('mt-0 text-darkgrey-2'),
-  input: clsx('form-field'),
-  textarea: clsx('form-field h-80 resize-none'),
+  input: clsx('form_field'),
+  textarea: clsx('form_field h-80 resize-none'),
   toast: clsx('text-primary [&_strong]:capitalize'),
 }
 

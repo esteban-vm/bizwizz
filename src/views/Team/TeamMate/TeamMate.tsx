@@ -3,9 +3,9 @@ import { SocialLink } from '@/components'
 import styles from './TeamMate.styles'
 
 const socialLinks: SocialLinkProps[] = [
-  { id: 'bb186afa-ef11-40ff-88ad-48256a6d6f6c', to: 'facebook', className: styles.link },
-  { id: '83f3fe76-d766-4c2b-9de3-59ce8218d7ef', to: 'twitter', className: styles.link },
-  { id: '2f6d3dce-7da0-4433-9a31-b597b51b40f0', to: 'linkedin', className: styles.link },
+  { id: 'bb186afa-ef11-40ff-88ad-48256a6d6f6c', to: 'facebook', className: 'social_link team_mate' },
+  { id: '83f3fe76-d766-4c2b-9de3-59ce8218d7ef', to: 'twitter', className: 'social_link team_mate' },
+  { id: '2f6d3dce-7da0-4433-9a31-b597b51b40f0', to: 'linkedin', className: 'social_link team_mate' },
 ]
 
 export interface TeamMateProps {

@@ -7,7 +7,7 @@ describe('Social Link:', () => {
   const props: SocialLinkProps = {
     id: '929262c9-7c62-4107-b17c-d1db9dbe3575',
     to: 'facebook',
-    className: 'class',
+    className: 'social_link cta',
   }
 
   beforeEach(() => {

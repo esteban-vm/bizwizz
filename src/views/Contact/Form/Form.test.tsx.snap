@@ -19,7 +19,7 @@ exports[`Form: > should render correctly 1`] = `
           class="basis-[48%]"
         >
           <input
-            class="form-field"
+            class="form_field"
             maxlength="30"
             minlength="5"
             name="name"
@@ -31,7 +31,7 @@ exports[`Form: > should render correctly 1`] = `
           class="basis-[48%]"
         >
           <input
-            class="form-field"
+            class="form_field"
             name="email"
             placeholder="Your email address"
             type="email"
@@ -42,7 +42,7 @@ exports[`Form: > should render correctly 1`] = `
         class="my-6 w-full"
       >
         <input
-          class="form-field"
+          class="form_field"
           maxlength="100"
           minlength="5"
           name="subject"
@@ -54,7 +54,7 @@ exports[`Form: > should render correctly 1`] = `
         class="my-6 w-full"
       >
         <textarea
-          class="form-field h-80 resize-none"
+          class="form_field h-80 resize-none"
           maxlength="500"
           minlength="10"
           name="message"

@@ -17,7 +17,6 @@ const styles = {
   name: clsx('text-[2.7rem] font-semibold'),
   designation: clsx('text-2xl font-medium'),
   links: clsx('mt-8 flex justify-between'),
-  link: clsx('m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light'),
 }
 
 export default styles

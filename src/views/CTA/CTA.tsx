@@ -3,9 +3,9 @@ import { Button, SocialLink, Wave } from '@/components'
 import styles from './CTA.styles'
 
 const socialLinks: SocialLinkProps[] = [
-  { id: 'c10f7e60-6e36-498f-9a72-7b481133a14f', to: 'facebook', className: styles.link },
-  { id: 'dc35c092-25ed-4754-8743-f4d9cd982004', to: 'twitter', className: styles.link },
-  { id: '5780b1a7-ea08-4bf7-9076-685e21e4483a', to: 'linkedin', className: styles.link },
+  { id: 'c10f7e60-6e36-498f-9a72-7b481133a14f', to: 'facebook', className: 'social_link cta' },
+  { id: 'dc35c092-25ed-4754-8743-f4d9cd982004', to: 'twitter', className: 'social_link cta' },
+  { id: '5780b1a7-ea08-4bf7-9076-685e21e4483a', to: 'linkedin', className: 'social_link cta' },
 ]
 
 const CTA: FC = () => {

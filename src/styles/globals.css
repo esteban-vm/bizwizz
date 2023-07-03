@@ -57,10 +57,6 @@
 }
 
 @layer components {
-  .icons {
-    @apply absolute h-0 w-0 overflow-hidden;
-  }
-
   .button {
     @apply block min-w-[20rem] cursor-pointer select-none bg-white bg-gradient-120 from-transparent from-0% via-transparent via-50% to-primary to-50% bg-[length:250%] p-[1.6rem] text-2xl font-[500] uppercase text-primary transition-all duration-300;
 
@@ -77,7 +73,7 @@
     }
   }
 
-  .form-field {
+  .form_field {
     @apply w-full rounded-xl border-2 border-solid border-primary-light p-2 text-2xl;
 
     &::placeholder {
@@ -93,6 +89,10 @@
     }
   }
 
+  .icons {
+    @apply absolute h-0 w-0 overflow-hidden;
+  }
+
   .nav_link {
     &.footer {
       @apply ml-4 text-yellow;
@@ -103,6 +103,24 @@
 
       &:hover {
         @apply border-b-2 border-b-primary;
+      }
+    }
+  }
+
+  .social_link {
+    &.cta {
+      @apply m-3 block h-[4.5rem] w-[4.5rem] translate-y-0 rounded-full border-2 border-solid border-primary fill-white p-5 transition-all duration-500;
+
+      &:hover {
+        @apply -translate-y-3 fill-primary;
+      }
+    }
+
+    &.team_mate {
+      @apply m-[2.6px] h-12 w-12 fill-white;
+
+      &:hover {
+        @apply fill-primary-light;
       }
     }
   }

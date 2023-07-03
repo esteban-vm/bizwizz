@@ -31,7 +31,7 @@ exports[`CTA: > should render correctly 1`] = `
         title="facebook"
       >
         <svg
-          class="m-3 block h-[4.5rem] w-[4.5rem] translate-y-0 rounded-full border-2 border-solid border-primary fill-white p-5 transition-all duration-500 hover:-translate-y-3 hover:fill-primary"
+          class="social_link cta"
           role="img"
         >
           <use
@@ -47,7 +47,7 @@ exports[`CTA: > should render correctly 1`] = `
         title="twitter"
       >
         <svg
-          class="m-3 block h-[4.5rem] w-[4.5rem] translate-y-0 rounded-full border-2 border-solid border-primary fill-white p-5 transition-all duration-500 hover:-translate-y-3 hover:fill-primary"
+          class="social_link cta"
           role="img"
         >
           <use
@@ -63,7 +63,7 @@ exports[`CTA: > should render correctly 1`] = `
         title="linkedin"
       >
         <svg
-          class="m-3 block h-[4.5rem] w-[4.5rem] translate-y-0 rounded-full border-2 border-solid border-primary fill-white p-5 transition-all duration-500 hover:-translate-y-3 hover:fill-primary"
+          class="social_link cta"
           role="img"
         >
           <use

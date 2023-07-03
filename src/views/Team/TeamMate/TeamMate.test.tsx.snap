@@ -33,7 +33,7 @@ exports[`Team Mate: > should render correctly 1`] = `
           title="facebook"
         >
           <svg
-            class="m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light"
+            class="social_link team_mate"
             role="img"
           >
             <use
@@ -49,7 +49,7 @@ exports[`Team Mate: > should render correctly 1`] = `
           title="twitter"
         >
           <svg
-            class="m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light"
+            class="social_link team_mate"
             role="img"
           >
             <use
@@ -65,7 +65,7 @@ exports[`Team Mate: > should render correctly 1`] = `
           title="linkedin"
         >
           <svg
-            class="m-[2.6px] h-12 w-12 fill-white hover:fill-primary-light"
+            class="social_link team_mate"
             role="img"
           >
             <use

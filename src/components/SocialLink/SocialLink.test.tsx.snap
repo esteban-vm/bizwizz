@@ -10,7 +10,7 @@ exports[`Social Link: > should render correctly 1`] = `
     title="facebook"
   >
     <svg
-      class="class"
+      class="social_link cta"
       role="img"
     >
       <use

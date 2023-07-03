@@ -4,7 +4,7 @@ import { Icon } from '../Icon'
 export interface SocialLinkProps {
   id: UUID
   to: Extract<IconName, 'facebook' | 'twitter' | 'linkedin'>
-  className: string
+  className: `social_link ${'cta' | 'team_mate'}`
 }
 
 const SocialLink: FC<SocialLinkProps> = ({ id, to: socialMedia, ...props }) => {
