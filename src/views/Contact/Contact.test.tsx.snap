@@ -51,7 +51,7 @@ exports[`Contact: > should render correctly 1`] = `
               role="img"
             >
               <use
-                xlink:href="#icon-location"
+                xlink:href="#icon-20"
               />
             </svg>
           </div>
@@ -82,7 +82,7 @@ exports[`Contact: > should render correctly 1`] = `
               role="img"
             >
               <use
-                xlink:href="#icon-envelop"
+                xlink:href="#icon-19"
               />
             </svg>
           </div>
@@ -113,7 +113,7 @@ exports[`Contact: > should render correctly 1`] = `
               role="img"
             >
               <use
-                xlink:href="#icon-address-book"
+                xlink:href="#icon-18"
               />
             </svg>
           </div>

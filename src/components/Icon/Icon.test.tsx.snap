@@ -7,7 +7,7 @@ exports[`Icon: > should render correctly 1`] = `
     role="img"
   >
     <use
-      xlink:href="#icon-desktop"
+      xlink:href="#icon-7"
     />
   </svg>
 </DocumentFragment>

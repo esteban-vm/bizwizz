@@ -12,7 +12,7 @@ exports[`Carousel: > should render correctly 1`] = `
       role="img"
     >
       <use
-        xlink:href="#icon-chevron-left"
+        xlink:href="#icon-3"
       />
     </svg>
     <div
@@ -65,7 +65,7 @@ exports[`Carousel: > should render correctly 1`] = `
       role="img"
     >
       <use
-        xlink:href="#icon-chevron-right"
+        xlink:href="#icon-4"
       />
     </svg>
   </div>

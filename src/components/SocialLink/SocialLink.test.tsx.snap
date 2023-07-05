@@ -14,7 +14,7 @@ exports[`Social Link: > should render correctly 1`] = `
       role="img"
     >
       <use
-        xlink:href="#icon-facebook"
+        xlink:href="#icon-0"
       />
     </svg>
   </a>

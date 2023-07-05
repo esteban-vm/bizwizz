@@ -42,7 +42,7 @@ exports[`Services: > should render correctly 1`] = `
           role="img"
         >
           <use
-            xlink:href="#icon-strategy"
+            xlink:href="#icon-15"
           />
         </svg>
         <h4
@@ -60,7 +60,7 @@ exports[`Services: > should render correctly 1`] = `
           role="img"
         >
           <use
-            xlink:href="#icon-desktop"
+            xlink:href="#icon-7"
           />
         </svg>
         <h4
@@ -78,7 +78,7 @@ exports[`Services: > should render correctly 1`] = `
           role="img"
         >
           <use
-            xlink:href="#icon-picture"
+            xlink:href="#icon-8"
           />
         </svg>
         <h4
@@ -96,7 +96,7 @@ exports[`Services: > should render correctly 1`] = `
           role="img"
         >
           <use
-            xlink:href="#icon-pencil"
+            xlink:href="#icon-14"
           />
         </svg>
         <h4
@@ -114,7 +114,7 @@ exports[`Services: > should render correctly 1`] = `
           role="img"
         >
           <use
-            xlink:href="#icon-expand"
+            xlink:href="#icon-10"
           />
         </svg>
         <h4
@@ -132,7 +132,7 @@ exports[`Services: > should render correctly 1`] = `
           role="img"
         >
           <use
-            xlink:href="#icon-megaphone"
+            xlink:href="#icon-11"
           />
         </svg>
         <h4
@@ -150,7 +150,7 @@ exports[`Services: > should render correctly 1`] = `
           role="img"
         >
           <use
-            xlink:href="#icon-video"
+            xlink:href="#icon-9"
           />
         </svg>
         <h4
@@ -168,7 +168,7 @@ exports[`Services: > should render correctly 1`] = `
           role="img"
         >
           <use
-            xlink:href="#icon-trophy"
+            xlink:href="#icon-12"
           />
         </svg>
         <h4
@@ -186,7 +186,7 @@ exports[`Services: > should render correctly 1`] = `
           role="img"
         >
           <use
-            xlink:href="#icon-map"
+            xlink:href="#icon-13"
           />
         </svg>
         <h4

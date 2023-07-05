@@ -11,7 +11,7 @@ exports[`Service: > should render correctly 1`] = `
       role="img"
     >
       <use
-        xlink:href="#icon-strategy"
+        xlink:href="#icon-15"
       />
     </svg>
     <h4

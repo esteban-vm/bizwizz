@@ -43,7 +43,7 @@ exports[`Testimonials: > should render correctly 1`] = `
           role="img"
         >
           <use
-            xlink:href="#icon-chevron-left"
+            xlink:href="#icon-3"
           />
         </svg>
         <div
@@ -98,7 +98,7 @@ exports[`Testimonials: > should render correctly 1`] = `
                   role="img"
                 >
                   <use
-                    xlink:href="#icon-star-full"
+                    xlink:href="#icon-23"
                   />
                 </svg>
                 <svg
@@ -106,7 +106,7 @@ exports[`Testimonials: > should render correctly 1`] = `
                   role="img"
                 >
                   <use
-                    xlink:href="#icon-star-full"
+                    xlink:href="#icon-23"
                   />
                 </svg>
                 <svg
@@ -114,7 +114,7 @@ exports[`Testimonials: > should render correctly 1`] = `
                   role="img"
                 >
                   <use
-                    xlink:href="#icon-star-full"
+                    xlink:href="#icon-23"
                   />
                 </svg>
                 <svg
@@ -122,7 +122,7 @@ exports[`Testimonials: > should render correctly 1`] = `
                   role="img"
                 >
                   <use
-                    xlink:href="#icon-star-full"
+                    xlink:href="#icon-23"
                   />
                 </svg>
                 <svg
@@ -130,7 +130,7 @@ exports[`Testimonials: > should render correctly 1`] = `
                   role="img"
                 >
                   <use
-                    xlink:href="#icon-star-empty"
+                    xlink:href="#icon-21"
                   />
                 </svg>
               </div>
@@ -186,7 +186,7 @@ exports[`Testimonials: > should render correctly 1`] = `
                   role="img"
                 >
                   <use
-                    xlink:href="#icon-star-full"
+                    xlink:href="#icon-23"
                   />
                 </svg>
                 <svg
@@ -194,7 +194,7 @@ exports[`Testimonials: > should render correctly 1`] = `
                   role="img"
                 >
                   <use
-                    xlink:href="#icon-star-full"
+                    xlink:href="#icon-23"
                   />
                 </svg>
                 <svg
@@ -202,7 +202,7 @@ exports[`Testimonials: > should render correctly 1`] = `
                   role="img"
                 >
                   <use
-                    xlink:href="#icon-star-full"
+                    xlink:href="#icon-23"
                   />
                 </svg>
                 <svg
@@ -210,7 +210,7 @@ exports[`Testimonials: > should render correctly 1`] = `
                   role="img"
                 >
                   <use
-                    xlink:href="#icon-star-full"
+                    xlink:href="#icon-23"
                   />
                 </svg>
                 <svg
@@ -218,7 +218,7 @@ exports[`Testimonials: > should render correctly 1`] = `
                   role="img"
                 >
                   <use
-                    xlink:href="#icon-star-full"
+                    xlink:href="#icon-23"
                   />
                 </svg>
               </div>
@@ -274,7 +274,7 @@ exports[`Testimonials: > should render correctly 1`] = `
                   role="img"
                 >
                   <use
-                    xlink:href="#icon-star-full"
+                    xlink:href="#icon-23"
                   />
                 </svg>
                 <svg
@@ -282,7 +282,7 @@ exports[`Testimonials: > should render correctly 1`] = `
                   role="img"
                 >
                   <use
-                    xlink:href="#icon-star-full"
+                    xlink:href="#icon-23"
                   />
                 </svg>
                 <svg
@@ -290,7 +290,7 @@ exports[`Testimonials: > should render correctly 1`] = `
                   role="img"
                 >
                   <use
-                    xlink:href="#icon-star-full"
+                    xlink:href="#icon-23"
                   />
                 </svg>
                 <svg
@@ -298,7 +298,7 @@ exports[`Testimonials: > should render correctly 1`] = `
                   role="img"
                 >
                   <use
-                    xlink:href="#icon-star-empty"
+                    xlink:href="#icon-21"
                   />
                 </svg>
                 <svg
@@ -306,7 +306,7 @@ exports[`Testimonials: > should render correctly 1`] = `
                   role="img"
                 >
                   <use
-                    xlink:href="#icon-star-empty"
+                    xlink:href="#icon-21"
                   />
                 </svg>
               </div>
@@ -357,7 +357,7 @@ exports[`Testimonials: > should render correctly 1`] = `
           role="img"
         >
           <use
-            xlink:href="#icon-chevron-right"
+            xlink:href="#icon-4"
           />
         </svg>
       </div>

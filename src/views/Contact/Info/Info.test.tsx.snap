@@ -14,7 +14,7 @@ exports[`Info: > should render correctly 1`] = `
         role="img"
       >
         <use
-          xlink:href="#icon-location"
+          xlink:href="#icon-20"
         />
       </svg>
     </div>

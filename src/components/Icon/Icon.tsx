@@ -1,4 +1,5 @@
 import type { FC, IconName } from '@/types'
+import { IconNames } from './Icons'
 
 interface IconProps {
   name: IconName
@@ -9,7 +10,7 @@ interface IconProps {
 const Icon: FC<IconProps> = ({ name, ...props }) => {
   return (
     <svg role='img' {...props}>
-      <use xlinkHref={`#icon-${name}`} />
+      <use xlinkHref={`#icon-${IconNames[name]}`} />
     </svg>
   )
 }
