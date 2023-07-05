@@ -9,17 +9,43 @@ interface CarouselProps {
 }
 
 const Carousel: FC<CarouselProps> = ({ children }) => {
+  const timer = useRef<ReturnType<typeof setInterval>>()
   const slider = useRef<HTMLDivElement>(null)
   const slides = [...Array(3).keys()].map((key) => `slide_${key + 1}`)
 
   useEffect(() => {
     if (slider.current) {
-      const slide1 = slider.current.querySelector('input') as HTMLInputElement
+      const sliderElement = slider.current
+      const slide1 = sliderElement.querySelector('input') as HTMLInputElement
       slide1.checked = true
-    }
 
-    const timer = setInterval(handleClick('right'), 5_000)
-    return () => clearInterval(timer)
+      const listener = (event: MouseEvent) => {
+        const element = (event.target as HTMLElement).nodeName
+        const isLabel = element === 'LABEL'
+        const isSVG = element === 'svg'
+
+        if (isLabel || isSVG) {
+          stopTimer()
+          startTimer()
+        }
+      }
+
+      const startTimer = () => {
+        timer.current = setInterval(handleClick('right'), 5_000)
+      }
+
+      const stopTimer = () => {
+        clearInterval(timer.current)
+      }
+
+      sliderElement.addEventListener('click', listener)
+      startTimer()
+
+      return () => {
+        stopTimer()
+        sliderElement.removeEventListener('click', listener)
+      }
+    }
   }, [])
 
   const handleClick = (side: 'left' | 'right') => {
@@ -47,9 +73,9 @@ const Carousel: FC<CarouselProps> = ({ children }) => {
   }
 
   return (
-    <div aria-roledescription='carousel' className={styles.outer_wrapper} role='group'>
+    <div ref={slider} aria-roledescription='carousel' className={styles.outer_wrapper} role='group'>
       <Icon className={styles.icon} name='chevron-left' onClick={handleClick('left')} />
-      <div ref={slider} className={styles.inner_wrapper}>
+      <div className={styles.inner_wrapper}>
         {slides.map((slide, index) => (
           <input key={index} className={styles.radio} id={slide} name='slide' type='radio' />
         ))}
