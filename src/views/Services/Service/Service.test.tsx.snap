@@ -3,7 +3,7 @@
 exports[`Service: > should render correctly 1`] = `
 <DocumentFragment>
   <article
-    class="flex w-80 flex-[1_1_30%] items-center justify-center overflow-hidden bg-lightgrey text-black hover:bg-primary hover:text-white [&>h4]:hover:translate-x-20 [&>svg]:hover:scale-150 [&>svg]:hover:opacity-60"
+    class="flex w-80 flex-[1_1_100%] items-center justify-center overflow-hidden bg-lightgrey text-black hover:bg-primary hover:text-white pointer-coarse:bg-primary pointer-coarse:text-white lg:flex-[1_1_30%] [&>h4]:hover:translate-x-20 [&>svg]:hover:scale-150 [&>svg]:hover:opacity-60 [&>svg]:pointer-coarse:scale-100 [&>svg]:pointer-coarse:opacity-60"
     id="92cf33d6-5464-4bb5-8768-d62f81ab5036"
   >
     <svg

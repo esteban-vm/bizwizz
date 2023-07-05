@@ -18,14 +18,10 @@ const CTA: FC = () => {
             <SocialLink key={link.id} {...link} />
           ))}
         </div>
-        <div>
-          <h2 className={styles.title} id='cta_title'>
-            Let&apos;s Talk
-          </h2>
-        </div>
-        <div className={styles.btn_container}>
-          <Button />
-        </div>
+        <h2 className={styles.title} id='cta_title'>
+          Let&apos;s Talk
+        </h2>
+        <Button />
       </section>
     </>
   )

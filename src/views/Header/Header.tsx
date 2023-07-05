@@ -25,9 +25,7 @@ const Header: FC = () => {
           </h1>
           <h2 className={styles.subtitle}>Innovate, Transform and Lead</h2>
         </div>
-        <div>
-          <Button />
-        </div>
+        <Button />
       </div>
     </header>
   )

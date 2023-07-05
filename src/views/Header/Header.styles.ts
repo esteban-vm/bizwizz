@@ -8,7 +8,7 @@ const styles = {
   navigation: clsx('-mt-20 flex justify-between'),
   image: clsx('h-[12rem] w-auto select-none'),
   links: clsx('m-[5rem_2rem_0_0] flex list-none'),
-  titles: clsx('absolute left-20 top-60 text-left font-[500]'),
+  titles: clsx('absolute left-32 top-1/2 -translate-y-1/2 text-left font-[500]'),
   title: clsx('text-[6rem] text-primary'),
   subtitle: clsx('mb-12 w-1/2 text-[5rem] text-white'),
 }

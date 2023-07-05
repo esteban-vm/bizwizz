@@ -5,12 +5,11 @@ export interface NavLinkProps {
   id: UUID
   text: Capitalize<string>
   to: `#${Extract<SectionID, 'contact' | 'portfolio' | 'services'>}`
-  className: `nav_link ${'header' | 'footer'}`
 }
 
 const NavLink: FC<NavLinkProps> = ({ to, text, ...props }) => {
   return (
-    <li {...props}>
+    <li className='nav_link' {...props}>
       <Link href={to}>{text}</Link>
     </li>
   )

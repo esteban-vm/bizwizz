@@ -3,10 +3,10 @@
 exports[`Footer: > should render correctly 1`] = `
 <DocumentFragment>
   <footer
-    class="flex justify-evenly p-[3rem_0] text-xl"
+    class="flex flex-wrap items-baseline justify-center pb-3 text-xl md:justify-evenly md:p-[3rem_0]"
   >
     <div
-      class="text-darkgrey"
+      class="mb-3 text-darkgrey md:mb-0"
     >
       <p>
         This website has been created by 
@@ -25,7 +25,7 @@ exports[`Footer: > should render correctly 1`] = `
         class="flex flex-row"
       >
         <li
-          class="nav_link footer"
+          class="nav_link"
           id="476b85cb-1e4d-4e03-9b66-d6ba167e09b2"
         >
           <a
@@ -35,7 +35,7 @@ exports[`Footer: > should render correctly 1`] = `
           </a>
         </li>
         <li
-          class="nav_link footer"
+          class="nav_link"
           id="72012561-b194-4711-b2a3-f4591312ef94"
         >
           <a
@@ -45,7 +45,7 @@ exports[`Footer: > should render correctly 1`] = `
           </a>
         </li>
         <li
-          class="nav_link footer"
+          class="nav_link"
           id="8efd4a0e-7c40-476f-8c8a-c654e06a86e9"
         >
           <a

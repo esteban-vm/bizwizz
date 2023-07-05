@@ -31,7 +31,7 @@
     }
 
     &::selection {
-      @apply bg-primary-light text-primary;
+      @apply bg-primary text-white;
     }
 
     &::-webkit-scrollbar {
@@ -48,7 +48,7 @@
   }
 
   html {
-    @apply text-[62.5%];
+    @apply text-[40%] md:text-[45%] lg:text-[55%] xl:text-[62.5%];
   }
 
   body {
@@ -94,19 +94,29 @@
   }
 
   .nav_link {
-    &.footer {
-      @apply ml-4 text-yellow;
+    @apply block select-none pb-[0.8rem] text-[1.4rem] uppercase text-white transition-[border-b];
 
-      &:hover {
-        @apply scale-110 opacity-80;
-      }
+    &:hover {
+      @apply border-b-2 border-b-primary;
     }
 
-    &.header {
-      @apply ml-10 block select-none pb-[0.8rem] text-[1.4rem] uppercase text-white transition-[border-b];
+    &:not(:first-of-type) {
+      @apply ml-10;
+    }
+  }
 
-      &:hover {
-        @apply border-b-2 border-b-primary;
+  .section {
+    @apply pb-32 text-center;
+
+    > header {
+      @apply font-bold tracking-widest;
+
+      > h2 {
+        @apply mb-5 text-[2.4rem] uppercase text-primary;
+      }
+
+      > h3 {
+        @apply mb-10 text-[4rem] capitalize text-darkgrey;
       }
     }
   }
@@ -125,22 +135,6 @@
 
       &:hover {
         @apply fill-primary-light;
-      }
-    }
-  }
-
-  .section {
-    @apply pb-32 text-center;
-
-    header {
-      @apply font-bold tracking-widest;
-
-      h2 {
-        @apply mb-5 text-[2.4rem] uppercase text-primary;
-      }
-
-      h3 {
-        @apply mb-10 text-[4rem] capitalize text-darkgrey;
       }
     }
   }

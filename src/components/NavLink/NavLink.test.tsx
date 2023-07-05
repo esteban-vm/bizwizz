@@ -8,7 +8,6 @@ describe('Nav Link:', () => {
     id: '31c97b93-9ad9-4064-9a41-d8034c2faccf',
     text: 'Contact',
     to: '#contact',
-    className: 'nav_link header',
   }
 
   beforeEach(() => {
@@ -25,7 +24,7 @@ describe('Nav Link:', () => {
     const navLinkElem = screen.getByRole('listitem')
     expect(navLinkElem).toBeInTheDocument()
     expect(navLinkElem).toHaveAttribute('id', props.id)
-    expect(navLinkElem).toHaveAttribute('class', props.className)
+    expect(navLinkElem).toHaveAttribute('class', 'nav_link')
     const linkElem = within(navLinkElem).getByRole('link', { name: props.text })
     expect(linkElem).toBeInTheDocument()
     expect(linkElem).toHaveAttribute('href', props.to)

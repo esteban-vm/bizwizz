@@ -17,11 +17,11 @@ exports[`CTA: > should render correctly 1`] = `
   </svg>
   <section
     aria-labelledby="cta_title"
-    class="flex w-full flex-row items-center justify-around bg-black p-12"
+    class="flex w-full flex-col items-center justify-around bg-black p-12 md:flex-row"
     id="call-to-action"
   >
     <div
-      class="mr-3 flex"
+      class="flex flex-row"
     >
       <a
         href="https://www.facebook.com"
@@ -72,24 +72,18 @@ exports[`CTA: > should render correctly 1`] = `
         </svg>
       </a>
     </div>
-    <div>
-      <h2
-        class="text-[4rem] font-semibold text-white"
-        id="cta_title"
-      >
-        Let's Talk
-      </h2>
-    </div>
-    <div
-      class=""
+    <h2
+      class="mb-3 text-[4rem] font-semibold text-white md:mb-0"
+      id="cta_title"
     >
-      <button
-        class="button"
-        type="button"
-      >
-        Get a quote today
-      </button>
-    </div>
+      Let's Talk
+    </h2>
+    <button
+      class="button"
+      type="button"
+    >
+      Get a quote today
+    </button>
   </section>
 </DocumentFragment>
 `;

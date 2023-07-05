@@ -3,8 +3,8 @@ const plugin = require('tailwindcss/plugin')
 const carouselCheck = plugin(({ addVariant }) => {
   addVariant(
     'carousel-check',
-    [...Array(3)].map((_, _index) => {
-      const index = _index + 1
+    [...Array(3).keys()].map((key) => {
+      const index = key + 1
       return `&:checked:nth-of-type(${index}) ~ div label:nth-of-type(${index})`
     })
   )

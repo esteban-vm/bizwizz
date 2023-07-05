@@ -40,7 +40,7 @@ exports[`Header: > should render correctly 1`] = `
           class="m-[5rem_2rem_0_0] flex list-none"
         >
           <li
-            class="nav_link header"
+            class="nav_link"
             id="e67da725-6069-4902-838f-2e54b680426e"
           >
             <a
@@ -50,7 +50,7 @@ exports[`Header: > should render correctly 1`] = `
             </a>
           </li>
           <li
-            class="nav_link header"
+            class="nav_link"
             id="c054a01e-9103-4cd7-8a2f-c647d0d3e73b"
           >
             <a
@@ -60,7 +60,7 @@ exports[`Header: > should render correctly 1`] = `
             </a>
           </li>
           <li
-            class="nav_link header"
+            class="nav_link"
             id="fdd9fce5-598c-4029-8682-5296584eec75"
           >
             <a
@@ -73,7 +73,7 @@ exports[`Header: > should render correctly 1`] = `
       </nav>
     </div>
     <div
-      class="absolute left-20 top-60 text-left font-[500]"
+      class="absolute left-32 top-1/2 -translate-y-1/2 text-left font-[500]"
     >
       <div>
         <h1
@@ -88,14 +88,12 @@ exports[`Header: > should render correctly 1`] = `
           Innovate, Transform and Lead
         </h2>
       </div>
-      <div>
-        <button
-          class="button"
-          type="button"
-        >
-          Get a quote today
-        </button>
-      </div>
+      <button
+        class="button"
+        type="button"
+      >
+        Get a quote today
+      </button>
     </div>
   </header>
 </DocumentFragment>

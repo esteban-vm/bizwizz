@@ -3,12 +3,12 @@
 exports[`Work: > should render correctly 1`] = `
 <DocumentFragment>
   <article
-    class="m-3 w-full overflow-hidden"
+    class="w-full overflow-hidden"
     id="56d05460-059d-4ea1-b980-8c9035d05aa2"
   >
     <img
       alt=""
-      class="h-auto w-full brightness-100 contrast-100 saturate-0 transition-all duration-500 hover:scale-125 hover:filter-none"
+      class="h-auto w-full brightness-100 contrast-100 saturate-0 transition-all duration-500 hover:scale-125 hover:filter-none pointer-coarse:filter-none"
       data-nimg="1"
       decoding="async"
       height="3078"

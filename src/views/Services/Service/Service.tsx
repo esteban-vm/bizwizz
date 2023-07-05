@@ -12,7 +12,7 @@ const Service: FC<ServiceProps> = ({ title, icon, ...props }) => {
   return (
     <article className={styles.wrapper} {...props}>
       <Icon className={styles.icon} name={icon} />
-      <h4 className={styles.heading}>{title}</h4>
+      <h4 className={styles.title}>{title}</h4>
     </article>
   )
 }
