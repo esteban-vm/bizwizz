@@ -9,8 +9,7 @@
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "test": "vitest -u",
-    "test:ui": "vitest -u --ui",
-    "prepare": "husky install"
+    "test:ui": "vitest -u --ui"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.1.1",
