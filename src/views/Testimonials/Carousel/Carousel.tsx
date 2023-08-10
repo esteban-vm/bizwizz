@@ -9,12 +9,13 @@ interface CarouselProps {
 }
 
 const Carousel: FC<CarouselProps> = ({ children }) => {
-  const timer = useRef<ReturnType<typeof setInterval>>()
   const slider = useRef<HTMLDivElement>(null)
   const slides = [...Array(3).keys()].map((key) => `slide_${key + 1}`)
 
   useEffect(() => {
     if (slider.current) {
+      let timer: ReturnType<typeof setInterval>
+
       const sliderElement = slider.current
       const slide1 = sliderElement.querySelector('input') as HTMLInputElement
       slide1.checked = true
@@ -31,15 +32,15 @@ const Carousel: FC<CarouselProps> = ({ children }) => {
       }
 
       const startTimer = () => {
-        timer.current = setInterval(handleClick('right'), 5_000)
+        timer = setInterval(handleClick('right'), 5_000)
       }
 
       const stopTimer = () => {
-        clearInterval(timer.current)
+        clearInterval(timer)
       }
 
-      sliderElement.addEventListener('click', listener)
       startTimer()
+      sliderElement.addEventListener('click', listener)
 
       return () => {
         stopTimer()
