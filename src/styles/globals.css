@@ -5,7 +5,7 @@
 @font-face {
   font-family: 'Work Sans';
   font-display: swap;
-  src: local('Work Sans') url('/fonts/work-sans-variable-font-wght.ttf') format('truetype-variations');
+  src: local('Work Sans'), url('/fonts/work-sans-variable-font-wght.ttf');
 }
 
 @layer base {
