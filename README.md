@@ -11,6 +11,6 @@ This is a **Next.js** website project for a **fictional company** bootstrapped w
 - [Prettier](https://prettier.io/)
 
 ## License:
-This project is released under the MIT [LICENSE](/LICENSE).
+This project is released under the MIT [LICENSE](/LICENSE)
 
 ![Bizwizz screenshot](/screenshot.jpeg "Bizwizz screenshot")
